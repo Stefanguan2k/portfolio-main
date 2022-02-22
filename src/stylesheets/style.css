@@ -1,0 +1,14 @@
+:root {
+  font-family: "Rubik", sans-serif;
+  --bg-clr: white;
+  --bg-clr-dark: rgb(38, 42, 43);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.dark {
+  background: var(--bg-clr-dark);
+}
