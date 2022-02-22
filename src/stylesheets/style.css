@@ -9,6 +9,49 @@ body {
   margin: 0;
 }
 
+/* Navbar */
+
+.navbar {
+  position: fixed;
+  display: grid;
+  height: 64px;
+  width: 100%;
+  top: 0;
+  background: grey;
+}
+
+.navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.main-icon,
+.main-icon > svg {
+  height: 40px;
+  width: 40px;
+}
+
+.hamburger-icon,
+.hamburger-icon > svg {
+  height: 20px;
+  width: 20px;
+}
+
+.nav-items {
+  display: none;
+}
+
+/* Content */
+
+.content-container {
+  margin-top: 64px;
+}
+
+/* Utility */
+
 .dark {
   background: var(--bg-clr-dark);
 }
