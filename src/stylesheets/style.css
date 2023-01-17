@@ -17,7 +17,9 @@ body {
   height: 64px;
   width: 100%;
   top: 0;
-  background: grey;
+  background: rgba(128, 128, 128, 0.425);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .navbar-inner {
@@ -25,6 +27,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 90%;
+  max-width: 1280px;
   margin: auto;
 }
 
@@ -48,6 +51,38 @@ body {
 
 .content-container {
   margin-top: 64px;
+}
+
+.hero {
+  height: 90vh;
+  padding: 2rem 2rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.splash {
+  font-size: 38px;
+}
+
+.works {
+  padding: 0 0 5rem 0;
+}
+
+.content-title {
+  background: #C4C4C4;
+  width: 80vw;
+  padding: 0.2rem 0 0.2rem 1rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.works-title > h2 {
+  font-size: 28px;
+}
+
+.competencies {
+  padding: 0 0 5rem 0;
 }
 
 /* Utility */

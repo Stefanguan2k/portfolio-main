@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="src/stylesheets/style.css" />
     <link rel="stylesheet" href="src/stylesheets/font.css" />
     <link rel="icon" href="src/SG.ico" />
+    <script src="scripts.js"></script>
   </head>
 
   <body>
@@ -93,7 +94,7 @@
       <!-- Main content -->
       <div class="content-container">
         <section class="hero">
-          <h1>Hello, I'm Stefan, a Front End Dev/UX Designer</h1>
+          <h1 class="splash">Hello, I'm Stefan, <br> a Front End Dev/UX Designer</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus id
             quae voluptate maxime officia molestias repellat ipsa ex laborum
@@ -103,15 +104,21 @@
             voluptatum vero sed, sit nisi rerum cumque!
           </p>
         </section>
+        <div class="content-title">
+          <h2>Some of My Works</h2>
+        </div>
         <section class="works">
           <div class="work-1 card">
             <h3>Yopo Sweet Mandarin</h3>
-            <p>Front End Developer</p>
+            <p>Front End Developer (Freelance)</p>
           </div>
           <div class="work-2 card"></div>
           <div class="work-3 card"></div>
-          <a href="#" class="show-all">Show All</a>
+          <button class="show-all" id="works-show-all-btn">Show All</button>
         </section>
+        <div class="content-title">
+          <h2>Competencies</h2>
+        </div>
         <section class="competencies">
           <div class="work-1 card">
             <h3>Front End</h3>
@@ -121,21 +128,22 @@
             <h3>UX Design</h3>
             <p>Figma, Adobe XD, Adobe Photoshop, Premiere Pro, After Effects</p>
           </div>
+          <button class="show-all" id="comp-show-all-btn">Show All</button>
         </section>
       </div>
       <!-- End of main content -->
       <!-- Footer -->
       <footer class="footer-container">
         <div class="link-container">
-          <a href="#" class="linkedin"
-            ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <a href="#" class="linkedin-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
               <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
               <path
                 d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
               />
             </svg>
           </a>
-          <a href="#" class="github">
+          <a href="#" class="github-btn">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
               <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
               <path
