@@ -2,6 +2,7 @@
   font-family: "Rubik", sans-serif;
   --bg-clr: white;
   --bg-clr-dark: rgb(38, 42, 43);
+  --bdblur: 5px;
 }
 
 body {
@@ -64,10 +65,65 @@ body {
 
 .splash {
   font-size: 38px;
+  font-weight: 100;
 }
 
-.works {
+.card {
+  display: flex;
+  flex-direction: column;
+  background: gray;
+  width: 80vw;
+  max-width: 400px;
+  height: 200px;
+  border-radius: 8px;
+  box-shadow: 0 0 3px rgb(58, 58, 58);
+}
+
+.inner-card {
+  display: inline-block;
+  background: beige;
+  width: 70%;
+  border-radius: 0 0.25rem 0 0;
+  padding-left: 1rem;
+  height: max-content;
+  margin-top: 75px;
+}
+
+.inner-card > h3 {
+  line-height: 0;
+}
+
+.card > p {
+  padding: 1rem 0 1rem 1rem;
+  background: rgba(38, 42, 43, 0.514);
+  width: 70%;
+  border-radius: 0 0 0.25rem 0;
+  margin-top: 0;
+  backdrop-filter: blur(var(--bdblur));
+  -webkit-backdrop-filter: blur(var(--bdblur));
+}
+
+.work-1 {
+  background-image: url();
+}
+
+.show-all {
+  border: none;
+  padding: 1rem 4rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(58, 58, 58, 0.575);
+  background: rgb(150, 150, 150);
+  font-weight: bold;
+}
+
+.works, .competencies {
+  margin-top: 3rem;
   padding: 0 0 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .content-title {
@@ -81,8 +137,28 @@ body {
   font-size: 28px;
 }
 
-.competencies {
-  padding: 0 0 5rem 0;
+/* Footer */
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer-info {
+  text-align: center;
+}
+
+.link-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.link-container > a {
+  width: 32px;
+  aspect-ratio: 1;
 }
 
 /* Utility */
