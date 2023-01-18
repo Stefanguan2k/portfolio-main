@@ -71,7 +71,7 @@ body {
 .card {
   display: flex;
   flex-direction: column;
-  background: gray;
+  background: rgba(128, 128, 128, 0.678);
   width: 80vw;
   max-width: 400px;
   height: 200px;
@@ -104,7 +104,8 @@ body {
 }
 
 .work-1 {
-  background-image: url();
+  background-image: url("/yopo.jpg");
+  background-size: cover;
 }
 
 .show-all {
