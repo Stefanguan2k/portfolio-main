@@ -18,6 +18,7 @@ body {
   height: 64px;
   width: 100%;
   top: 0;
+  z-index: 9999;
   background: rgba(128, 128, 128, 0.425);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -76,12 +77,12 @@ body {
   max-width: 400px;
   height: 200px;
   border-radius: 8px;
-  box-shadow: 0 0 3px rgb(58, 58, 58);
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
 }
 
 .inner-card {
   display: inline-block;
-  background: beige;
+  background: rgb(188, 231, 233);
   width: 70%;
   border-radius: 0 0.25rem 0 0;
   padding-left: 1rem;
@@ -95,7 +96,7 @@ body {
 
 .card > p {
   padding: 1rem 0 1rem 1rem;
-  background: rgba(38, 42, 43, 0.514);
+  background: rgba(196, 196, 196, 0.514);
   width: 70%;
   border-radius: 0 0 0.25rem 0;
   margin-top: 0;
@@ -106,7 +107,10 @@ body {
 .work-1 {
   background-image: url("/yopo.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
 }
+
 
 .show-all {
   border: none;
