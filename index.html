@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="src/stylesheets/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap" rel="stylesheet">
     <link rel="icon" href="src/SG.ico" />
     <script async src="scripts.js"></script>
   </head>
@@ -17,6 +17,7 @@
     <div class="container">
       <!-- Navbar -->
       <nav class="navbar">
+        <div class="nav-bg" data-active="false"></div>
         <div class="navbar-inner">
           <!-- Icon -->
           <div class="main-icon">
@@ -46,7 +47,7 @@
             </svg>
           </div>
           <!-- Hamburger icon -->
-          <div class="hamburger-icon">
+          <div class="hamburger-icon" id="hamburger">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
@@ -59,9 +60,9 @@
             </svg>
           </div>
         </div>
-        <aside class="nav-items">
+        <aside class="nav-items" data-active="false">
           <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">Home</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">About Me</a></li>
             <li><a href="#">Contact</a></li>
@@ -94,7 +95,7 @@
       </nav>
       <!-- End of navbar -->
       <!-- Main content -->
-      <div class="content-container">
+      <div class="content-container" data-loaded="false">
         <section class="hero">
           <h1 class="splash">Hello, I'm Stefan, <br>a <strong>Front End Dev/UX Designer</strong></h1>
           <p>
@@ -115,7 +116,7 @@
             <div class="inner-card">
               <h3>Yopo Sweet Mandarin</h3>
             </div>
-            <p>Front End Developer (Freelance)</p>
+            <p>Front End Dev (Freelance)</p>
           </div>
           <div class="work-2 card" id="work-2">
             <div class="inner-card">
@@ -123,13 +124,13 @@
             </div>
             <p>UX Designer</p>
           </div>
-          <div class="work-3 card" id="work-3">
+          <!-- <div class="work-3 card" id="work-3">
             <div class="inner-card">
               <h3>Lorem Ipsum</h3>
             </div>
             <p>Lorem ipsum</p>
-          </div>
-          <button class="show-all" id="works-show-all-btn">Show All</button>
+          </div> -->
+          <!-- <button class="show-all" id="works-show-all-btn">Show All</button> -->
         </section>
         <!-- Competencies -->
         <div class="content-title">
@@ -150,7 +151,7 @@
               After Effects
             </p>
           </div>
-          <button class="show-all" id="comp-show-all-btn">Show All</button>
+          <!-- <button class="show-all" id="comp-show-all-btn">Show All</button> -->
         </section>
       </div>
       <!-- End of main content -->
