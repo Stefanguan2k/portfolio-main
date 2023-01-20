@@ -2,16 +2,36 @@ const hamburger = document.getElementById('hamburger');
 const navbg = document.querySelector('.nav-bg');
 const navItems = document.querySelector('.nav-items');
 const homeBtn = document.querySelector('.main-icon');
-const work1 = document.getElementById('work-1');
-const work2 = document.getElementById('work-2');
-const work3 = document.getElementById('work-3');
 const container = document.querySelector('.content-container');
+const footerLine = document.querySelector('.footer-container');
+const linkedinBtn = document.querySelector('.linkedin-btn');
+const githubBtn = document.querySelector('.github-btn');
 
 // window.onload = () => {
 //     setTimeout(() => {
 //         container.setAttribute('data-loaded', 'true')
 //     }, 1000);
 // }
+
+// 
+// Listen for hover
+// 
+
+linkedinBtn.addEventListener("mouseover", () => {
+    footerLine.setAttribute('data-icon', 'linkedin');
+})
+
+linkedinBtn.addEventListener("mouseout", () => {
+    footerLine.setAttribute('data-icon', 'none');
+})
+
+githubBtn.addEventListener('mouseover', () => {
+    footerLine.setAttribute('data-icon', 'github');
+})
+
+githubBtn.addEventListener("mouseout", () => {
+    footerLine.setAttribute('data-icon', 'none');
+})
 
 // 
 // Listen for button clicks
@@ -34,13 +54,11 @@ homeBtn.addEventListener('click', () => {
     window.location.href = "/index.html"
 });
 
-//  Works card 1
-work1.addEventListener("click", () =>
-{
-    window.location.href = "/yopo.html"
+// Resize navbar height and close mobile nav menu
+window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768) {
+        navbg.setAttribute('data-active', false);
+        navItems.setAttribute('data-active', false);
+    };
 });
 
-work2.addEventListener("click", () =>
-{
-    window.location.href = "/munch.html"
-});
