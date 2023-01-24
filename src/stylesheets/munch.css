@@ -48,6 +48,8 @@
     background: var(--bg-clr);
 }
 
-.project-details {
-    display: grid;
+.detail-wrapper {
+    background: rgb(231, 231, 231);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem 1rem 0 0;
 }
