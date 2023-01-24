@@ -14,68 +14,40 @@
   } */
 
 .content-container {
+    margin: 0;
     height: 5000px;
 }
 
-.wrapper {
-    height: 100vh;
-    overflow-x: hidden;
-    perspective: 2px;
-}
-
 .hero {
-    position: relative;
-    height: 94vh;
+    height: 100vh;
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.parallax::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    transform: translateZ(-1px) scale(1.5);
-    background-size: 100%;
-    z-index: -1;
-}
-
-.bg::after {
-    background-image: url("/src/assets/img/munch.jpg");
-    background-repeat: none;
-    background-size: cover;
-    background-position: center;
-}
-
-.main-text {
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.49);
+.bg {
+    background: url("/src/assets/img/munch.jpg") no-repeat center / cover;
 }
 
 .title {
     font-size: 5rem;
+    line-height: 0;
 }
 
 .description {
     text-align: center;
+    border-radius: 0.2rem;
+    padding: 0.3rem 0;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background: rgba(128, 128, 128, 0.313);
 }
 
-.current-proj {
-    position: fixed;
-    top: 80px;
-    display: flex;
-    align-items: center;
-    background: rgb(191, 245, 255);
-    justify-content: space-between;
-    width: 70%;
-    padding: 0 2rem;
-    border-radius: 5px;
-    opacity: 0;
+.project-details {
+    background: var(--bg-clr);
 }
 
-.current-proj > p {
-    font-size: 12px;
+.project-details {
+    display: grid;
 }
