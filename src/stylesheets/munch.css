@@ -16,6 +16,8 @@
 .content-container {
     margin: 0;
     height: 5000px;
+    display: flex;
+    flex-direction: column;
 }
 
 .hero {
@@ -33,6 +35,7 @@
 .title {
     font-size: 5rem;
     line-height: 0;
+    color:rgb(0, 0, 0);
 }
 
 .description {
@@ -41,7 +44,15 @@
     padding: 0.3rem 0;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    background: rgba(128, 128, 128, 0.313);
+    background: rgba(115, 179, 198, 0.313);
+}
+
+section > h1 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
 }
 
 .project-details {
@@ -52,4 +63,86 @@
     background: rgb(231, 231, 231);
     padding: 0.5rem 1rem;
     border-radius: 1rem 1rem 0 0;
+}
+
+/* Persona Carousel */
+
+.persona-carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: solid 1px black; */
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    gap: 5rem;
+}
+
+
+.persona {
+    position: absolute;
+    display: grid;
+    grid-template-areas:
+    "img info"
+    "desc desc"
+    "attr attr";
+    place-items: center;
+    width: 350px;
+    height: 250px;
+    background: rgb(161, 161, 161);
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 0 5px rgb(94, 94, 94);
+    transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+}
+
+.persona-img {
+    height: 100px;
+    width: 100px;
+    grid-area: img;
+}
+
+.info {
+    grid-area: info;
+}
+
+.desc {
+    grid-area: desc;
+    font-size: 14px;
+}
+
+.attribution {
+    grid-area: attr;
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(25, 34, 45);
+}
+
+.persona-btn {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 1rem;
+}
+
+.next-btn, .prev-btn {
+    background: rgba(205, 205, 205, 0.337);
+    display: grid;
+    place-items: center;
+    padding: 0.5rem;
+    border-radius: 100%;
+    box-shadow: 0 0 5px rgb(83, 83, 83);
+    border: none;
+    cursor: pointer;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+}
+
+.next-btn:hover, .prev-btn:hover {
+    transform: scale(1.2);
+} 
+
+.next-btn > svg, .prev-btn > svg {
+    height: 20px;
+    width: 20px;
 }
