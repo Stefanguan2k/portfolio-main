@@ -1,6 +1,8 @@
 const heroText = document.querySelector(".main-text");
 const personaCards = document.querySelectorAll(".persona");
-const personaGap = 125;
+const personaGap = 101;
+const cardIndicator1 = document.querySelector(".card-ct1");
+const cardIndicator2 = document.querySelector(".card-ct2");
 
 // Parallax hero text
 
@@ -28,8 +30,12 @@ const prevBtn = document.querySelector(".prev-btn");
 nextBtn.addEventListener("click", function () {
     if (curCard === maxCard) {
         curCard = 0;
+        cardIndicator1.classList.add('current-cnt');
+        cardIndicator2.classList.remove('current-cnt');
     } else {
         curCard++;
+        cardIndicator1.classList.remove('current-cnt');
+        cardIndicator2.classList.add('current-cnt');
     }
     personaCards.forEach((personaCard, index) => {
         personaCard.style.transform = `translateX(${personaGap * (index - curCard)}%)`;
@@ -40,8 +46,12 @@ nextBtn.addEventListener("click", function () {
 prevBtn.addEventListener("click", function () {
     if (curCard === 0) {
         curCard = maxCard;
+        cardIndicator1.classList.remove('current-cnt');
+        cardIndicator2.classList.add('current-cnt');
     } else {
         curCard--;
+        cardIndicator1.classList.add('current-cnt');
+        cardIndicator2.classList.remove('current-cnt');
     }
     personaCards.forEach((personaCard, index) => {
         personaCard.style.transform = `translateX(${personaGap * (index - curCard)}%)`;

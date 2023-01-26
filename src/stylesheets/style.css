@@ -166,7 +166,7 @@ body {
   background: rgb(151, 151, 151);
   margin: auto;
   border-radius: 100rem;
-  transition: cubic-bezier(1, 0, 0, 1) 0.5s;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
 }
 
 .footer-container[data-icon="linkedin"]::before {
@@ -193,7 +193,7 @@ body {
 .link-container > a {
   width: 32px;
   height: 32px;
-  transition: cubic-bezier(1, 0, 0, 1) 0.5s;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
 }
 
 .link-container > a > svg {

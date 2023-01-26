@@ -15,12 +15,12 @@
 
 .content-container {
     margin: 0;
-    height: 5000px;
     display: flex;
     flex-direction: column;
 }
 
 .hero {
+    grid-area: hero;
     height: 100vh;
     align-items: center;
     display: flex;
@@ -59,10 +59,15 @@ h2 {
     background: var(--bg-clr);
 }
 
-.detail-wrapper {
+.section-head {
     background: rgb(231, 231, 231);
-    padding: 0.5rem 1rem;
-    border-radius: 1rem 1rem 0 0;
+    padding: 1rem;
+    margin: 0;
+}
+
+.detail-wrapper {
+    padding: 1rem;
+    display: grid;
 }
 
 /* Persona Carousel */
@@ -73,12 +78,15 @@ h2 {
     align-items: center;
     justify-content: center;
     /* border: solid 1px black; */
+    box-shadow: 0 0 5px rgba(10, 10, 10, 0.237);
+    max-width: calc(400px + 1.2rem);
     width: 100%;
-    height: 300px;
+    min-height: calc(250px + 1.2rem);
     overflow: hidden;
-    gap: 5rem;
+    margin: auto;
+    border-radius: 1rem;
+    z-index: 2;
 }
-
 
 .persona {
     position: absolute;
@@ -88,13 +96,22 @@ h2 {
     "desc desc"
     "attr attr";
     place-items: center;
-    width: 350px;
-    height: 250px;
-    background: rgb(161, 161, 161);
-    border-radius: 1rem;
-    padding: 1rem;
-    box-shadow: 0 0 5px rgb(94, 94, 94);
-    transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+    max-width: 400px;
+    min-height: 250px;
+    /* border-radius: 1rem; */
+    /* box-shadow: 0 0 5px rgb(94, 94, 94); */
+    padding: 1.2rem;
+    transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.25s;
+    z-index: 1;
+    user-select: none;
+}
+
+.persona:first-child {
+    background: rgb(223, 244, 254);
+}
+
+.persona:nth-child(2) {
+    background: rgb(255, 217, 211);
 }
 
 .persona-img {
@@ -115,13 +132,13 @@ h2 {
 .attribution {
     grid-area: attr;
     font-size: 12px;
-    text-decoration: none;
-    color: rgb(25, 34, 45);
+    color: rgb(0, 0, 0);
 }
 
 .persona-btn {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 5rem;
     margin-top: 1rem;
 }
@@ -145,4 +162,81 @@ h2 {
 .next-btn > svg, .prev-btn > svg {
     height: 20px;
     width: 20px;
+}
+
+.card-counter {
+    background: rgba(205, 205, 205, 0.337);
+    display: flex;
+    gap: 1rem;
+    height: max-content;
+    border-radius: 10rem;
+}
+
+.card-ct1, .card-ct2 {
+    border-radius: 100%;
+    background: rgb(197, 197, 197);
+    height: 20px;
+    width: 20px;
+}
+
+.current-cnt {
+    background: grey;
+}
+
+/* Research images */
+
+.concept-img {
+    margin: auto;
+    background: white;
+    max-width: 800px;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* User Testing */
+
+.insight-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.insight {
+    background:rgb(185, 185, 185);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: grid;
+    place-items: center;
+    max-width: 300px;
+    height: 275px;
+}
+
+.insight > h3 {
+    line-height: 0;
+}
+
+.insight > p {
+    text-align: center;
+    place-self: start;
+}
+
+.insight-icon {
+    width: 100px;
+    height: 100px;
+    background: rgb(255, 183, 183);
+    border-radius: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.insight-icon > svg {
+    width: 50px;
+    height: 50px;
+}
+
+@media (min-width: 768px) {
+    .insight-container {
+        flex-direction: row;
+    }
 }
