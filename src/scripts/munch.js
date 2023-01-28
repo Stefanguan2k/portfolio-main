@@ -9,7 +9,7 @@ const cardIndicator2 = document.querySelector(".card-ct2");
 window.addEventListener("scroll", () => {
     const dist = window.scrollY;
     heroText.style.transform = 
-        `translateY(${dist * -0.5}px)`;
+    `translateY(${dist * -0.5}px)`;
 });
 
 // Persona carousel
@@ -57,3 +57,23 @@ prevBtn.addEventListener("click", function () {
         personaCard.style.transform = `translateX(${personaGap * (index - curCard)}%)`;
     });
 })
+
+// Figma prototype
+const figmaBtn = document.querySelector(".figma-btn");
+const figmaOverlay = document.querySelector(".figma-overlay");
+const figma = document.querySelector('.figma');
+const closeFigmaBtn = document.querySelector('.close-figma')
+
+figmaBtn.addEventListener('click', () => {
+    figmaOverlay.setAttribute('data-active', true);
+    setTimeout(() => {
+        figmaOverlay.style.opacity = 1
+    }, 200);
+});
+
+closeFigmaBtn.addEventListener('click', () => {
+    figmaOverlay.style.opacity = 0
+    setTimeout(() => {
+        figmaOverlay.setAttribute('data-active', false)
+    }, 500);
+});
