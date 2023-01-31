@@ -162,6 +162,10 @@
     font-size: 28px;
   }
   
+  .disable-anim {
+    transition: none;
+  }
+
   /* Desktop View */
   @media (min-width: 768px) {
     .content-title {

@@ -3,7 +3,8 @@
   --bg-clr: white;
   --bg-clr-dark: #121212;
   --bdblur: 10px;
-  --nav-clr: rgba(128, 128, 128, 0.425);
+  --nav-clr: rgba(209, 209, 209, 0.425);
+  --nav-clr-open: rgba(71, 71, 71, 0.425);
   --nav-height: 64px;
 }
 
@@ -34,7 +35,7 @@ body {
 
 .nav-bg {
   position: absolute;
-  background: rgba(128, 128, 128, 0.425);
+  background: var(--nav-clr);
   height: calc(440px + var(--nav-height));
   width: 100%;
   backdrop-filter: blur(var(--bdblur));
@@ -47,6 +48,7 @@ body {
 .nav-bg[data-active="true"] {
   transform: translateY(0);
   border-radius: 0 0 0.5rem 0.5rem;
+  background: var(--nav-clr-open);
 }
 
 .navbar-inner {
