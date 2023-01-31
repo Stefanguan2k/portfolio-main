@@ -5,10 +5,10 @@ const work3 = document.getElementById('work-3');
 //  Works card 1
 work1.addEventListener("click", () =>
 {
-    window.location.href = "/yopo.html"
+    window.location.href = "/munch.html"
 });
 
 work2.addEventListener("click", () =>
 {
-    window.location.href = "/munch.html"
+    window.location.href = "/yopo.html"
 });

@@ -14,9 +14,22 @@ window.addEventListener("scroll", () => {
 
 // Persona carousel
 
-personaCards.forEach((personaCard, indx) => {
-    personaCard.style.transform = `translateX(${indx * personaGap}%)`;
-});
+document.onload = togglePersonaCarousel();
+window.addEventListener("resize", togglePersonaCarousel);
+
+function togglePersonaCarousel() {
+    if (window.innerWidth <= 768) {
+        personaCards.forEach((personaCard, indx) => {
+            personaCard.style.transform = `translateX(${indx * personaGap}%)`;
+            cardIndicator1.classList.add('current-cnt');
+            cardIndicator2.classList.remove('current-cnt');
+        });
+    } else { 
+        personaCards.forEach((personaCard) => {
+            personaCard.style.removeProperty('transform');
+        })
+    }
+};
 
 // Current card
 let curCard = 0;

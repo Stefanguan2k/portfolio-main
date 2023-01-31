@@ -71,9 +71,9 @@
   }
   
   .card {
-    display: flex;
-    flex-direction: column;
-    background: rgba(128, 128, 128, 0.678);
+    display: grid;
+    place-items: center start;
+    background: rgba(128, 128, 128, 0.678); 
     width: 80vw;
     max-width: 400px;
     height: 200px;
@@ -84,42 +84,38 @@
   .work-1:hover, .work-2:hover {
     transform: scale(1.1);
   }
-  
+
   .inner-card {
-    display: inline-block;
-    background: white;
     width: 70%;
-    border-radius: 0 0.25rem 0 0;
-    padding-left: 1rem;
+    border-radius: 0 0.5rem 0.5rem 0;
     height: max-content;
-    margin-top: 75px;
+    overflow: hidden;
   }
-  
-  .title-1 {
-    background: rgb(255, 222, 189);
-  }
-  
-  .title-2 {
-    background: rgb(191, 245, 255);
-  }
-  
   
   .inner-card > h3 {
-    line-height: 0;
+    background: white;
+    margin: 0;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
   }
   
-  .card > p {
-    padding: 1rem 0 1rem 1rem;
-    background: rgba(164, 164, 164, 0.527);
-    width: 70%;
-    border-radius: 0 0 0.25rem 0;
-    margin-top: 0;
-    backdrop-filter: blur(var(--bdblur));
-    -webkit-backdrop-filter: blur(var(--bdblur));
+  .inner-card > p {
+    background: rgba(128, 128, 128, 0.479);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    margin: 0;
   }
   
+  .munch > h3 {
+    background: rgb(191, 245, 255);
+  }
+
+  .yopo > h3 {
+    background: rgb(255, 222, 189);
+  }
+
   .work-1 {
-    background-image: url("/src/assets/img/yopo.jpg");
+    background-image: url("/src/assets/img/munch.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: center;
@@ -128,7 +124,7 @@
   }
   
   .work-2 {
-    background-image: url("/src/assets/img/munch.jpg");
+    background-image: url("/src/assets/img/yopo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: center;
@@ -166,3 +162,54 @@
     font-size: 28px;
   }
   
+  /* Desktop View */
+  @media (min-width: 768px) {
+    .content-title {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr 1fr;
+      width: 100%;
+      height: max-content;
+      padding: 0;
+      border-radius: 0.5rem;
+      text-align: center;
+      background: none;
+    }
+
+    .content-title > h2 {
+      font-size: 32px;
+      width: 100%;
+      margin: 0;
+      padding: 1rem 0;
+      background: #C4C4C4;
+      border-radius: 0.5rem;
+      place-self: center;
+    }
+    
+    .content-title::before {
+      content: "";
+      place-self: center end;
+      width: 90%;
+      height: 4px;
+      border-radius: 1rem 0 0 1rem;
+      background: #C4C4C4;
+    }
+    
+    .content-title::after {
+      content: "";
+      place-self: center start;
+      width: 90%;
+      height: 4px;
+      border-radius: 0 1rem 1rem 0;
+      background: #C4C4C4;
+    }
+
+    .works, .competencies {
+      flex-direction: row;
+      padding: 10rem 2rem;
+      margin: 0;
+    }
+    .card {
+      max-width: 500px;
+      height: 400px;
+    }
+  }
