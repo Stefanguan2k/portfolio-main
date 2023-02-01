@@ -1,233 +1,235 @@
 /* BACKGROUND */
 
 .bg-deco1 {
+  background: rgb(167, 255, 255);
+  filter: blur(30px);
+  z-index: -1;
+  height: 128px;
+  aspect-ratio: 1;
+  top: 30%;
+  right: 40%;
+  animation-name: blue-glow;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.bg-deco2 {
+  background: rgb(255, 196, 86);
+  filter: blur(20px);
+  z-index: -2;
+  height: 128px;
+  aspect-ratio: 1;
+  bottom: 40%;
+  left: 50%;
+  animation-name: orange-glow;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes blue-glow {
+  from {
+    transform: scale(1);
     background: rgb(167, 255, 255);
-    filter: blur(30px);
-    z-index: -1;
-    height: 128px;
-    aspect-ratio: 1;
-    top: 30%;
-    right: 40%;
-    animation-name: blue-glow;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
   }
-  
-  .bg-deco2 {
+  to {
+    transform: scale(1.5);
+    background: rgb(120, 221, 255);
+  }
+}
+
+@keyframes orange-glow {
+  from {
+    transform: scale(1.5);
+    background: rgb(255, 210, 125);
+  }
+  to {
+    transform: scale(1);
     background: rgb(255, 196, 86);
-    filter: blur(20px);
-    z-index: -2;
-    height: 128px;
-    aspect-ratio: 1;
-    bottom: 40%;
-    left: 50%;
-    animation-name: orange-glow;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
   }
-  
-  @keyframes blue-glow{
-    from {
-      transform: scale(1);
-      background: rgb(167, 255, 255);
-    }
-    to {
-      transform: scale(1.5);
-      background: rgb(120, 221, 255);
-    }
-  }
-  
-  @keyframes orange-glow{
-    from {
-      transform: scale(1.5);
-      background: rgb(255, 210, 125);
-    }
-    to {
-      transform: scale(1);
-      background: rgb(255, 196, 86);
-    }
-  }
+}
 
-  /* CONTENT */
+/* CONTENT */
 
-  .hero {
-    height: 90vh;
-    min-height: 700px;
-    padding: 2rem 2rem 0 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    user-select: none;
-    -webkit-user-select: none;
-  }
-  
-  .splash {
-    font-size: 38px;
-    font-weight: 100;
-  }
-  
-  .works, .competencies {
-    margin-top: 3rem;
-    padding: 0 0 5rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-  }
-  
-  .card {
-    display: grid;
-    place-items: center start;
-    background: rgba(128, 128, 128, 0.678); 
-    width: 80vw;
-    max-width: 400px;
-    height: 200px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
-  }
-  
-  .work-1:hover, .work-2:hover {
-    transform: scale(1.1);
-  }
+.hero {
+  height: 90vh;
+  min-height: 700px;
+  padding: 2rem 2rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  user-select: none;
+  -webkit-user-select: none;
+}
 
-  .inner-card {
-    width: 70%;
-    border-radius: 0 0.5rem 0.5rem 0;
-    height: max-content;
-    overflow: hidden;
-  }
-  
-  .inner-card > h3 {
-    background: white;
-    margin: 0;
-    padding: 0.5rem 0.5rem 0.5rem 1rem;
-  }
-  
-  .inner-card > p {
-    background: rgba(128, 128, 128, 0.479);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    padding: 0.5rem 0.5rem 0.5rem 1rem;
-    margin: 0;
-  }
-  
-  .munch > h3 {
-    background: rgb(191, 245, 255);
-  }
+.splash {
+  font-size: 38px;
+  font-weight: 100;
+}
 
-  .yopo > h3 {
-    background: rgb(255, 222, 189);
-  }
+.works,
+.competencies {
+  margin-top: 3rem;
+  padding: 0 0 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
 
-  .work-1 {
-    background-image: url("/src/assets/img/munch.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: center;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
-    cursor: pointer;
-  }
-  
-  .work-2 {
-    background-image: url("/src/assets/img/yopo.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: center;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
-    cursor: pointer;
-  }
-  
-  .show-all {
-    border: none;
-    padding: 1rem 4rem;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(58, 58, 58, 0.575);
-    background: rgb(150, 150, 150);
-    font-weight: bold;
-  }
-  
-  
+.card {
+  display: grid;
+  place-items: center start;
+  background: rgba(128, 128, 128, 0.678);
+  width: 80vw;
+  max-width: 400px;
+  height: 200px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+}
+
+.work-1:hover,
+.work-2:hover {
+  transform: scale(1.1);
+}
+
+.inner-card {
+  width: 70%;
+  border-radius: 0 0.5rem 0.5rem 0;
+  height: max-content;
+  overflow: hidden;
+}
+
+.inner-card > h3 {
+  background: white;
+  margin: 0;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+}
+
+.inner-card > p {
+  background: rgba(128, 128, 128, 0.479);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  margin: 0;
+}
+
+.munch > h3 {
+  background: rgb(191, 245, 255);
+}
+
+.yopo > h3 {
+  background: rgb(255, 222, 189);
+}
+
+.work-1 {
+  background-image: url("/src/assets/img/munch.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
+  cursor: pointer;
+}
+
+.work-2 {
+  background-image: url("/src/assets/img/yopo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
+  cursor: pointer;
+}
+
+.show-all {
+  border: none;
+  padding: 1rem 4rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(58, 58, 58, 0.575);
+  background: rgb(150, 150, 150);
+  font-weight: bold;
+}
+
+.content-title {
+  background: #c4c4c4;
+  width: 80vw;
+  padding: 0.2rem 0 0.2rem 1rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.works-title > h2 {
+  font-size: 28px;
+}
+
+.disable-anim {
+  transition: none;
+}
+
+/* Desktop View */
+@media (min-width: 768px) {
   .content-title {
-    background: #C4C4C4;
-    width: 80vw;
-    padding: 0.2rem 0 0.2rem 1rem;
-    border-radius: 0 0.5rem 0.5rem 0;
-  }
-  
-  .works-title > h2 {
-    font-size: 28px;
-  }
-  
-  .disable-anim {
-    transition: none;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    width: 100%;
+    height: max-content;
+    padding: 0;
+    border-radius: 0.5rem;
+    text-align: center;
+    background: none;
   }
 
-  /* Desktop View */
-  @media (min-width: 768px) {
-    .content-title {
-      display: grid;
-      grid-template-columns: 1fr 1.5fr 1fr;
-      width: 100%;
-      height: max-content;
-      padding: 0;
-      border-radius: 0.5rem;
-      text-align: center;
-      background: none;
-    }
-
-    .content-title > h2 {
-      font-size: 32px;
-      width: 100%;
-      margin: 0;
-      padding: 1rem 0;
-      background: #C4C4C4;
-      border-radius: 0.5rem;
-      place-self: center;
-    }
-    
-    .content-title::before {
-      content: "";
-      place-self: center end;
-      width: 90%;
-      height: 4px;
-      border-radius: 1rem 0 0 1rem;
-      background: #C4C4C4;
-    }
-    
-    .content-title::after {
-      content: "";
-      place-self: center start;
-      width: 90%;
-      height: 4px;
-      border-radius: 0 1rem 1rem 0;
-      background: #C4C4C4;
-    }
-
-    .works, .competencies {
-      flex-direction: row;
-      padding: 5rem 1rem;
-      margin: 0;
-      flex-wrap: wrap;
-    }
-
-    .card {
-      max-width: 500px;
-      height: 300px;
-      width: 40%;
-      min-width: 350px;
-    }
+  .content-title > h2 {
+    font-size: 32px;
+    width: 100%;
+    margin: 0;
+    padding: 1rem 0;
+    background: #c4c4c4;
+    border-radius: 0.5rem;
+    place-self: center;
   }
-  
-  @media (min-width: 1613px) {
-    .card {
-      max-width: 500px;
-      height: 400px;
-      width: 40%;
-      min-width: 350px;
-    }
+
+  .content-title::before {
+    content: "";
+    place-self: center end;
+    width: 90%;
+    height: 4px;
+    border-radius: 1rem 0 0 1rem;
+    background: #c4c4c4;
   }
+
+  .content-title::after {
+    content: "";
+    place-self: center start;
+    width: 90%;
+    height: 4px;
+    border-radius: 0 1rem 1rem 0;
+    background: #c4c4c4;
+  }
+
+  .works,
+  .competencies {
+    flex-direction: row;
+    padding: 5rem 1rem;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    max-width: 500px;
+    height: 300px;
+    width: 40%;
+    min-width: 350px;
+  }
+}
+
+@media (min-width: 1613px) {
+  .card {
+    max-width: 500px;
+    height: 400px;
+    width: 40%;
+    min-width: 350px;
+  }
+}

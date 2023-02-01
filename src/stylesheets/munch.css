@@ -1,325 +1,328 @@
-
-
 .content-container {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero {
-    grid-area: hero;
-    height: 100vh;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  grid-area: hero;
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .bg {
-    background: url("/src/assets/img/munch.jpg") no-repeat center / cover;
+  background: url("/src/assets/img/munch.jpg") no-repeat center / cover;
 }
 
 .title {
-    font-size: 5rem;
-    line-height: 0;
-    color:rgb(0, 0, 0);
+  font-size: 5rem;
+  line-height: 0;
+  color: rgb(0, 0, 0);
 }
 
 .description {
-    text-align: center;
-    border-radius: 0.2rem;
-    padding: 0.3rem 0;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    background: rgba(115, 179, 198, 0.313);
+  text-align: center;
+  border-radius: 0.2rem;
+  padding: 0.3rem 0;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  background: rgba(115, 179, 198, 0.313);
 }
 
 section > h1 {
-    text-align: center;
+  text-align: center;
 }
 
 h2 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .project-details {
-    background: var(--bg-clr);
+  background: var(--bg-clr);
 }
 
 .section-head {
-    background: rgb(231, 231, 231);
-    padding: 1rem;
-    margin: 0;
+  background: rgb(231, 231, 231);
+  padding: 1rem;
+  margin: 0;
 }
 
 .detail-wrapper {
-    padding: 1rem;
-    display: grid;
+  padding: 1rem;
+  display: grid;
 }
 
 /* Persona Carousel */
 
 .persona-carousel {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 0 5px rgba(10, 10, 10, 0.237);
-    max-width: calc(400px + 1.2rem);
-    width: 100%;
-    min-height: calc(250px + 1.2rem);
-    overflow: hidden;
-    margin: auto;
-    border-radius: 1rem;
-    z-index: 2;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 5px rgba(10, 10, 10, 0.237);
+  max-width: calc(400px + 1.2rem);
+  width: 100%;
+  min-height: calc(250px + 1.2rem);
+  overflow: hidden;
+  margin: auto;
+  border-radius: 1rem;
+  z-index: 2;
 }
 
 .persona {
-    position: absolute;
-    display: grid;
-    grid-template-areas:
+  position: absolute;
+  display: grid;
+  grid-template-areas:
     "img info"
     "desc desc"
     "attr attr";
-    place-items: center;
-    max-width: 400px;
-    width: max-content;
-    min-height: 250px;
-    /* border-radius: 1rem; */
-    /* box-shadow: 0 0 5px rgb(94, 94, 94); */
-    padding: 1.2rem;
-    transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.25s;
-    z-index: 1;
-    user-select: none;
+  place-items: center;
+  max-width: 400px;
+  width: max-content;
+  min-height: 250px;
+  /* border-radius: 1rem; */
+  /* box-shadow: 0 0 5px rgb(94, 94, 94); */
+  padding: 1.2rem;
+  transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.25s;
+  z-index: 1;
+  user-select: none;
 }
 
 .persona:first-child {
-    background: rgb(223, 244, 254);
+  background: rgb(223, 244, 254);
 }
 
 .persona:nth-child(2) {
-    background: rgb(255, 217, 211);
+  background: rgb(255, 217, 211);
 }
 
 .persona-img {
-    height: 100px;
-    width: 100px;
-    grid-area: img;
+  height: 100px;
+  width: 100px;
+  grid-area: img;
 }
 
 .info {
-    grid-area: info;
+  grid-area: info;
 }
 
 .desc {
-    grid-area: desc;
-    font-size: 14px;
+  grid-area: desc;
+  font-size: 14px;
 }
 
 .attribution {
-    grid-area: attr;
-    font-size: 12px;
-    color: rgb(0, 0, 0);
+  grid-area: attr;
+  font-size: 12px;
+  color: rgb(0, 0, 0);
 }
 
 .persona-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
-    margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 1rem;
 }
 
-.next-btn, .prev-btn {
-    background: rgba(205, 205, 205, 0.337);
-    display: grid;
-    place-items: center;
-    padding: 0.5rem;
-    border-radius: 100%;
-    box-shadow: 0 0 5px rgb(83, 83, 83);
-    border: none;
-    cursor: pointer;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+.next-btn,
+.prev-btn {
+  background: rgba(205, 205, 205, 0.337);
+  display: grid;
+  place-items: center;
+  padding: 0.5rem;
+  border-radius: 100%;
+  box-shadow: 0 0 5px rgb(83, 83, 83);
+  border: none;
+  cursor: pointer;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
 }
 
-.next-btn:hover, .prev-btn:hover {
-    transform: scale(1.2);
-} 
+.next-btn:hover,
+.prev-btn:hover {
+  transform: scale(1.2);
+}
 
-.next-btn > svg, .prev-btn > svg {
-    height: 20px;
-    width: 20px;
+.next-btn > svg,
+.prev-btn > svg {
+  height: 20px;
+  width: 20px;
 }
 
 .card-counter {
-    background: rgba(205, 205, 205, 0.337);
-    display: flex;
-    gap: 1rem;
-    height: max-content;
-    border-radius: 10rem;
+  background: rgba(205, 205, 205, 0.337);
+  display: flex;
+  gap: 1rem;
+  height: max-content;
+  border-radius: 10rem;
 }
 
-.card-ct1, .card-ct2 {
-    border-radius: 100%;
-    background: rgb(197, 197, 197);
-    height: 20px;
-    width: 20px;
+.card-ct1,
+.card-ct2 {
+  border-radius: 100%;
+  background: rgb(197, 197, 197);
+  height: 20px;
+  width: 20px;
 }
 
 .current-cnt {
-    background: grey;
+  background: grey;
 }
 
 /* Research images */
 
 .concept-img {
-    margin: auto;
-    background: white;
-    max-width: 800px;
-    width: 100%;
-    object-fit: contain;
+  margin: auto;
+  background: white;
+  max-width: 800px;
+  width: 100%;
+  object-fit: contain;
 }
 
 /* User Testing */
 
 .insight-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    margin: 3rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 3rem 0;
 }
 
 .insight {
-    background:rgb(185, 185, 185);
-    padding: 1rem;
-    border-radius: 0.5rem;
-    display: grid;
-    place-items: center;
-    max-width: 300px;
-    height: 275px;
+  background: rgb(185, 185, 185);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: grid;
+  place-items: center;
+  max-width: 300px;
+  height: 275px;
 }
 
 .insight > h3 {
-    line-height: 0;
+  line-height: 0;
 }
 
 .insight > p {
-    text-align: center;
-    place-self: start;
+  text-align: center;
+  place-self: start;
 }
 
 .insight-icon {
-    width: 100px;
-    height: 100px;
-    background: rgb(255, 183, 183);
-    border-radius: 100%;
-    display: grid;
-    place-items: center;
+  width: 100px;
+  height: 100px;
+  background: rgb(255, 183, 183);
+  border-radius: 100%;
+  display: grid;
+  place-items: center;
 }
 
 .insight-icon > svg {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 .figma-btn {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 1.5rem;
-    background: rgb(196, 196, 196);
-    border-radius: 0.5rem;
-    cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background: rgb(196, 196, 196);
+  border-radius: 0.5rem;
+  cursor: pointer;
 }
 
-
 .figma-btn > svg {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 .figma-overlay {
-    position: fixed;
-    background: rgba(0, 0, 0, 0.879);
-    height: 100vh;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    display: grid;
-    grid-template-rows: 1fr auto;
-    place-items: center;
-    gap: 1rem;
-    opacity: 0;
-    transition: 0.5s;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.879);
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  place-items: center;
+  gap: 1rem;
+  opacity: 0;
+  transition: 0.5s;
 }
 
 .figma-overlay[data-active="false"] {
-    display: none;
+  display: none;
 }
 .close-figma {
-    border-radius: 100%;
-    aspect-ratio: 1;
-    margin-bottom: 1.5rem;
-    border: none;
-    cursor: pointer;
-    background: rgba(255, 255, 255, 0.679);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+  border-radius: 100%;
+  aspect-ratio: 1;
+  margin-bottom: 1.5rem;
+  border: none;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.679);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .close-figma > svg {
-    height: 35px;
-    width: 35px;
+  height: 35px;
+  width: 35px;
 }
 
 .figma {
-    position: relative;
-    margin-top: 64px;
-    width: 90%;
-    height: 90%;
-    border: none;
-    border-radius: 1rem;
-    display: block;
+  position: relative;
+  margin-top: 64px;
+  width: 90%;
+  height: 90%;
+  border: none;
+  border-radius: 1rem;
+  display: block;
 }
 
 /* Desktop View */
 @media (min-width: 768px) {
-    .detail-wrapper {
-        max-width: 1280px;
-        margin: auto;
-        border: solid black 1px;
-    }
-    .proj-wrapper {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
-    }
-    .role, .goals, .target {
-        background: rgb(202, 202, 202);
-        padding: 1rem;
-        border-radius: 1rem;
-    }
-    .persona-carousel {
-        max-width: max-content;
-        width: 90%;
-        height: max-content;
-        gap: 5rem;
-        box-shadow: none;
-        border-radius: 0;
-        padding: 1rem;
-    }
-    .persona {
-        position: relative;
-        border-radius: 1rem;
-        box-shadow: 0 0 5px rgba(10, 10, 10, 0.237);
-    }
-    .persona-btn {
-        display: none;
-    }
+  .detail-wrapper {
+    max-width: 1280px;
+    margin: auto;
+    border: solid black 1px;
+  }
+  .proj-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .role,
+  .goals,
+  .target {
+    background: rgb(202, 202, 202);
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  .persona-carousel {
+    max-width: max-content;
+    width: 90%;
+    height: max-content;
+    gap: 5rem;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 1rem;
+  }
+  .persona {
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px rgba(10, 10, 10, 0.237);
+  }
+  .persona-btn {
+    display: none;
+  }
 
-    .insight-container {
-        flex-direction: row;
-        justify-content: center;
-    }
+  .insight-container {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
