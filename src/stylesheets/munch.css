@@ -45,7 +45,6 @@ h2 {
 }
 
 .section-head {
-  background: rgb(231, 231, 231);
   padding: 1rem;
   margin: 0;
 }
@@ -55,6 +54,14 @@ h2 {
   display: grid;
 }
 
+.grey-bg {
+    background: rgb(241, 241, 241);
+}
+
+p {
+    max-width: 600px;
+}
+
 /* Persona Carousel */
 
 .persona-carousel {
@@ -62,7 +69,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 5px rgba(10, 10, 10, 0.237);
+  box-shadow: 0 0 5px var(--munch-sh-clr);
   max-width: calc(400px + 1.2rem);
   width: 100%;
   min-height: calc(250px + 1.2rem);
@@ -83,8 +90,6 @@ h2 {
   max-width: 400px;
   width: max-content;
   min-height: 250px;
-  /* border-radius: 1rem; */
-  /* box-shadow: 0 0 5px rgb(94, 94, 94); */
   padding: 1.2rem;
   transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.25s;
   z-index: 1;
@@ -135,8 +140,7 @@ h2 {
   place-items: center;
   padding: 0.5rem;
   border-radius: 100%;
-  box-shadow: 0 0 5px rgb(83, 83, 83);
-  border: none;
+  box-shadow: 0 0 5px var(--munch-sh-clr);
   cursor: pointer;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
 }
@@ -175,11 +179,25 @@ h2 {
 /* Research images */
 
 .concept-img {
-  margin: auto;
   background: white;
   max-width: 800px;
   width: 100%;
   object-fit: contain;
+}
+
+.img-wrapper {
+    margin-bottom: 3rem;
+    padding: 1rem;
+    border: solid var(--card-border-clr) 1px;
+    border-radius: 1rem;
+    overflow: hidden;
+    background: white;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
+}
+
+.img-wrapper:hover {
+    box-shadow: 0 0 5px var(--munch-sh-clr);
+    transform: translateY(-2.5px);
 }
 
 /* User Testing */
@@ -194,13 +212,14 @@ h2 {
 }
 
 .insight {
-  background: rgb(185, 185, 185);
+  background: var(--card-bg);
   padding: 1rem;
   border-radius: 0.5rem;
   display: grid;
   place-items: center;
   max-width: 300px;
   height: 275px;
+  box-shadow: 0 0 5px var(--munch-sh-clr);
 }
 
 .insight > h3 {
@@ -230,7 +249,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   padding: 1rem 1.5rem;
-  background: rgb(196, 196, 196);
+  border: solid rgb(95, 95, 95) 1px;
   border-radius: 0.5rem;
   cursor: pointer;
 }
@@ -285,23 +304,34 @@ h2 {
   display: block;
 }
 
+/* Conclusion */
+.conclusion {
+    margin-bottom: 5rem;
+}
+
 /* Desktop View */
 @media (min-width: 768px) {
   .detail-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 1280px;
     margin: auto;
-    border: solid black 1px;
   }
   .proj-wrapper {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    padding: 3rem 1rem;
   }
   .role,
   .goals,
   .target {
-    background: rgb(202, 202, 202);
     padding: 1rem;
     border-radius: 1rem;
+    height: 100%;
+    background: var(--card-bg);
+    box-shadow: 0 0 5px var(--munch-sh-clr);
   }
   .persona-carousel {
     max-width: max-content;
@@ -315,7 +345,7 @@ h2 {
   .persona {
     position: relative;
     border-radius: 1rem;
-    box-shadow: 0 0 5px rgba(10, 10, 10, 0.237);
+    box-shadow: 0 0 5px var(--munch-sh-clr);
   }
   .persona-btn {
     display: none;
@@ -324,5 +354,18 @@ h2 {
   .insight-container {
     flex-direction: row;
     justify-content: center;
+    gap: 2rem;
+  }
+
+  .figma-btn {
+    width: 600px;
+    transition: all 0.25s;
+  }
+
+  .figma-btn:hover {
+    box-shadow: 0 0 10px var(--munch-sh-clr);
+    background: rgb(95,95,95);
+    color: white;
+    fill: white;
   }
 }
