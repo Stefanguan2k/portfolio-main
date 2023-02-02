@@ -112,11 +112,12 @@
 }
 
 .inner-card > p {
-  background: rgba(128, 128, 128, 0.479);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  background: rgba(182, 182, 182, 0.479);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   padding: 0.5rem 0.5rem 0.5rem 1rem;
   margin: 0;
+  border-radius: 0 0 0.3rem 0;
 }
 
 .munch > h3 {
@@ -149,7 +150,7 @@
   background: var(--content-title-bg);
   width: 80vw;
   padding: 0.2rem 0 0.2rem 1rem;
-  border-radius: 0 0.5rem 0.5rem 0;
+  border-radius: 0 0.3rem 0.3rem 0;
 }
 
 .works-title > h2 {
@@ -161,14 +162,25 @@
 }
 
 .comp-card {
+  width: 70%;
+  max-width: 400px;
+  border: solid 1px var(--card-border-clr);
+  background: rgba(190, 190, 190, 0.433);
+  border-radius: 0.5rem;
+}
+
+.comp-card > h3 {
+  background: white;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  margin: 1rem 0 0 0;
+  width: 65%;
+  border-radius: 0 0.3rem 0.3rem 0;
+}
+
+.comp-card-inner {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  width: 70%;
-  max-width: 400px;
-  border-radius: 0.5rem;
-  border: solid 1px var(--card-border-clr);
-  background: rgba(190, 190, 190, 0.433);
   padding: 1rem;
 }
 
@@ -176,7 +188,7 @@
   display: flex;
   align-items: center;
   border-radius: 5px;
-  background: rgb(174, 174, 174);
+  background: rgba(128, 128, 128, 0.479);
   overflow: hidden;
 }
 
@@ -244,6 +256,29 @@
     align-items: flex-start;
   }
 
+  .comp-card-inner {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  .comp-inner {
+    flex-direction: column;
+    width: max-content;
+    border-radius: 10px;
+    gap: 0.5rem;
+  }
+
+  .comp-inner > img {
+    height: 100px;
+    border-radius: 10px;
+  }
+
+  .comp-inner > p {
+    font-size: 15px;
+    padding-bottom: 0.5rem;
+  }
   .card {
     max-width: 500px;
     height: 300px;

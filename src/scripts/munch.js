@@ -13,8 +13,23 @@ window.addEventListener("scroll", () => {
 
 // Persona carousel
 
+// Throttle to improve resize performance
+
+let throttleTimer;
+
+const throttle = (callback, time) => {
+  if (throttleTimer) return;
+  throttleTimer = true;
+  setTimeout(() => {
+    callback();
+    throttleTimer = false;
+  }, time);
+};
+
 document.onload = togglePersonaCarousel();
-window.addEventListener("resize", togglePersonaCarousel);
+window.addEventListener("resize", () => {
+  throttle(togglePersonaCarousel, 250);
+});
 
 function togglePersonaCarousel() {
   if (window.innerWidth <= 768) {
@@ -72,24 +87,4 @@ prevBtn.addEventListener("click", function () {
       personaGap * (index - curCard)
     }%)`;
   });
-});
-
-// Figma prototype
-const figmaBtn = document.querySelector(".figma-btn");
-const figmaOverlay = document.querySelector(".figma-overlay");
-const figma = document.querySelector(".figma");
-const closeFigmaBtn = document.querySelector(".close-figma");
-
-figmaBtn.addEventListener("click", () => {
-  figmaOverlay.setAttribute("data-active", true);
-  setTimeout(() => {
-    figmaOverlay.style.opacity = 1;
-  }, 200);
-});
-
-closeFigmaBtn.addEventListener("click", () => {
-  figmaOverlay.style.opacity = 0;
-  setTimeout(() => {
-    figmaOverlay.setAttribute("data-active", false);
-  }, 500);
 });

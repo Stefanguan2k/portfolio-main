@@ -55,11 +55,11 @@ h2 {
 }
 
 .grey-bg {
-    background: rgb(241, 241, 241);
+  background: rgb(241, 241, 241);
 }
 
 p {
-    max-width: 600px;
+  max-width: 600px;
 }
 
 /* Persona Carousel */
@@ -73,6 +73,7 @@ p {
   max-width: calc(400px + 1.2rem);
   width: 100%;
   min-height: calc(250px + 1.2rem);
+  height: max-content;
   overflow: hidden;
   margin: auto;
   border-radius: 1rem;
@@ -88,7 +89,7 @@ p {
     "attr attr";
   place-items: center;
   max-width: 400px;
-  width: max-content;
+  /* width: max-content; */
   min-height: 250px;
   padding: 1.2rem;
   transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.25s;
@@ -116,7 +117,7 @@ p {
 
 .desc {
   grid-area: desc;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .attribution {
@@ -186,18 +187,18 @@ p {
 }
 
 .img-wrapper {
-    margin-bottom: 3rem;
-    padding: 1rem;
-    border: solid var(--card-border-clr) 1px;
-    border-radius: 1rem;
-    overflow: hidden;
-    background: white;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  border: solid var(--card-border-clr) 1px;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: white;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
 }
 
 .img-wrapper:hover {
-    box-shadow: 0 0 5px var(--munch-sh-clr);
-    transform: translateY(-2.5px);
+  box-shadow: 0 0 5px var(--munch-sh-clr);
+  transform: translateY(-2.5px);
 }
 
 /* User Testing */
@@ -251,7 +252,10 @@ p {
   padding: 1rem 1.5rem;
   border: solid rgb(95, 95, 95) 1px;
   border-radius: 0.5rem;
+  color: black;
+  text-decoration: none;
   cursor: pointer;
+  transition: all 0.25s;
 }
 
 .figma-btn > svg {
@@ -259,54 +263,48 @@ p {
   height: 20px;
 }
 
-.figma-overlay {
-  position: fixed;
-  background: rgba(0, 0, 0, 0.879);
-  height: 100vh;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  display: grid;
-  grid-template-rows: 1fr auto;
-  place-items: center;
-  gap: 1rem;
-  opacity: 0;
-  transition: 0.5s;
+.figma-btn:hover,
+.figma-btn:focus {
+  border: solid rgba(0, 0, 0, 0) 1px;
+  color: white;
+  fill: white;
+  animation-name: animFigma;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
 }
 
-.figma-overlay[data-active="false"] {
-  display: none;
-}
-.close-figma {
-  border-radius: 100%;
-  aspect-ratio: 1;
-  margin-bottom: 1.5rem;
-  border: none;
-  cursor: pointer;
-  background: rgba(255, 255, 255, 0.679);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-}
-
-.close-figma > svg {
-  height: 35px;
-  width: 35px;
-}
-
-.figma {
-  position: relative;
-  margin-top: 64px;
-  width: 90%;
-  height: 90%;
-  border: none;
-  border-radius: 1rem;
-  display: block;
+@keyframes animFigma {
+  0% {
+    background: rgb(148, 49, 19);
+    box-shadow: 0 0 10px rgb(148, 49, 19);
+  }
+  20% {
+    background: rgb(180, 80, 69);
+    box-shadow: 0 0 10px rgb(180, 80, 69);
+  }
+  40% {
+    background: rgb(115, 63, 183);
+    box-shadow: 0 0 10px rgb(115, 63, 183);
+  }
+  60% {
+    background: rgb(17, 129, 173);
+    box-shadow: 0 0 10px rgb(17, 129, 173);
+  }
+  80% {
+    background: rgb(6, 146, 92);
+    box-shadow: 0 0 10px rgb(6, 146, 92);
+  }
+  100% {
+    background: rgb(63, 63, 63);
+    box-shadow: 0 0 10px var(--munch-sh-clr);
+  }
 }
 
 /* Conclusion */
 .conclusion {
-    margin-bottom: 5rem;
+  margin-bottom: 5rem;
 }
 
 /* Desktop View */
@@ -350,6 +348,9 @@ p {
   .persona-btn {
     display: none;
   }
+  .desc {
+    font-size: 14px;
+  }
 
   .insight-container {
     flex-direction: row;
@@ -359,13 +360,5 @@ p {
 
   .figma-btn {
     width: 600px;
-    transition: all 0.25s;
-  }
-
-  .figma-btn:hover {
-    box-shadow: 0 0 10px var(--munch-sh-clr);
-    background: rgb(95,95,95);
-    color: white;
-    fill: white;
   }
 }
