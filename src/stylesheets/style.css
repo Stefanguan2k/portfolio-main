@@ -23,6 +23,12 @@ body {
   margin: 0;
 }
 
+button {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  background: transparent;
+}
+
 .bg-deco1,
 .bg-deco2 {
   position: fixed;
@@ -225,6 +231,10 @@ body {
 
 .dark {
   background: var(--bg-clr-dark);
+}
+
+.hidden {
+  display: none;
 }
 
 @media (min-width: 768px) {

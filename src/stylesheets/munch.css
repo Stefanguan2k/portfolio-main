@@ -189,13 +189,13 @@ p {
 }
 
 .img-wrapper {
-  margin-bottom: 3rem;
+  margin: 2rem 0;
   padding: 1rem;
   border: solid var(--card-border-clr) 1px;
   border-radius: 1rem;
   overflow: hidden;
   background: white;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
+  transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
 }
 
 .img-wrapper:hover {
@@ -248,11 +248,18 @@ p {
   height: 50px;
 }
 
-.figma-btn {
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.figma-btn,
+#dark-btn {
   display: flex;
   justify-content: space-between;
   padding: 1rem 1.5rem;
-  border: solid rgb(95, 95, 95) 1px;
+  border: solid rgb(186, 186, 186) 1px;
   border-radius: 0.5rem;
   color: black;
   text-decoration: none;
@@ -260,9 +267,22 @@ p {
   transition: all 0.25s;
 }
 
-.figma-btn > svg {
+.figma-btn > svg,
+#dark-btn > svg {
   width: 20px;
   height: 20px;
+}
+
+#dark-btn:hover {
+  box-shadow: 0 0 10px #252727;
+  border: solid transparent 1px;
+}
+
+#dark-btn[data-dark="true"] {
+  background: #252727;
+  color: white;
+  fill: white;
+  border: solid #252727 1px;
 }
 
 .figma-btn:hover,
@@ -302,6 +322,10 @@ p {
     background: rgb(63, 63, 63);
     box-shadow: 0 0 10px var(--munch-sh-clr);
   }
+}
+
+.dark {
+  background: #252727;
 }
 
 /* Conclusion */
@@ -367,8 +391,7 @@ p {
     justify-content: center;
     gap: 2rem;
   }
-
-  .figma-btn {
+  .button-container {
     width: 600px;
   }
 }
