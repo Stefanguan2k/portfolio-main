@@ -193,9 +193,9 @@ p {
   padding: 1rem;
   border: solid var(--card-border-clr) 1px;
   border-radius: 1rem;
-  overflow: hidden;
+  /* overflow: hidden; */
   background: white;
-  transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
 }
 
 .img-wrapper:hover {
