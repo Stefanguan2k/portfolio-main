@@ -94,8 +94,12 @@ p {
   min-height: 250px;
   padding: 1.2rem;
   transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.25s;
+  -webkit-transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.25s;
+  -moz-transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.25s;
   z-index: 1;
   user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
 }
 
 .persona:first-child {
@@ -146,6 +150,8 @@ p {
   box-shadow: 0 0 5px var(--munch-sh-clr);
   cursor: pointer;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  -moz-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
 }
 
 .next-btn:hover,
@@ -196,6 +202,8 @@ p {
   /* overflow: hidden; */
   background: white;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
+  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
+  -moz-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
 }
 
 .img-wrapper:hover {
@@ -260,11 +268,14 @@ p {
   justify-content: space-between;
   padding: 1rem 1.5rem;
   border: solid rgb(186, 186, 186) 1px;
+  background: white;
   border-radius: 0.5rem;
   color: black;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
 }
 
 .figma-btn > svg,
