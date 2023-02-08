@@ -146,7 +146,7 @@
 }
 
 .work-1 {
-  background-image: url("/src/assets/img/munch.jpg");
+  background-image: url("/src/assets/img/munch/munch.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: center;
@@ -157,7 +157,7 @@
 }
 
 .work-2 {
-  background-image: url("/src/assets/img/yopo.jpg");
+  background-image: url("/src/assets/img/yopo/yopo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: center;
