@@ -269,6 +269,14 @@ p {
   place-items: center;
 }
 
+.alt-gradient {
+  background: linear-gradient(
+    90deg,
+    rgb(123, 204, 110) 0%,
+    rgb(163, 231, 188) 100%
+  );
+}
+
 .button-container {
   display: flex;
   flex-direction: column;
