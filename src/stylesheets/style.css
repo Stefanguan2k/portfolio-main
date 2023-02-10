@@ -40,6 +40,12 @@ button {
   border-radius: 600px;
 }
 
+.disable-anim {
+  transition: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+}
+
 /* Navbar */
 
 .navbar {

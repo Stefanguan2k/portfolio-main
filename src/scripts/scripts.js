@@ -7,11 +7,17 @@ const footerLine = document.querySelector('.footer-container');
 const linkedinBtn = document.querySelector('.linkedin-btn');
 const githubBtn = document.querySelector('.github-btn');
 
-// window.onload = () => {
-//     setTimeout(() => {
-//         container.setAttribute('data-loaded', 'true')
-//     }, 1000);
-// }
+// Disable then reenable animations on load
+// to prevent unexpected animations
+
+window.onload = () => {
+    navbg.classList.add('disable-anim');
+    navItems.classList.add('disable-anim');
+    setTimeout(() => {
+        navbg.classList.remove('disable-anim');
+        navItems.classList.remove('disable-anim');
+    }, 500);
+}
 
 // 
 // Listen for hover
