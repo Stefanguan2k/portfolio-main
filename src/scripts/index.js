@@ -34,6 +34,7 @@ var delay = 100; //in ms
 function disableAnim() {
   work1.classList.add("disable-anim");
   work2.classList.add("disable-anim");
+  work3.classList.add("disable-anim");
   clearTimeout(timeOut);
   timeOut = setTimeout(applyAnim, delay);
 }
@@ -43,4 +44,5 @@ function disableAnim() {
 function applyAnim() {
   work1.classList.remove("disable-anim");
   work2.classList.remove("disable-anim");
+  work3.classList.remove("disable-anim");
 }
