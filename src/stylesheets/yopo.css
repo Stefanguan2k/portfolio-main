@@ -14,7 +14,8 @@
 }
 
 .bg {
-  background: url("/src/assets/img/yopo/yopo.jpg") no-repeat center / cover;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/src/assets/img/yopo/yopo.jpg") no-repeat center / cover;
 }
 
 .main-text {
@@ -26,7 +27,7 @@
 
 .title {
   font-size: 4rem;
-  color: rgb(0, 0, 0);
+  color: white;
   text-align: center;
 }
 
@@ -283,8 +284,7 @@ p {
   gap: 2rem;
 }
 
-.figma-btn,
-#dark-btn {
+.web-btn {
   display: flex;
   justify-content: space-between;
   padding: 1rem 1.5rem;
@@ -299,65 +299,10 @@ p {
   -moz-transition: all 0.25s;
 }
 
-.figma-btn > svg,
-#dark-btn > svg {
-  width: 20px;
-  height: 20px;
-}
-
-#dark-btn:hover {
-  box-shadow: 0 0 10px #252727;
-  border: solid transparent 1px;
-}
-
-#dark-btn[data-dark="true"] {
-  background: #252727;
-  color: white;
-  fill: white;
-  border: solid #252727 1px;
-}
-
-.figma-btn:hover,
-.figma-btn:focus {
-  border: solid rgba(0, 0, 0, 0) 1px;
-  color: white;
-  fill: white;
-  animation-name: animFigma;
-  animation-duration: 1.5s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
-}
-
-@keyframes animFigma {
-  0% {
-    background: rgb(148, 49, 19);
-    box-shadow: 0 0 10px rgb(148, 49, 19);
-  }
-  20% {
-    background: rgb(180, 80, 69);
-    box-shadow: 0 0 10px rgb(180, 80, 69);
-  }
-  40% {
-    background: rgb(115, 63, 183);
-    box-shadow: 0 0 10px rgb(115, 63, 183);
-  }
-  60% {
-    background: rgb(17, 129, 173);
-    box-shadow: 0 0 10px rgb(17, 129, 173);
-  }
-  80% {
-    background: rgb(6, 146, 92);
-    box-shadow: 0 0 10px rgb(6, 146, 92);
-  }
-  100% {
-    background: rgb(63, 63, 63);
-    box-shadow: 0 0 10px var(--munch-sh-clr);
-  }
-}
-
-.dark {
-  background: #252727;
+.web-btn:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border: solid rgb(186, 186, 186) 1px;
+  background: #ece1c6;
 }
 
 /* Conclusion */

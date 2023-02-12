@@ -6,7 +6,7 @@
   --backdrop-blur: 10px;
   --nav-clr: rgba(209, 209, 209, 0.425);
   --nav-clr-open: rgba(71, 71, 71, 0.425);
-  --nav-height: 64px;
+  --nav-height: 50px;
   --shadow-clr: rgba(0, 0, 0, 0.3);
   --content-title-bg: rgb(220, 220, 220);
   --munch-sh-clr: rgba(19, 44, 57, 0.3);
@@ -54,7 +54,7 @@ button {
   width: 100%;
   top: 0;
   z-index: 999;
-  height: 64px;
+  height: var(--nav-height);
 }
 
 .nav-bg {
@@ -87,15 +87,8 @@ button {
   z-index: 9999;
 }
 
-.main-icon {
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-}
-
+.main-icon,
 .hamburger-icon {
-  height: 20px;
-  width: 20px;
   cursor: pointer;
 }
 
@@ -288,7 +281,7 @@ button {
   .nav-list > li::after {
     display: none;
   }
-  
+
   .toggle-dark {
     border: none;
     padding: 0;
