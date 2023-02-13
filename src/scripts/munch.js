@@ -1,10 +1,10 @@
-const heroText = document.querySelector(".main-text");
+const heroText = document.querySelector(".title");
 const personaCards = document.querySelectorAll(".persona");
 const personaGap = 101;
 const cardIndicator1 = document.querySelector(".card-ct1");
 const cardIndicator2 = document.querySelector(".card-ct2");
 
-// Parallax hero text
+// Parallax hero logo
 
 window.addEventListener("scroll", () => {
   const dist = window.scrollY;

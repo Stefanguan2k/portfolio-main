@@ -139,7 +139,7 @@
 }
 
 .work-1 {
-  background: linear-gradient(45deg, #a8cdd8, rgb(215, 246, 255));
+  background: linear-gradient(45deg, #b1ccd4, rgb(225, 247, 253));
   transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
   -webkit-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
   -moz-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
