@@ -14,8 +14,7 @@
 }
 
 .bg {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/src/assets/img/yopo/yopo.jpg") no-repeat center / cover;
+  background: url("/src/assets/img/yopo/yopo.jpg") no-repeat center / cover;
 }
 
 .title {

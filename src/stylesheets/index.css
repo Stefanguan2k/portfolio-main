@@ -119,6 +119,7 @@
   background: rgba(0, 0, 0, 0.3);
   border-radius: 0.2rem 0.2rem 0 0;
   width: max-content;
+  color: black;
 }
 
 .card:nth-child(3) > p {
