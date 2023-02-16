@@ -16,6 +16,7 @@
 
 html {
   scroll-behavior: smooth;
+  color: rgb(50, 50, 50);
 }
 
 body {
@@ -23,10 +24,6 @@ body {
   margin: 0;
   /* background: var(--bg-clr-dark); */
 }
-
-/* p {
-  color: white;
-} */
 
 button {
   font-family: "Rubik", sans-serif;
@@ -64,7 +61,7 @@ button {
   width: 100%;
   backdrop-filter: blur(var(--backdrop-blur));
   -webkit-backdrop-filter: blur(var(--backdrop-blur));
-  transform: translateY(calc(64px - 504px));
+  transform: translateY(calc(50px - 490px));
   transition: cubic-bezier(1, 0, 0, 1) 0.75s;
   -webkit-transition: cubic-bezier(1, 0, 0, 1) 0.75s;
   -moz-transition: cubic-bezier(1, 0, 0, 1) 0.75s;
@@ -176,7 +173,7 @@ button {
 /* Content */
 
 .content-container {
-  margin-top: 64px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
 }

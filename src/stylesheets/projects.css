@@ -1,0 +1,85 @@
+body {
+  background: linear-gradient(to top, white, white);
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+section {
+  height: 70vh;
+  display: grid;
+  grid-template-areas:
+    'title'
+    'card';
+  grid-template-rows: max-content 1fr;
+  scroll-snap-align: start;
+  scroll-margin: 150px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.proj1 {
+  padding-top: 10rem;
+  background: linear-gradient(to top, #b1ccd4, rgb(225, 247, 253));
+}
+
+.proj2 {
+  background: linear-gradient(to top, #dfcea2, #f6edda);
+}
+
+.proj3 {
+  background: linear-gradient(to top, #242424, #5c5c5c);
+}
+
+.section-title {
+  grid-area: title;
+  place-self: center;
+}
+
+.title {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 4rem);
+  top: calc(var(--nav-height) + 1rem);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--nav-clr);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 1rem;
+}
+
+.title > h1 {
+  margin-left: 1rem;
+}
+
+.title > span {
+  margin-right: 1rem;
+}
+
+.proj-card {
+  grid-area: card;
+  place-self: center;
+  padding: 0;
+  width: 90%;
+  border: solid 1px rgb(215, 215, 215);
+  border-radius: 0.5rem;
+}
+
+/* Desktop View */
+@media (min-width: 768px) {
+  .project-container {
+    grid-template-areas:
+      'title carousel'
+      'project-title carousel'
+      'project-title carousel';
+  }
+}
