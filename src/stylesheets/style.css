@@ -1,5 +1,5 @@
 :root {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
   /* Variables */
   --bg-clr: white;
   --bg-clr-dark: #252727;
@@ -26,7 +26,7 @@ body {
 }
 
 button {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 16px;
   background: transparent;
 }
@@ -67,7 +67,7 @@ button {
   -moz-transition: cubic-bezier(1, 0, 0, 1) 0.75s;
 }
 
-.nav-bg[data-active="true"] {
+.nav-bg[data-active='true'] {
   transform: translateY(0);
   border-radius: 0 0 0.5rem 0.5rem;
   background: var(--nav-clr-open);
@@ -107,7 +107,7 @@ button {
   opacity: 0;
 }
 
-.nav-items[data-active="true"] {
+.nav-items[data-active='true'] {
   transform: translateY(0px);
   opacity: 1;
 }
@@ -141,7 +141,7 @@ button {
 }
 
 .nav-list > li::after {
-  content: "";
+  content: '';
   background-color: rgb(96, 96, 96);
   width: 70%;
   height: 1px;
@@ -162,7 +162,7 @@ button {
   -moz-user-select: none;
 }
 
-.navlinks[aria-current="page"] {
+.navlinks[aria-current='page'] {
   font-weight: bolder;
 }
 
@@ -189,7 +189,7 @@ button {
 }
 
 .footer-container::before {
-  content: "";
+  content: '';
   width: 80%;
   height: 4px;
   background: rgb(151, 151, 151);
@@ -200,12 +200,12 @@ button {
   -moz-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
 }
 
-.footer-container[data-icon="linkedin"]::before {
+.footer-container[data-icon='linkedin']::before {
   background: #0077b5;
   box-shadow: 0 0 15px #4891b9;
 }
 
-.footer-container[data-icon="github"]::before {
+.footer-container[data-icon='github']::before {
   background: #452055;
   box-shadow: 0 0 15px #876d92;
 }
@@ -255,7 +255,7 @@ button {
   .hamburger-icon {
     display: none;
   }
-  .nav-bg[data-active="true"] {
+  .nav-bg[data-active='true'] {
     transform: translateY(0);
     border-radius: 0 0 0.5rem 0.5rem;
   }
@@ -266,12 +266,12 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 64px;
+    height: var(--nav-height);
   }
   .nav-list {
     display: flex;
     gap: 3rem;
-    height: 64px;
+    height: var(--nav-height);
     align-items: center;
     line-height: 0;
   }
@@ -290,8 +290,8 @@ button {
   .footer-container {
     display: grid;
     grid-template:
-      "line line"
-      "copyright links";
+      'line line'
+      'copyright links';
     align-items: center;
     justify-content: space-between;
     width: 80%;
