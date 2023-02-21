@@ -7,6 +7,8 @@
   --nav-clr: rgba(209, 209, 209, 0.425);
   --nav-clr-open: rgba(71, 71, 71, 0.425);
   --nav-height: 50px;
+  /* Original height with dark mode icon = 440px */
+  --nav-bg-height: 350px;
   --shadow-clr: rgba(0, 0, 0, 0.3);
   --content-title-bg: rgb(220, 220, 220);
   --munch-sh-clr: rgba(19, 44, 57, 0.3);
@@ -57,11 +59,13 @@ button {
 .nav-bg {
   position: absolute;
   background: var(--nav-clr);
-  height: calc(440px + var(--nav-height));
+  height: calc(var(--nav-bg-height) + var(--nav-height));
+  /* Original value with dark mode icon */
+  /* height: calc(440px + var(--nav-height)); */
   width: 100%;
   backdrop-filter: blur(var(--backdrop-blur));
   -webkit-backdrop-filter: blur(var(--backdrop-blur));
-  transform: translateY(calc(50px - 490px));
+  transform: translateY(calc(-1 * (var(--nav-bg-height))));
   transition: cubic-bezier(1, 0, 0, 1) 0.75s;
   -webkit-transition: cubic-bezier(1, 0, 0, 1) 0.75s;
   -moz-transition: cubic-bezier(1, 0, 0, 1) 0.75s;
