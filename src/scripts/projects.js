@@ -55,7 +55,7 @@ const checkActive = function (newActive) {
     projTitle.innerHTML = 'Ken Construction Ltd. [WIP]';
     projDesc.innerHTML = 'Currently crafting their digital presence...';
     numerator.innerHTML = '03';
-    document.body.style.background = 'rgb(200,200,200)';
+    document.body.style.background = 'rgb(150,150,150)';
   }
 
   if (newActive.getAttribute('data-card') === 'yopo') {
