@@ -87,6 +87,7 @@ body {
   border-radius: 0.5rem;
   max-height: 500px;
   transition: all ease-in 0.3s;
+  cursor: pointer;
 }
 
 .img-container,
@@ -107,14 +108,15 @@ body {
   filter: drop-shadow(0 0 5px rgba(36, 36, 36, 0.185));
 }
 
-.list-item:first-child {
+.list-item[data-card='munch'] {
   background: linear-gradient(45deg, rgb(132, 212, 218), rgb(184, 216, 255));
 }
-.list-item:nth-child(2) {
+.list-item[data-card='yopo'] {
   background: linear-gradient(45deg, rgb(223, 193, 121), rgb(254, 250, 202));
 }
-.list-item:nth-child(3) {
+.list-item[data-card='kcl'] {
   background: linear-gradient(45deg, rgb(0, 0, 0), rgb(152, 151, 140));
+  cursor: default;
 }
 
 .list-item[data-pos='0'] {
@@ -146,6 +148,8 @@ body {
     height: 85%;
     flex-direction: column-reverse;
     padding: 0;
+    width: max-content;
+    margin-left: 3rem;
   }
 
   .title {

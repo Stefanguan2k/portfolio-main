@@ -107,6 +107,7 @@
   border-radius: 8px;
   border: solid var(--card-border-clr) 1px;
   position: relative;
+  overflow: hidden;
 }
 
 .card > p {
@@ -263,7 +264,7 @@
     align-items: flex-start;
   }
 
-  .comp-card-inner {
+  /* .comp-card-inner {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -285,7 +286,7 @@
   .comp-inner > p {
     font-size: 15px;
     padding-bottom: 0.5rem;
-  }
+  } */
   .card {
     max-width: 500px;
     height: 325px;
