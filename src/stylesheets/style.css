@@ -33,6 +33,23 @@ button {
   background: transparent;
 }
 
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--nav-clr);
+}
+
+::-webkit-scrollbar-thumb {
+  background: grey;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
 .bg-deco1,
 .bg-deco2 {
   position: fixed;
@@ -52,7 +69,7 @@ button {
   display: grid;
   width: 100%;
   top: 0;
-  z-index: 999;
+  z-index: 9999;
   height: var(--nav-height);
 }
 
@@ -86,6 +103,19 @@ button {
   margin: auto;
   height: var(--nav-height);
   z-index: 9999;
+}
+
+.nav-close {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 8000;
+  background: transparent;
+  display: none;
+}
+
+.nav-close[data-active="true"] {
+  display: block;
 }
 
 .main-icon,
@@ -177,7 +207,7 @@ button {
 /* Content */
 
 .content-container {
-  margin-top: 50px;
+  margin-top: var(--nav-height);
   display: flex;
   flex-direction: column;
 }

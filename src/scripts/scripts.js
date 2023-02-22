@@ -6,6 +6,7 @@ const container = document.querySelector('.content-container');
 const footerLine = document.querySelector('.footer-container');
 const linkedinBtn = document.querySelector('.linkedin-btn');
 const githubBtn = document.querySelector('.github-btn');
+const navClose = document.querySelector('.nav-close');
 
 // Disable then reenable animations on load
 // to prevent unexpected animations
@@ -69,10 +70,19 @@ hamburger.addEventListener('click', () => {
   if (navbg.getAttribute('data-active') === 'false') {
     navbg.setAttribute('data-active', true);
     navItems.setAttribute('data-active', true);
+    navClose.setAttribute('data-active', true);
   } else {
     navbg.setAttribute('data-active', false);
     navItems.setAttribute('data-active', false);
+    navClose.setAttribute('data-active', false);
   }
+});
+
+// Click off of navbar to close
+navClose.addEventListener('click', () => {
+  navbg.setAttribute('data-active', false);
+  navItems.setAttribute('data-active', false);
+  navClose.setAttribute('data-active', false);
 });
 
 // Logo button
