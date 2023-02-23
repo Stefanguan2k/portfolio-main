@@ -1,0 +1,51 @@
+p {
+  line-height: 1.4rem;
+}
+
+.content-container {
+  padding: 1rem;
+  align-items: center;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.description {
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.profile-section > img {
+  border-radius: 100%;
+}
+
+.contact > a {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  border: solid var(--card-border-clr) 4px;
+  color: var(--text-clr);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
+  -webkit-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
+  -moz-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
+}
+
+.contact > a:hover {
+  border: solid transparent 4px;
+  background: var(--card-border-clr);
+}
+
+/* Desktop View */
+@media screen and (min-width: 768px) {
+  .content-container {
+    margin: var(--nav-height) auto 0 auto;
+    max-width: var(--max-container-width);
+  }
+}

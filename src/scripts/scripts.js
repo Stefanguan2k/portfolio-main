@@ -95,6 +95,7 @@ window.addEventListener('resize', () => {
   if (window.innerWidth >= 768) {
     navbg.setAttribute('data-active', false);
     navItems.setAttribute('data-active', false);
+    navClose.setAttribute('data-active', false);
   }
 });
 

@@ -21,6 +21,7 @@
   --munch-sh-clr: rgba(19, 44, 57, 0.3);
   --card-bg: rgb(61, 61, 61);
   --card-border-clr: rgb(75, 75, 75);
+  --max-container-width: 1280px;
 }
 
 html {
