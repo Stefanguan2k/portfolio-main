@@ -5,6 +5,8 @@ const elems = Array.from(carouselItems);
 const projTitle = document.querySelector('.project-title');
 const projDesc = document.querySelector('.project-descript');
 const numerator = document.querySelector('.numerator');
+const nextBtn = document.querySelector('.next-btn');
+const prevBtn = document.querySelector('.previous-btn');
 
 window.onload = () => {
   setTimeout(() => {
@@ -86,6 +88,17 @@ function debounce(func, timeout = 300) {
   };
 }
 
+// Previous and Next button functionality
+nextBtn.addEventListener('click', () => {
+  determineIndex(2);
+});
+
+prevBtn.addEventListener('click', () => {
+  determineIndex(1);
+});
+
+// Determine the index corresponding to input (1 = previous, 2 = next)
+
 const determineIndex = function (delta) {
   if (delta === 1) {
     if (idx === 0) {
@@ -105,8 +118,6 @@ const determineIndex = function (delta) {
   update(elems[idx]);
   checkActive(elems[idx]);
 };
-
-var MouseWheelHandler = function (e) {};
 
 const update = function (newActive) {
   const newActivePos = newActive.dataset.pos;

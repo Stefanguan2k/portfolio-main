@@ -17,8 +17,8 @@ body {
   width: 100%;
   margin-top: var(--nav-height);
   height: calc(100vh - var(--nav-height));
-  grid-template-areas: 'title' 'project-info' 'carousel';
-  grid-template-rows: max-content max-content 1fr;
+  grid-template-areas: 'title' 'project-info' 'carousel-btn' 'carousel';
+  grid-template-rows: max-content max-content max-content 1fr;
 }
 
 .title-container {
@@ -53,8 +53,30 @@ body {
   display: grid;
   place-items: center;
   width: 100%;
+  margin-bottom: 3rem;
   user-select: none;
   -webkit-user-select: none;
+}
+
+.carousel-btn-container {
+  display: flex;
+  gap: 5rem;
+  grid-area: carousel-btn;
+}
+
+.carousel-btn-container > button {
+  display: grid;
+  place-items: center;
+  margin: 0;
+  padding: 0.3rem;
+  border-radius: 999px;
+  border: solid var(--card-border-clr) 1px;
+  background: var(--card-bg);
+  transition: all linear 0.2s;
+}
+
+.carousel-btn-container > button:hover {
+  transform: scale(1.2);
 }
 
 .project-carousel {
@@ -76,6 +98,7 @@ body {
   width: 100%;
   height: 80%;
   padding: 0;
+  margin: 0;
 }
 
 .list-item {
@@ -137,9 +160,9 @@ body {
 /* Dekstop View */
 @media (min-width: 768px) {
   .project-container {
-    grid-template-areas: 'title project-info carousel';
+    grid-template-areas: 'title project-info carousel-btn carousel';
     grid-template-rows: auto;
-    grid-template-columns: max-content 1fr 1fr;
+    grid-template-columns: max-content 1fr max-content 1fr;
     max-width: 1920px;
     margin: var(--nav-height) auto 0 auto;
   }
@@ -156,6 +179,14 @@ body {
   .title {
     rotate: -90deg;
     margin-bottom: 3rem;
+  }
+
+  .carousel-btn-container {
+    flex-direction: column;
+  }
+
+  .carousel-btn-container > button {
+    rotate: 90deg;
   }
 
   .project-carousel {
