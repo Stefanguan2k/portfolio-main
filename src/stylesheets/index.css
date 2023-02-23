@@ -47,22 +47,22 @@
 @keyframes blue-glow {
   from {
     transform: scale(1);
-    background: rgb(167, 255, 255);
+    background: rgb(119, 183, 183);
   }
   to {
     transform: scale(1.5);
-    background: rgb(120, 221, 255);
+    background: rgb(85, 157, 182);
   }
 }
 
 @keyframes orange-glow {
   from {
     transform: scale(1.5);
-    background: rgb(255, 210, 125);
+    background: rgb(179, 147, 87);
   }
   to {
     transform: scale(1);
-    background: rgb(255, 196, 86);
+    background: rgb(182, 140, 62);
   }
 }
 
@@ -117,10 +117,10 @@
   transform: translateX(-50%);
   margin: 0;
   padding: 0.5rem 1rem;
-  background: rgba(255, 255, 255, 0.6);
+  background: var(--card-border-clr);
   border-radius: 0.2rem 0.2rem 0 0;
   width: max-content;
-  color: black;
+  color: #dedede;
 }
 
 .card > svg {
@@ -173,12 +173,12 @@
   width: 70%;
   max-width: 400px;
   border: solid 1px var(--card-border-clr);
-  background: rgba(190, 190, 190, 0.433);
+  background: var(--content-title-bg);
   border-radius: 0.5rem;
 }
 
 .comp-card > h3 {
-  background: rgba(255, 255, 255, 0.6);
+  background: var(--card-border-clr);
   padding: 1rem;
   margin: 0 auto;
   border-radius: 0 0 0.3rem 0.3rem;
@@ -196,7 +196,7 @@
   display: flex;
   align-items: center;
   border-radius: 5px;
-  background: rgba(255, 255, 255, 0.6);
+  background: var(--card-border-clr);
   overflow: hidden;
 }
 

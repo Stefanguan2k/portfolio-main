@@ -7,7 +7,7 @@ img {
 }
 
 body {
-  background: rgb(235, 250, 255);
+  background: rgb(70, 80, 84);
   transition: background linear 0.3s;
 }
 
@@ -44,7 +44,7 @@ body {
 .divider {
   width: 1px;
   height: 1rem;
-  background: rgb(50, 50, 50);
+  background: var(--text-clr);
   rotate: 30deg;
 }
 

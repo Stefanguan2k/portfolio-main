@@ -6,8 +6,6 @@ const projTitle = document.querySelector('.project-title');
 const projDesc = document.querySelector('.project-descript');
 const numerator = document.querySelector('.numerator');
 
-console.log(elems);
-
 window.onload = () => {
   setTimeout(() => {
     carouselItems.forEach((elem) => elem.classList.remove('disable-anim'));
@@ -48,21 +46,21 @@ const checkActive = function (newActive) {
     projTitle.innerHTML = 'Munch';
     projDesc.innerHTML = 'A Google UX Design Certificate Project';
     numerator.innerHTML = '01';
-    document.body.style.background = 'rgb(235, 250, 255)';
+    document.body.style.background = 'rgb(70, 80, 84)';
   }
 
   if (newActive.getAttribute('data-card') === 'kcl') {
     projTitle.innerHTML = 'Ken Construction Ltd. [WIP]';
     projDesc.innerHTML = 'Currently crafting their digital presence...';
     numerator.innerHTML = '03';
-    document.body.style.background = 'rgb(150,150,150)';
+    document.body.style.background = 'rgb(50,50,50)';
   }
 
   if (newActive.getAttribute('data-card') === 'yopo') {
     projTitle.innerHTML = 'Yopo';
     projDesc.innerHTML = 'A website overhaul project';
     numerator.innerHTML = '02';
-    document.body.style.background = '#f9f6e9';
+    document.body.style.background = '#474743';
   }
 };
 

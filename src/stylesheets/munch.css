@@ -32,7 +32,7 @@
   text-align: center;
   border-radius: 0.5rem 0.5rem 0 0;
   padding: 1rem;
-  background: rgba(255, 255, 255, 0.6);
+  background: var(--card-bg);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   margin: 0;
@@ -47,7 +47,7 @@ h2 {
 }
 
 .project-details {
-  background: var(--bg-clr);
+  background: var(--bg-clr-dark);
 }
 
 .section-head {
@@ -61,7 +61,7 @@ h2 {
 }
 
 .grey-bg {
-  background: rgb(241, 241, 241);
+  background: var(--alt-section-clr);
 }
 
 p {
@@ -109,6 +109,7 @@ p {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
+  color: black;
 }
 
 .persona:first-child {
@@ -155,16 +156,17 @@ p {
   align-items: center;
   gap: 5rem;
   margin-top: 1rem;
+  fill: #dedede;
 }
 
 .next-btn,
 .prev-btn {
-  background: rgba(205, 205, 205, 0.337);
+  background: var(--card-bg);
   display: grid;
   place-items: center;
   padding: 0.5rem;
   border-radius: 100%;
-  border: solid 1px rgb(192, 192, 192);
+  border: solid 1px var(--card-border-clr);
   box-shadow: 0 0 5px var(--munch-sh-clr);
   cursor: pointer;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
@@ -184,7 +186,7 @@ p {
 }
 
 .card-counter {
-  background: rgba(205, 205, 205, 0.337);
+  background: var(--card-bg);
   display: flex;
   gap: 1rem;
   height: max-content;
@@ -194,19 +196,18 @@ p {
 .card-ct1,
 .card-ct2 {
   border-radius: 100%;
-  background: rgb(197, 197, 197);
+  background: rgb(80, 80, 80);
   height: 20px;
   width: 20px;
 }
 
 .current-cnt {
-  background: grey;
+  background: rgb(190, 190, 190);
 }
 
 /* Research images */
 
 .concept-img {
-  background: white;
   max-width: 800px;
   width: 100%;
   object-fit: contain;
@@ -217,8 +218,8 @@ p {
   padding: 1rem;
   border: solid var(--card-border-clr) 1px;
   border-radius: 1rem;
+  background: var(--card-bg);
   /* overflow: hidden; */
-  background: white;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
   -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
   -moz-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
@@ -290,40 +291,40 @@ p {
   display: flex;
   justify-content: space-between;
   padding: 1rem 1.5rem;
-  border: solid rgb(186, 186, 186) 1px;
-  background: white;
+  border: solid var(--card-border-clr) 1px;
+  background: var(--card-bg);
+  color: var(--text-clr);
   border-radius: 0.5rem;
-  color: black;
   text-decoration: none;
   cursor: pointer;
-  transition: all 0.25s;
-  -webkit-transition: all 0.25s;
-  -moz-transition: all 0.25s;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
+  -webkit-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
+  -moz-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
 }
 
 .figma-btn > svg,
 #dark-btn > svg {
   width: 20px;
   height: 20px;
+  fill: #dedede;
 }
 
 #dark-btn:hover {
-  box-shadow: 0 0 10px #252727;
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px #131313;
   border: solid transparent 1px;
 }
 
 #dark-btn[data-dark="true"] {
-  background: #252727;
-  color: white;
-  fill: white;
-  border: solid #252727 1px;
+  background: var(--card-bg);
+  fill: #dedede;
 }
 
 .figma-btn:hover,
 .figma-btn:focus {
+  transform: translateY(-5px);
   border: solid rgba(0, 0, 0, 0) 1px;
-  color: white;
-  fill: white;
+  fill: #dedede;
   animation-name: animFigma;
   animation-duration: 1.5s;
   animation-iteration-count: 1;

@@ -30,7 +30,7 @@
   text-align: center;
   border-radius: 0.5rem 0.5rem 0 0;
   padding: 1rem;
-  background: rgba(255, 255, 255, 0.6);
+  background: var(--card-bg);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   margin: 0;
@@ -45,7 +45,7 @@ h2 {
 }
 
 .project-details {
-  background: var(--bg-clr);
+  background: var(--bg-clr-dark);
 }
 
 .section-head {
@@ -63,7 +63,7 @@ h2 {
 }
 
 .grey-bg {
-  background: rgb(241, 241, 241);
+  background: var(--alt-section-clr);
 }
 
 p {
@@ -202,7 +202,6 @@ p {
 /* Research images */
 
 .concept-img {
-  background: white;
   max-width: 800px;
   width: 100%;
   object-fit: contain;
@@ -214,7 +213,7 @@ p {
   border: solid var(--card-border-clr) 1px;
   border-radius: 1rem;
   /* overflow: hidden; */
-  background: white;
+  background: var(--card-bg);
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
   -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
   -moz-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
@@ -361,21 +360,25 @@ p {
   display: flex;
   justify-content: space-between;
   padding: 1rem 1.5rem;
-  border: solid rgb(186, 186, 186) 1px;
-  background: white;
+  border: solid var(--card-border-clr) 1px;
+  background: var(--card-bg);
+  color: var(--text-clr);
+  fill: var(--text-clr);
   border-radius: 0.5rem;
-  color: black;
   text-decoration: none;
   cursor: pointer;
-  transition: all 0.25s;
-  -webkit-transition: all 0.25s;
-  -moz-transition: all 0.25s;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
+  -webkit-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
+  -moz-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
 }
 
 .web-btn:hover {
+  transform: translateY(-5px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   border: solid rgb(186, 186, 186) 1px;
   background: #ece1c6;
+  color: black;
+  fill: black;
 }
 
 /* Conclusion */
@@ -478,6 +481,7 @@ p {
     align-items: center;
     gap: 0.5rem;
     background: #ede1c2;
+    color: black;
     width: max-content;
     padding: 0.2rem 0;
     border-radius: 0.3rem;
