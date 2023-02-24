@@ -3,14 +3,23 @@ p {
 }
 
 .content-container {
+  display: grid;
+  grid-template-areas: 'profile' 'content' 'contact';
+  place-items: center;
   padding: 1rem;
   align-items: center;
 }
 
 .profile-section {
+  grid-area: profile;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.content {
+  grid-area: content;
 }
 
 .description {
@@ -24,6 +33,7 @@ p {
 }
 
 .contact > a {
+  grid-area: contact;
   display: flex;
   justify-content: space-between;
   padding: 1rem 1.5rem;
@@ -47,5 +57,11 @@ p {
   .content-container {
     margin: var(--nav-height) auto 0 auto;
     max-width: var(--max-container-width);
+    grid-template-areas:
+      'profile content'
+      'profile contact';
+    grid-template-columns: 1fr 1fr;
+    height: calc(100vh - var(--nav-height));
+    padding: 0;
   }
 }
