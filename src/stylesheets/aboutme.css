@@ -32,24 +32,8 @@ p {
   border-radius: 100%;
 }
 
-.contact > a {
-  grid-area: contact;
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 1.5rem;
-  border: solid var(--card-border-clr) 4px;
-  color: var(--text-clr);
-  border-radius: 0.5rem;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
-  -webkit-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
-  -moz-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
-}
-
-.contact > a:hover {
-  border: solid transparent 4px;
-  background: var(--card-border-clr);
+.action-btn {
+  --btn-hover-clr: rgb(0, 95, 122);
 }
 
 /* Desktop View */
@@ -63,5 +47,8 @@ p {
     grid-template-columns: 1fr 1fr;
     height: calc(100vh - var(--nav-height));
     padding: 0;
+  }
+  .contact {
+    place-self: start center;
   }
 }

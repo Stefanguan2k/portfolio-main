@@ -278,12 +278,6 @@ p {
   height: 50px;
 }
 
-.button-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-
 .figma-btn,
 #dark-btn {
   display: flex;

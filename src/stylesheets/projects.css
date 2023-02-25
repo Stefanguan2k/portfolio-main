@@ -72,7 +72,10 @@ body {
   border-radius: 999px;
   border: solid var(--card-border-clr) 1px;
   background: var(--card-bg);
-  transition: all linear 0.2s;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  -webkit-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  -moz-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  cursor: pointer;
 }
 
 .carousel-btn-container > button:hover {

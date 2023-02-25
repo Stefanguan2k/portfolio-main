@@ -21,6 +21,7 @@
   --card-bg: rgb(61, 61, 61);
   --card-border-clr: rgb(75, 75, 75);
   --max-container-width: 1280px;
+  --btn-hover-clr: rgb(75, 75, 75);
 }
 
 html {
@@ -129,6 +130,9 @@ button {
 .hamburger-icon {
   cursor: pointer;
   fill: var(--nav-elem-clr);
+}
+.hamburger-icon {
+  border: none;
 }
 
 .nav-items {
@@ -275,12 +279,47 @@ button {
   fill: #2176a3;
   transform: scale(1.25);
   filter: drop-shadow(0 0 5px #34698562);
+  -webkit-filter: drop-shadow(0 0 5px #34698562);
 }
 
 .github-btn:hover {
   fill: #9445b6;
   transform: scale(1.25);
   filter: drop-shadow(0 0 5px #6e59776f);
+  -webkit-filter: drop-shadow(0 0 5px #6e59776f);
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.action-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  color: var(--text-clr);
+  fill: var(--text-clr);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  border: solid var(--btn-hover-clr) 4px;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
+  -webkit-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
+  -moz-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
+}
+
+.action-btn > svg {
+  width: 20px;
+  height: 20px;
+}
+
+.action-btn:hover {
+  box-shadow: 0 0 10px #131313;
+  border: solid transparent 4px;
+  background: var(--btn-hover-clr);
 }
 
 /* Utility */
