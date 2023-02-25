@@ -14,8 +14,6 @@ function resetForm() {
   form.reset();
 }
 
-// modifyBtn('success');
-// 'service_q42ebsg', 'template_1fdyrau'
 
 emailjs.init('5jl6JNXBemLoWgQGo');
 
@@ -28,7 +26,7 @@ window.onload = function () {
       //   Modify button to loading state
       modifyBtn('submitting');
 
-      emailjs.sendForm('asdf', 'asdf', this).then(
+      emailjs.sendForm('service_q42ebsg', 'template_1fdyrau', this).then(
         function () {
           modifyBtn('success');
           setTimeout(resetBtn, delay);
