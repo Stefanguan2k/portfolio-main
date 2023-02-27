@@ -2,7 +2,6 @@
   display: grid;
   grid-template-areas: 'form' 'links';
   padding: 0 1rem;
-  height: calc(100vh - var(--nav-height));
 }
 
 .contact-form {
@@ -10,6 +9,10 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+section {
+  width: 100%;
 }
 
 .form-elem {
@@ -48,6 +51,7 @@ label {
   display: flex;
   justify-content: center;
   gap: clamp(1rem, 7vw, 3rem);
+  margin-bottom: 4rem;
 }
 
 .links-container > a {
@@ -89,7 +93,17 @@ label {
   grid-template-columns: 1fr;
 }
 
+.button-container > div {
+  position: absolute;
+  width: 1px;
+}
+
+.reset {
+  z-index: 10;
+}
+
 #submit-btn {
+  z-index: 10;
   --btn-hover-clr: rgb(0, 95, 122);
 }
 
@@ -103,9 +117,17 @@ label {
   background: rgb(29, 114, 73);
 }
 
-.reset:hover {
+.clear-btn:hover {
   border-color: rgb(114, 29, 29);
   background: rgb(114, 29, 29);
+}
+
+.reset-btn {
+  border-color: rgb(114, 104, 29);
+}
+
+.reset-btn:hover {
+  background: rgb(114, 104, 29);
 }
 
 /* Loading Icon */
@@ -182,16 +204,55 @@ label {
   }
 }
 
+/* Recaptcha */
+.grecaptcha-badge {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.recaptcha-notif {
+  margin: 3rem 0 4rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(45deg, #02091a 30%, #203350);
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+
+.privacy-container {
+  font-size: 0.8rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.privacy-container > a {
+  text-decoration: none;
+  background: rgba(75, 75, 75, 0.5);
+  color: var(--text-clr);
+  padding: 0.75rem;
+  border-radius: 0.3rem;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
+  -webkit-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
+  -moz-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
+}
+
+.privacy-container > a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 5px var(--shadow-clr);
+}
+
 @media (min-width: 768px) {
   .content-container {
     grid-template-areas: 'form links';
+    grid-template-rows: 1fr;
     place-items: center;
     max-width: 1280px;
     margin: var(--nav-height) auto 0 auto;
-    height: calc(100vh - var(--nav-height));
+    min-height: calc(100vh - var(--nav-height));
   }
-  .form {
+  /* .form {
     height: max-content;
     width: 100%;
-  }
+  } */
 }

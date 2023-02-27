@@ -278,20 +278,6 @@ p {
   height: 50px;
 }
 
-.figma-btn,
-#dark-btn {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 1.5rem;
-  color: var(--text-clr);
-  border-radius: 0.5rem;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
-  -webkit-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
-  -moz-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
-}
-
 #dark-btn {
   border: solid var(--card-border-clr) 4px;
 }

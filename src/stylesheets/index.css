@@ -69,6 +69,7 @@
 /* CONTENT */
 
 .hero {
+  position: relative;
   height: 90vh;
   min-height: 700px;
   padding: 2rem 2rem 0 2rem;
@@ -80,6 +81,14 @@
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
+}
+
+.version {
+  font-family: monospace;
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+  color: grey;
 }
 
 .splash {
@@ -214,6 +223,7 @@
   padding: 0;
 }
 
+
 /* Desktop View */
 @media (min-width: 768px) {
   .content-title {
@@ -264,29 +274,6 @@
     align-items: flex-start;
   }
 
-  /* .comp-card-inner {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 4rem;
-  }
-
-  .comp-inner {
-    flex-direction: column;
-    width: max-content;
-    border-radius: 10px;
-    gap: 0.5rem;
-  }
-
-  .comp-inner > img {
-    height: 100px;
-    border-radius: 10px;
-  }
-
-  .comp-inner > p {
-    font-size: 15px;
-    padding-bottom: 0.5rem;
-  } */
   .card {
     max-width: 500px;
     height: 325px;

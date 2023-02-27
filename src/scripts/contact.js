@@ -4,9 +4,9 @@ const paperPlane = document.querySelector('.plane');
 const loader = document.querySelector('.loading');
 const exclaimation = document.querySelector('.exclaimation');
 const check = document.querySelector('.check');
-const form = document.getElementById('email-form');
-const resetFormBtn = document.querySelector('.reset');
-const btnContainer = document.querySelector('.button-container')
+let form = document.getElementById('email-form');
+const clearFormBtn = document.querySelector('.clear-btn');
+const resetFormBtn = document.querySelector('.reset-btn');
 
 const delay = 5000;
 
@@ -14,71 +14,88 @@ function resetForm() {
   form.reset();
 }
 
+// Test buttons
+// Uncomment to test states ('fail', 'success', 'default')
+// modifyBtn('success');
 
-emailjs.init('5jl6JNXBemLoWgQGo');
+// Form submit & recaptcha
 
-window.onload = function () {
-  document
-    .getElementById('email-form')
-    .addEventListener('submit', function (event) {
-      event.preventDefault();
+form.addEventListener('submit', function (event) {
+  event.preventDefault();
+  grecaptcha.reset();
+  grecaptcha.execute();
+});
 
-      //   Modify button to loading state
-      modifyBtn('submitting');
+function postForm(token) {
+  console.log(token);
+  modifyBtn('submitting');
 
-      emailjs.sendForm('service_q42ebsg', 'template_1fdyrau', this).then(
-        function () {
-          modifyBtn('success');
-          setTimeout(resetBtn, delay);
-          form.reset();
-          console.log('success');
-        },
-        function (error) {
-          setTimeout(() => {
-            modifyBtn('fail');
-          }, 2000);
+  var params = {
+    user_name: form.elements['name'].value,
+    user_email: form.elements['email'].value,
+    subject: form.elements['subject'].value,
+    message: form.elements['message'].value,
+    'g-recaptcha-response': token,
+  };
 
-          // Refresh Button after timeout
-          setTimeout(resetBtn, 5000);
-          console.log('error', error);
-        }
-      );
-    });
-};
+  emailjs.send('service_q42ebsg', 'template_1fdyrau', params, '5jl6JNXBemLoWgQGo').then(
+    function () {
+      modifyBtn('success');
+      console.log('success');
+    },
+    function (error) {
+      setTimeout(() => {
+        modifyBtn('fail');
+      }, 2000);
+
+      // Refresh Button after timeout
+      setTimeout(resetBtn, 5000);
+      console.log('error', error);
+    }
+  );
+}
+
+// Button states
 
 function modifyBtn(status) {
   // Hide submit icon
   paperPlane.setAttribute('data-active', 'false');
-  resetFormBtn.style.display = 'none';
-  btnContainer.setAttribute('data-single', 'true');
+  clearFormBtn.style.display = 'none';
   // Submitting state
   if (status === 'submitting') {
-      submitBtnText.innerHTML = 'Submitting...';
-      loader.setAttribute('data-active', 'true');
-    }
-    //   Fail state
-    if (status === 'fail') {
+    submitBtnText.innerHTML = 'Submitting...';
+    loader.setAttribute('data-active', 'true');
+  }
+  //   Fail state
+  if (status === 'fail') {
     loader.setAttribute('data-active', 'false');
     submitBtnText.innerHTML = 'Failed!';
     submitBtn.setAttribute('data-submit', 'fail');
     exclaimation.setAttribute('data-active', 'true');
-}
-//   Success state
-if (status === 'success') {
+  }
+  //   Success state
+  if (status === 'success') {
     loader.setAttribute('data-active', 'false');
     submitBtnText.innerHTML = 'Sent!';
     submitBtn.setAttribute('data-submit', 'success');
     check.setAttribute('data-active', 'true');
-}
+    setTimeout(() => {
+      submitBtn.style.display = 'none';
+      resetFormBtn.style.display = 'flex';
+    }, delay);
+  }
 }
 
 function resetBtn() {
-    submitBtnText.innerHTML = `Submit`;
-    submitBtn.setAttribute('data-submit', 'default');
-    loader.setAttribute('data-active', 'false');
-    paperPlane.setAttribute('data-active', 'true');
-    exclaimation.setAttribute('data-active', 'false');
-    check.setAttribute('data-active', 'false');
-    btnContainer.setAttribute('data-single', 'false');
-  resetFormBtn.style.display = 'flex';
+  // Reset submit button elements
+  submitBtnText.innerHTML = `Submit`;
+  submitBtn.setAttribute('data-submit', 'default');
+  loader.setAttribute('data-active', 'false');
+  paperPlane.setAttribute('data-active', 'true');
+  exclaimation.setAttribute('data-active', 'false');
+  check.setAttribute('data-active', 'false');
+  // Reset clear buttons
+  resetFormBtn.style.display = 'none';
+  clearFormBtn.style.display = 'flex';
+  submitBtn.style.display = 'flex';
 }

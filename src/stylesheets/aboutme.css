@@ -28,6 +28,10 @@ p {
   border-radius: 0.5rem;
 }
 
+.contact {
+  margin-bottom: 4rem;
+}
+
 .profile-section > img {
   border-radius: 100%;
 }
@@ -45,8 +49,7 @@ p {
       'profile content'
       'profile contact';
     grid-template-columns: 1fr 1fr;
-    height: calc(100vh - var(--nav-height));
-    padding: 0;
+    min-height: calc(100vh - var(--nav-height));
   }
   .contact {
     place-self: start center;
