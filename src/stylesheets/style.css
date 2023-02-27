@@ -22,6 +22,7 @@
   --card-border-clr: rgb(75, 75, 75);
   --max-container-width: 1280px;
   --btn-hover-clr: rgb(75, 75, 75);
+  --primary-btn: rgb(0, 95, 122);
 }
 
 html {

@@ -223,6 +223,19 @@
   padding: 0;
 }
 
+.action-btn-container {
+  width: 80vw;
+  max-width: 400px;
+}
+
+.action-btn {
+  border-color: var(--primary-btn);
+  background: var(--content-title-bg);
+}
+
+.action-btn:hover {
+  background: var(--primary-btn);
+}
 
 /* Desktop View */
 @media (min-width: 768px) {
@@ -280,12 +293,23 @@
     width: 60%;
     min-width: 350px;
   }
+
+  .action-btn-container {
+    width: 60%;
+    min-width: 350px;
+    max-width: 500px;
+  }
 }
 
 @media (min-width: 1613px) {
   .card {
     max-width: 500px;
     height: 400px;
+    width: 40%;
+    min-width: 350px;
+  }
+  .action-btn-container {
+    max-width: 500px;
     width: 40%;
     min-width: 350px;
   }
