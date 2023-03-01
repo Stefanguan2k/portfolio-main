@@ -378,9 +378,15 @@ button {
   cursor: pointer;
   border-radius: 0.5rem;
   border: solid var(--btn-hover-clr) 4px;
-  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
-  -webkit-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
-  -moz-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
+  transition: background cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s,
+    border cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s,
+    box-shadow cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
+  -webkit-transition: background cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s,
+    border cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s,
+    box-shadow cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
+  -moz-transition: background cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s,
+    border cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s,
+    box-shadow cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
 }
 
 .action-btn > svg {

@@ -58,6 +58,10 @@ body {
   -webkit-user-select: none;
 }
 
+.project-descript {
+  text-align: center;
+}
+
 .carousel-btn-container {
   display: flex;
   gap: 5rem;
@@ -130,7 +134,7 @@ body {
 
 .img-container > img {
   position: absolute;
-  height: 600px;
+  max-height: 600px;
   bottom: -300px;
   filter: drop-shadow(0 0 5px rgba(36, 36, 36, 0.185));
 }
@@ -161,11 +165,12 @@ body {
 }
 
 /* Dekstop View */
+
 @media (min-width: 768px) {
   .project-container {
     grid-template-areas: 'title project-info carousel-btn carousel';
+    grid-template-columns: max-content 1fr max-content 2fr;
     grid-template-rows: auto;
-    grid-template-columns: max-content 1fr max-content 1fr;
     max-width: 1920px;
     margin: var(--nav-height) auto 0 auto;
   }
@@ -176,7 +181,7 @@ body {
     flex-direction: column-reverse;
     padding: 0;
     width: max-content;
-    margin-left: 3rem;
+    margin-left: 1rem;
   }
 
   .title {
@@ -222,5 +227,14 @@ body {
     filter: blur(2px);
     transform: translateY(-30%) scale(0.8);
     z-index: 1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-container {
+    grid-template-columns: max-content 1fr max-content 1fr;
+  }
+  .title-container {
+    margin-left: 5rem;
   }
 }
