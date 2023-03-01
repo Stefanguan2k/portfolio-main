@@ -17,7 +17,6 @@
   --text-clr: #dedede;
   --shadow-clr: rgba(0, 0, 0, 0.3);
   --content-title-bg: rgba(58, 58, 58, 0.8);
-  --munch-sh-clr: rgba(19, 44, 57, 0.3);
   --card-bg: rgb(61, 61, 61);
   --card-border-clr: rgb(75, 75, 75);
   --max-container-width: 1280px;
@@ -213,13 +212,80 @@ button {
   display: none;
 }
 
-
 /* Content */
 
 .content-container {
   margin-top: var(--nav-height);
   display: flex;
   flex-direction: column;
+}
+
+.para {
+  margin: 3rem 0;
+}
+
+.para-first {
+  margin: 1rem 0 3rem 0;
+}
+
+.detail-wrapper {
+  display: grid;
+}
+
+.project-details {
+  background: var(--bg-clr-dark);
+}
+
+.date {
+  color: grey;
+}
+
+.grey-bg {
+  background: var(--alt-section-clr);
+}
+
+.insight-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 3rem 0;
+}
+
+.insight {
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: grid;
+  place-items: center;
+  grid-template-rows: 2fr 1fr 3fr;
+  max-width: 300px;
+  height: 275px;
+  box-shadow: 0 0 5px var(--shadow-clr);
+}
+
+.insight > h3 {
+  line-height: 0;
+}
+
+.insight > p {
+  text-align: center;
+  place-self: start;
+}
+
+.insight-icon {
+  width: 100px;
+  height: 100px;
+
+  border-radius: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.insight-icon > svg {
+  width: 50px;
+  height: 50px;
 }
 
 /* Footer */
@@ -370,6 +436,43 @@ button {
     height: 20px;
     width: 20px;
   } */
+
+  .detail-wrapper > h2 {
+    font-size: 26px;
+  }
+
+  .detail-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1280px;
+    margin: auto;
+  }
+  .proj-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 3rem 1rem;
+  }
+  .role,
+  .goals,
+  .target {
+    padding: 1rem;
+    border-radius: 1rem;
+    height: 100%;
+    background: var(--card-bg);
+    box-shadow: 0 0 5px var(--shadow-clr);
+    position: relative;
+  }
+  .date {
+    position: absolute;
+    bottom: 0;
+  }
+  .insight-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
 
   .footer-container {
     display: grid;

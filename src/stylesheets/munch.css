@@ -12,7 +12,7 @@
 }
 
 .bg {
-  background: url("/src/assets/img/munch/munch.jpg") no-repeat center / cover;
+  background: url('/src/assets/img/munch/munch.jpg') no-repeat center / cover;
 }
 
 .title {
@@ -22,6 +22,24 @@
   height: 75%;
   margin: 0;
   padding: 0;
+}
+
+section:not(:first-child) {
+  padding: 2rem 1rem;
+}
+
+.action-parent {
+  padding: 0 1rem;
+  margin-top: 1rem;
+}
+
+.pdf-btn,
+.pdf-btn:hover {
+  border-color: rgb(0, 95, 122);
+}
+
+.pdf-btn:hover {
+  background-color: rgb(0, 95, 122);
 }
 
 .description {
@@ -36,30 +54,14 @@
   margin: 0;
 }
 
-section > h1 {
-  text-align: center;
-}
-
 h2 {
-  font-size: 20px;
-}
-
-.project-details {
-  background: var(--bg-clr-dark);
+  font-size: 18px;
+  margin-bottom: 0;
 }
 
 .section-head {
-  padding: 1rem;
-  margin: 0;
-}
-
-.detail-wrapper {
-  padding: 1rem;
-  display: grid;
-}
-
-.grey-bg {
-  background: var(--alt-section-clr);
+  text-align: center;
+  margin: 0 0 1rem 0;
 }
 
 p {
@@ -77,7 +79,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 5px var(--munch-sh-clr);
+  box-shadow: 0 0 5px var(--shadow-clr);
   max-width: calc(400px + 1.2rem);
   width: 100%;
   min-height: calc(250px + 1.2rem);
@@ -92,9 +94,9 @@ p {
   position: absolute;
   display: grid;
   grid-template-areas:
-    "img info"
-    "desc desc"
-    "attr attr";
+    'img info'
+    'desc desc'
+    'attr attr';
   place-items: center;
   max-width: 400px;
   /* width: max-content; */
@@ -139,7 +141,7 @@ p {
 .desc {
   grid-area: desc;
   font-size: 12px;
-  line-height: 1.2rem !important; 
+  line-height: 1.2rem !important;
 }
 
 .attribution {
@@ -165,7 +167,7 @@ p {
   padding: 0.5rem;
   border-radius: 100%;
   border: solid 1px var(--card-border-clr);
-  box-shadow: 0 0 5px var(--munch-sh-clr);
+  box-shadow: 0 0 5px var(--shadow-clr);
   cursor: pointer;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
   -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
@@ -212,7 +214,6 @@ p {
 }
 
 .img-wrapper {
-  margin: 2rem 0;
   padding: 1rem;
   border: solid var(--card-border-clr) 1px;
   border-radius: 1rem;
@@ -224,58 +225,18 @@ p {
 }
 
 .img-wrapper:hover {
-  box-shadow: 0 0 5px var(--munch-sh-clr);
+  box-shadow: 0 0 5px var(--shadow-clr);
   transform: translateY(-2.5px);
 }
 
 /* User Testing */
 
-.insight-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  margin: 3rem 0;
-}
-
-.insight {
-  background: var(--card-bg);
-  padding: 1rem;
-  border-radius: 0.5rem;
-  display: grid;
-  place-items: center;
-  grid-template-rows: 2fr 1fr 3fr;
-  max-width: 300px;
-  height: 275px;
-  box-shadow: 0 0 5px var(--munch-sh-clr);
-}
-
-.insight > h3 {
-  line-height: 0;
-}
-
-.insight > p {
-  text-align: center;
-  place-self: start;
-}
-
 .insight-icon {
-  width: 100px;
-  height: 100px;
   background: linear-gradient(
     90deg,
     rgba(117, 211, 240, 1) 0%,
     rgba(176, 231, 248, 1) 100%
   );
-  border-radius: 100%;
-  display: grid;
-  place-items: center;
-}
-
-.insight-icon > svg {
-  width: 50px;
-  height: 50px;
 }
 
 #dark-btn {
@@ -299,7 +260,7 @@ p {
   background: var(--card-border-clr);
 }
 
-#dark-btn[data-dark="true"] {
+#dark-btn[data-dark='true'] {
   background: var(--card-border-clr);
   fill: #dedede;
 }
@@ -338,7 +299,7 @@ p {
   }
   100% {
     background: rgb(63, 63, 63);
-    box-shadow: 0 0 10px var(--munch-sh-clr);
+    box-shadow: 0 0 10px var(--shadow-clr);
   }
 }
 
@@ -351,39 +312,12 @@ p {
   margin-bottom: 5rem;
 }
 
-
 /* Desktop View */
 @media (min-width: 768px) {
   h1 {
     font-size: 32px;
   }
 
-  .detail-wrapper > h2 {
-    font-size: 26px;
-  }
-
-  .detail-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1280px;
-    margin: auto;
-  }
-  .proj-wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    padding: 3rem 1rem;
-  }
-  .role,
-  .goals,
-  .target {
-    padding: 1rem;
-    border-radius: 1rem;
-    height: 100%;
-    background: var(--card-bg);
-    box-shadow: 0 0 5px var(--munch-sh-clr);
-  }
   .persona-carousel {
     max-width: max-content;
     width: 90%;
@@ -396,7 +330,7 @@ p {
   .persona {
     position: relative;
     border-radius: 1rem;
-    box-shadow: 0 0 5px var(--munch-sh-clr);
+    box-shadow: 0 0 5px var(--shadow-clr);
   }
   .persona-btn {
     display: none;
@@ -405,11 +339,6 @@ p {
     font-size: 14px;
   }
 
-  .insight-container {
-    flex-direction: row;
-    justify-content: center;
-    gap: 2rem;
-  }
   .button-container {
     width: 600px;
   }
