@@ -12,7 +12,7 @@
 }
 
 .bg {
-  background: url('/src/assets/img/yopo/yopo.jpg') no-repeat center / cover;
+  background: url('/src/assets/img/yopo/yopo.webp') no-repeat center / cover;
 }
 
 .title {
@@ -25,6 +25,7 @@
 section:not(:first-child) {
   padding: 2rem 1rem;
 }
+
 
 .description {
   position: absolute;
@@ -202,7 +203,6 @@ p {
   h1 {
     font-size: 32px;
   }
-
 
   .faux-browser-container {
     max-height: 1000px;

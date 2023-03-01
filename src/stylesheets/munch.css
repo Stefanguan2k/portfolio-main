@@ -12,7 +12,7 @@
 }
 
 .bg {
-  background: url('/src/assets/img/munch/munch.jpg') no-repeat center / cover;
+  background: url('/src/assets/img/munch/munch.webp') no-repeat center / cover;
 }
 
 .title {
@@ -210,7 +210,7 @@ p {
 .concept-img {
   max-width: 800px;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .img-wrapper {

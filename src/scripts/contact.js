@@ -38,21 +38,23 @@ function postForm(token) {
     'g-recaptcha-response': token,
   };
 
-  emailjs.send('service_q42ebsg', 'template_1fdyrau', params, '5jl6JNXBemLoWgQGo').then(
-    function () {
-      modifyBtn('success');
-      console.log('success');
-    },
-    function (error) {
-      setTimeout(() => {
-        modifyBtn('fail');
-      }, 2000);
+  emailjs
+    .send('service_q42ebsg', 'template_1fdyrau', params, '5jl6JNXBemLoWgQGo')
+    .then(
+      function () {
+        modifyBtn('success');
+        console.log('success');
+      },
+      function (error) {
+        setTimeout(() => {
+          modifyBtn('fail');
+        }, 2000);
 
-      // Refresh Button after timeout
-      setTimeout(resetBtn, 5000);
-      console.log('error', error);
-    }
-  );
+        // Refresh Button after timeout
+        setTimeout(resetBtn, 5000);
+        console.log('error', error);
+      }
+    );
 }
 
 // Button states
@@ -87,6 +89,7 @@ function modifyBtn(status) {
 }
 
 function resetBtn() {
+  form.reset();
   // Reset submit button elements
   submitBtnText.innerHTML = `Submit`;
   submitBtn.setAttribute('data-submit', 'default');

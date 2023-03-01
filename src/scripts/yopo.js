@@ -5,11 +5,11 @@ const desktopImg = document.querySelector('.desktop-img');
 const mobileImg = document.querySelector('.mobile-img');
 
 const desktopImgArray = [
-  'src/assets/img/yopo/yopoDesktopMain.png',
-  'src/assets/img/yopo/desktopMenu.png',
-  'src/assets/img/yopo/desktopOrder.png',
-  'src/assets/img/yopo/desktopContact.png',
-  'src/assets/img/yopo/yopoDesktopMain.png',
+  'src/assets/img/yopo/yopoDesktopMain.webp',
+  'src/assets/img/yopo/desktopMenu.webp',
+  'src/assets/img/yopo/desktopOrder.webp',
+  'src/assets/img/yopo/desktopContact.webp',
+  'src/assets/img/yopo/yopoDesktopMain.webp',
 ];
 
 const desktopAltText = [
@@ -21,11 +21,11 @@ const desktopAltText = [
 ];
 
 const mobileImgArray = [
-  'src/assets/img/yopo/yopoMobileMain.png',
-  'src/assets/img/yopo/mobileMenu.png',
-  'src/assets/img/yopo/mobileOrder.png',
-  'src/assets/img/yopo/mobileContact.png',
-  'src/assets/img/yopo/yopoMobileMain.png',
+  'src/assets/img/yopo/yopoMobileMain.webp',
+  'src/assets/img/yopo/mobileMenu.webp',
+  'src/assets/img/yopo/mobileOrder.webp',
+  'src/assets/img/yopo/mobileContact.webp',
+  'src/assets/img/yopo/yopoMobileMain.webp',
 ];
 
 const mobileAltText = [

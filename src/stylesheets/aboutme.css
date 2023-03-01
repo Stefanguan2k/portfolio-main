@@ -21,12 +21,25 @@ p {
 
 .content {
   grid-area: content;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.description {
+.paragraph-container {
+  display: grid;
   background: var(--card-bg);
-  padding: 1rem;
+  padding: 0 1rem 1rem 1rem;
   border-radius: 0.5rem;
+  border: solid 1px var(--card-border-clr);
+}
+
+.paragraph-header {
+  background: var(--card-border-clr);
+  width: max-content;
+  padding: 1rem 2rem;
+  place-self: center;
+  border-radius: 0 0 0.3rem 0.3rem;
 }
 
 .contact {
@@ -50,6 +63,7 @@ p {
       'profile content'
       'profile contact';
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
     min-height: calc(100vh - var(--nav-height));
   }
   .contact {

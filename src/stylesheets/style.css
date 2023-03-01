@@ -215,7 +215,6 @@ button {
 /* Content */
 
 .content-container {
-  margin-top: var(--nav-height);
   display: flex;
   flex-direction: column;
 }
