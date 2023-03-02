@@ -6,8 +6,9 @@ p {
   display: grid;
   grid-template-areas: 'profile' 'content' 'contact';
   place-items: center;
-  padding: 1rem;
+  padding: 0 1rem;
   align-items: center;
+  margin-top: calc(1rem + var(--nav-height));
 }
 
 .profile-section {
@@ -17,6 +18,10 @@ p {
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
+}
+
+.profile-section > img {
+  border: solid 1px var(--card-border-clr);
 }
 
 .content {

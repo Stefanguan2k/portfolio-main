@@ -205,7 +205,12 @@ button {
 }
 
 .navlinks[aria-current='page'] {
+  color: rgb(0, 135, 172);
   font-weight: bolder;
+}
+
+.navlinks:not([aria-current='page']):hover {
+  color: grey;
 }
 
 .desktop-nav {

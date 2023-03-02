@@ -26,7 +26,6 @@ section:not(:first-child) {
   padding: 2rem 1rem;
 }
 
-
 .description {
   position: absolute;
   bottom: 0;
@@ -80,7 +79,6 @@ p {
   margin-top: 2rem;
 }
 
-
 .img-wrapper:hover {
   box-shadow: 0 0 5px var(--shadow-clr);
   transform: translateY(-2.5px);
@@ -102,6 +100,15 @@ p {
     rgb(123, 204, 110) 0%,
     rgb(163, 231, 188) 100%
   );
+}
+
+.browser-info {
+  fill: var(--text-clr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0 0.5rem 0;
 }
 
 .faux-browser-container {
