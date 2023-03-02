@@ -74,6 +74,10 @@ p {
 
 /* Persona Carousel */
 
+.persona-title {
+  margin-bottom: 3rem;
+}
+
 .persona-carousel {
   position: relative;
   display: flex;
@@ -203,6 +207,10 @@ p {
 
 .current-cnt {
   background: #dedede;
+}
+
+.wireframe-title {
+  margin-top: 3rem;
 }
 
 /* Research images */
