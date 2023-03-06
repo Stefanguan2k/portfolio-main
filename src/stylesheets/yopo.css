@@ -150,6 +150,10 @@ p {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.219);
 }
 
+.address > span {
+  color: black;
+}
+
 .access {
   position: absolute;
   left: 0.5rem;
