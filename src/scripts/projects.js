@@ -51,11 +51,11 @@ const checkActive = function (newActive) {
     document.body.style.background = 'rgb(70, 80, 84)';
   }
 
-  if (newActive.getAttribute('data-card') === 'kcl') {
-    projTitle.innerHTML = 'Ken Construction Ltd. [WIP]';
-    projDesc.innerHTML = 'Currently crafting their digital presence...';
+  if (newActive.getAttribute('data-card') === 'oasis') {
+    projTitle.innerHTML = 'Oasis';
+    projDesc.innerHTML = 'A Google UX Responsive Web Project';
     numerator.innerHTML = '03';
-    document.body.style.background = 'rgb(50,50,50)';
+    document.body.style.background = '#3a2d40';
   }
 
   if (newActive.getAttribute('data-card') === 'yopo') {

@@ -124,7 +124,7 @@
   color: #dedede;
 }
 
-.card > svg {
+.card > svg, .card > img {
   place-self: center;
   height: 40%;
   width: 40%;
@@ -153,7 +153,7 @@
 }
 
 .work-3 {
-  background: linear-gradient(45deg, #242424, #5c5c5c);
+  background: linear-gradient(45deg, #9882C5, #E0A1FF);
   transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
   -webkit-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
   -moz-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;

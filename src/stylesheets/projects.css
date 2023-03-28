@@ -145,8 +145,8 @@ body {
 .list-item[data-card='yopo'] {
   background: linear-gradient(45deg, rgb(223, 193, 121), rgb(254, 250, 202));
 }
-.list-item[data-card='kcl'] {
-  background: linear-gradient(45deg, rgb(0, 0, 0), rgb(152, 151, 140));
+.list-item[data-card='oasis'] {
+  background: linear-gradient(45deg, #541bc7, #ab00ff);
   cursor: default;
 }
 
