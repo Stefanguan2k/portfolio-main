@@ -199,21 +199,20 @@
   border-radius: 5px;
   background: var(--card-border-clr);
   overflow: hidden;
+  padding: 0 2rem;
+  justify-content: space-between;
 }
 
 .comp-inner > img {
-  height: 50px;
-  aspect-ratio: 1;
-  background: rgb(255, 225, 225);
-  border-radius: 5px;
+  height: 30px;
 }
 
-.comp-inner > p {
+/* .comp-inner > p {
   width: 100%;
   text-align: center;
   margin: 0;
   padding: 0;
-}
+} */
 
 .action-btn-container {
   width: 80vw;
