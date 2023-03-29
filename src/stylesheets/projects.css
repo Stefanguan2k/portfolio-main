@@ -147,7 +147,6 @@ body {
 }
 .list-item[data-card='oasis'] {
   background: linear-gradient(45deg, #541bc7, #ab00ff);
-  cursor: default;
 }
 
 .list-item[data-pos='0'] {

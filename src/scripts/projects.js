@@ -36,6 +36,9 @@ const redirect = function (newActive) {
     }
     if (newActive.getAttribute('data-card') === 'yopo') {
       window.location.href = '/yopo.html';
+    }
+    if (newActive.getAttribute('data-card') === 'oasis') {
+      window.location.href = 'src/assets/Oasis-slide-deck.pdf';
     } else {
       return;
     }
