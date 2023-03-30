@@ -153,29 +153,15 @@ p {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  color: black;
-}
-
-.persona:first-child {
-  background: linear-gradient(
-    90deg,
-    rgba(223, 244, 254, 1) 0%,
-    rgb(168, 207, 226) 100%
-  );
-}
-
-.persona:nth-child(2) {
-  background: linear-gradient(
-    90deg,
-    rgb(255, 217, 211) 0%,
-    rgb(235, 173, 173) 100%
-  );
+  color: var(--text-clr);
+  background: #584561;
 }
 
 .persona-img {
   height: 100px;
   width: 100px;
   grid-area: img;
+  border-radius: 50%;
 }
 
 .info {
@@ -186,12 +172,6 @@ p {
   grid-area: desc;
   font-size: 12px;
   line-height: 1.2rem !important;
-}
-
-.attribution {
-  grid-area: attr;
-  font-size: 12px;
-  color: rgb(0, 0, 0);
 }
 
 .persona-btn {
