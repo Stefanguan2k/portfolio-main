@@ -45,6 +45,7 @@ h2 {
 
 h3 {
   font-size: 24px;
+  margin: 0 0 2rem 0;
 }
 
 .section-head {
@@ -58,6 +59,20 @@ p {
 
 .detail-wrapper p {
   line-height: 1.4rem;
+}
+
+.action-parent {
+  padding: 0 1rem;
+  margin-top: 1rem;
+}
+
+.pdf-btn,
+.pdf-btn:hover {
+  border-color: #541BC7;
+}
+
+.pdf-btn:hover {
+  background-color: #541BC7;
 }
 
 /* Images */
@@ -77,6 +92,7 @@ p {
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
   -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
   -moz-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
+  margin-bottom: 2rem;
 }
 
 .img-wrapper-middle {
@@ -90,19 +106,6 @@ p {
 
 /* User Testing */
 
-.insight-icon {
-  background: linear-gradient(
-    90deg,
-    rgb(238, 130, 130) 0%,
-    rgb(248, 176, 176) 100%
-  );
-}
-
-.card-title {
-  font-weight: bold;
-  font-size: 18px;
-  margin: 1rem 0 0 0;
-}
 
 .alt-gradient {
   background: linear-gradient(
