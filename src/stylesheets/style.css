@@ -244,10 +244,6 @@ button {
   color: grey;
 }
 
-.grey-bg {
-  background: var(--alt-section-clr);
-}
-
 .card-title {
   font-weight: bold;
   font-size: 18px;
@@ -287,14 +283,14 @@ button {
 .insight-icon {
   width: 100px;
   height: 100px;
-
+  background: var(--insight-icon-clr);
   border-radius: 100%;
   display: grid;
   place-items: center;
 }
 
 .insight-pain {
-  background: #CF6679;
+  background: #cf6679;
 }
 
 .insight-icon > svg {

@@ -26,6 +26,10 @@ section:not(:first-child) {
   padding: 2rem 1rem;
 }
 
+section:nth-child(even) {
+  background: var(--alt-section-clr);
+}
+
 .description {
   position: absolute;
   bottom: 0;

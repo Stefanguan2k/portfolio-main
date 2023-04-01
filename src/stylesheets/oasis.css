@@ -27,6 +27,10 @@ section:not(:first-child) {
   padding: 2rem 1rem;
 }
 
+section:nth-child(even) {
+  background: var(--alt-section-clr);
+}
+
 .description {
   position: absolute;
   bottom: 0;
@@ -67,12 +71,17 @@ p {
 }
 
 .pdf-btn,
-.pdf-btn:hover {
-  border-color: #541BC7;
+.pdf-btn:hover,
+.xd-btn,
+.xd-btn:hover {
+  border-color: #9882c5;
 }
 
-.pdf-btn:hover {
-  background-color: #541BC7;
+.pdf-btn:hover,
+.xd-btn:hover {
+  background-color: #9882c5;
+  color: black;
+  fill: black;
 }
 
 /* Images */
@@ -80,14 +89,15 @@ p {
 .concept-img {
   max-width: 800px;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .img-wrapper {
+  display: grid;
   padding: 1rem;
   border: solid var(--card-border-clr) 1px;
   border-radius: 1rem;
-  /* overflow: hidden; */
+  overflow: hidden;
   background: var(--card-bg);
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
   -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
@@ -106,13 +116,8 @@ p {
 
 /* User Testing */
 
-
-.alt-gradient {
-  background: linear-gradient(
-    90deg,
-    rgb(123, 204, 110) 0%,
-    rgb(163, 231, 188) 100%
-  );
+.insight-icon {
+  --insight-icon-clr: #9882c5;
 }
 
 /* Persona Carousel */
@@ -328,19 +333,13 @@ p {
   gap: 2rem;
 }
 
-.web-btn {
-  border: solid #ece1c6 4px;
-}
-
-.web-btn:hover {
-  background: #ece1c6;
-  color: black;
-  fill: black;
-}
-
 /* Conclusion */
 .conclusion {
   margin-bottom: 5rem;
+}
+
+.p-0 {
+  padding: 0;
 }
 
 /* Desktop View */

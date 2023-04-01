@@ -28,6 +28,10 @@ section:not(:first-child) {
   padding: 2rem 1rem;
 }
 
+section:nth-child(even) {
+  background: var(--alt-section-clr);
+}
+
 .action-parent {
   padding: 0 1rem;
   margin-top: 1rem;
@@ -245,11 +249,7 @@ p {
 /* User Testing */
 
 .insight-icon {
-  background: linear-gradient(
-    90deg,
-    rgba(117, 211, 240, 1) 0%,
-    rgba(176, 231, 248, 1) 100%
-  );
+  --insight-icon-clr: rgb(117, 211, 240);
 }
 
 #dark-btn {

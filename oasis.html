@@ -21,16 +21,6 @@
     <link rel="icon" href="src/SG.ico" />
     <script defer src="/src/scripts/scripts.js"></script>
     <script defer src="/src/scripts/oasis.js"></script>
-    <link
-      rel="preload"
-      as="image"
-      href="/src/assets/img/yopo/yopoMobileMain.webp"
-    />
-    <link
-      rel="preload"
-      as="image"
-      href="/src/assets/img/yopo/yopoDesktopMain.webp"
-    />
   </head>
   <body>
     <div class="container">
@@ -180,7 +170,6 @@
                 minimal amount of stress.
               </p>
             </div>
-            
           </div>
           <div class="action-parent">
             <div class="action-btn-container">
@@ -203,7 +192,7 @@
           </div>
         </section>
 
-        <section class="research grey-bg">
+        <section class="research">
           <h2 class="section-head">Research</h2>
           <div class="detail-wrapper">
             <p class="para-first">
@@ -256,7 +245,7 @@
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 640 512"
-                    style="height: 40px; width: 40px;"
+                    style="height: 40px; width: 40px"
                   >
                     <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                     <path
@@ -376,69 +365,204 @@
                 class="concept-img"
                 loading="lazy"
             /></a>
+            <h3>Digital Wireframes</h3>
+            <p class="para-first">
+              After satisfactory paper wireframes, I converted the designs into
+              digital wireframes using Adobe XD. Thus, the digital wireframes
+              enabled the ability to gether more feedback.
+            </p>
             <a
-              href="/src/assets/img/yopo/yopoDesktopFigma.webp"
-              class="img-wrapper img-wrapper-middle"
+              href="/src/assets/img/oasis/digital-wireframe.webp"
+              class="img-wrapper"
               ><img
-                src="/src/assets/img/yopo/yopoDesktopFigma.webp"
-                alt="Rough sketch of the app design"
+                src="/src/assets/img/oasis/digital-wireframe.webp"
+                alt="Digital wireframe of the desktop oasis website"
+                class="concept-img"
+                loading="lazy"
+            /></a>
+            <a
+              href="/src/assets/img/oasis/mobile-digital-wireframe.webp"
+              class="img-wrapper"
+              ><img
+                src="/src/assets/img/oasis/mobile-digital-wireframeswebp.webp"
+                alt="Digital wireframe of the mobile oasis website"
                 class="concept-img"
                 loading="lazy"
             /></a>
           </div>
         </section>
 
-        <section class="user-testing grey-bg">
+        <section class="user-testing">
           <h2 class="section-head">User Testing</h2>
           <div class="detail-wrapper">
             <p class="para-first">
-              I gave the prototype to the owner and some of their patrons to
-              test out the new design. They generally liked the visual refresh
-              but found some minor issues. For example, the mobile navigation
-              menu elements were placed too high and the map was too small on
-              the desktop view. Provided with the feedback, I created
-              high-fidelity prototypes both mobile and desktop.
+              After connecting the wireframes into a low-fidelity prototype, I
+              set out to test it with a usability study. The parameters of the
+              study include: (1) An unmoderated usability study, (2) remote
+              study in Canada, (3) five particiapnts, and (4) a duration of
+              20-40 minutes. The data from the usability study gave three
+              important insights.
             </p>
-            <!-- <h2>Insights</h2>
-            <p>
-              These insights were swiftly implemented into the next wireframe
-              revision.
-            </p> -->
-            <a href="/src/assets/img/yopo/hifiMobile.webp" class="img-wrapper"
-              ><img
-                src="/src/assets/img/yopo/hifiMobile.webp"
-                alt="Second wireframe with considerations to the insights"
-                loading="lazy"
-                class="concept-img"
-            /></a>
+            <h3>Insights</h3>
+            <div class="insight-container">
+              <div class="insight">
+                <div class="insight-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V192c0-35.3-28.7-64-64-64H80c-8.8 0-16-7.2-16-16s7.2-16 16-16H448c17.7 0 32-14.3 32-32s-14.3-32-32-32H64zM416 272a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
+                    />
+                  </svg>
+                </div>
+                <div class="card-title">Saved Cards</div>
+                <p>
+                  Users want to be able to select their previously saved cards
+                  for booking.
+                </p>
+              </div>
+              <div class="insight">
+                <div class="insight-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path
+                      d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                    />
+                  </svg>
+                </div>
+                <div class="card-title">Navigation</div>
+                <p>
+                  The current navigation bar buttons do not sufficiently
+                  describe where they lead to.
+                </p>
+              </div>
+              <div class="insight">
+                <div class="insight-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      d="M448 256c0-106-86-192-192-192V448c106 0 192-86 192-192zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"
+                    />
+                  </svg>
+                </div>
+                <div class="card-title">Contrast</div>
+                <p>
+                  Elements there were toggleable lacked contrast. Some users
+                  reported not konwing whether an option was on or off.
+                </p>
+              </div>
+            </div>
+            <p class="para-first">
+              The insights were consequently implemented into the next iteration
+              of the designs—the mockups.
+            </p>
+
             <a
-              href="/src/assets/img/yopo/hifiDesktop.webp"
-              class="img-wrapper img-wrapper-middle"
+              href="/src/assets/img/oasis/before-and-after.webp"
+              class="img-wrapper"
               ><img
-                src="/src/assets/img/yopo/hifiDesktop.webp"
-                alt="Second wireframe with considerations to the insights"
+                src="/src/assets/img/oasis/before-and-after.webp"
+                alt="Comparison between digital wireframe and mockup with the improvements regarding the insights"
                 loading="lazy"
                 class="concept-img"
             /></a>
+            <a href="/src/assets/img/oasis/mockups.png" class="img-wrapper"
+              ><img
+                src="/src/assets/img/oasis/mockups.png"
+                alt="Comparison between digital wireframe and mockup with the improvements regarding the insights"
+                loading="lazy"
+                class="concept-img"
+            /></a>
+            <h3>Accessibility Considerations</h3>
+            <div class="insight-container">
+              <div class="insight">
+                <div class="insight-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                    <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M208 80c0-26.5 21.5-48 48-48h64c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48h-8v40H464c30.9 0 56 25.1 56 56v32h8c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H464c-26.5 0-48-21.5-48-48V368c0-26.5 21.5-48 48-48h8V288c0-4.4-3.6-8-8-8H312v40h8c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H256c-26.5 0-48-21.5-48-48V368c0-26.5 21.5-48 48-48h8V280H112c-4.4 0-8 3.6-8 8v32h8c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V368c0-26.5 21.5-48 48-48h8V288c0-30.9 25.1-56 56-56H264V192h-8c-26.5 0-48-21.5-48-48V80z"
+                    />
+                  </svg>
+                </div>
+                <div class="card-title">Hierarchy</div>
+                <p>
+                  Clear and consistent heading styles inform visual hierarchy of
+                  each page.
+                </p>
+              </div>
+              <div class="insight">
+                <div class="insight-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M0 96C0 60.7 28.7 32 64 32H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM323.8 202.5c-4.5-6.6-11.9-10.5-19.8-10.5s-15.4 3.9-19.8 10.5l-87 127.6L170.7 297c-4.6-5.7-11.5-9-18.7-9s-14.2 3.3-18.7 9l-64 80c-5.8 7.2-6.9 17.1-2.9 25.4s12.4 13.6 21.6 13.6h96 32H424c8.9 0 17.1-4.9 21.2-12.8s3.6-17.4-1.4-24.7l-120-176zM112 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"
+                    />
+                  </svg>
+                </div>
+                <div class="card-title">Alt Text</div>
+                <p>
+                  As images are heavily featured due to the nature of the
+                  website, each image contains alt text to help screen readers
+                  describe the content of the image.
+                </p>
+              </div>
+              <div class="insight">
+                <div class="insight-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      d="M448 256c0-106-86-192-192-192V448c106 0 192-86 192-192zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"
+                    />
+                  </svg>
+                </div>
+                <div class="card-title">Contrast</div>
+                <p>
+                  Important elements have high contrast, making it stand out
+                  from the background (e.g., buttons, toggles).
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
         <section class="final-design">
           <h2 class="section-head">Final Design</h2>
           <div class="detail-wrapper">
-            <img src="" alt="" />
+            <a
+              href="/src/assets/img/oasis/oasis-final.webp"
+              class="img-wrapper p-0"
+            >
+              <img
+                class="concept-img"
+                src="/src/assets/img/oasis/oasis-final.webp"
+                alt="Mockup of the oasis website"
+              />
+            </a>
             <div class="action-btn-container">
-              <a class="web-btn action-btn" href="https://www.sweetmandarin.ca">
-                Click to view live website
+              <a
+                class="xd-btn action-btn"
+                href="https://xd.adobe.com/view/99a46e1a-a8af-487b-a735-d5923365ea9f-ccf7/?fullscreen"
+              >
+                Hi-Fi Prototype
                 <svg
+                  viewBox="0 34.656 240 166.12"
+                  width="240"
+                  height="166.12"
+                  style="enable-background: new 0 0 240 234"
                   xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                  style="height: 20px; width: 20px"
                 >
-                  <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
-                    d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
-                  />
+                  <g
+                    id="Layer_2_1_"
+                    transform="matrix(1.398805, 0, 0, 1.398805, -47.899097, -35.671978)"
+                  >
+                    <g id="Outlined_Mnemonics_Logos">
+                      <g id="Xd">
+                        <path
+                          class="st1"
+                          d="M126.2,61.5L96.2,111l32,52.5c0.2,0.4,0.3,0.8,0.2,1.2c-0.1,0.4-0.5,0.1-1.1,0.2h-22.9 c-1.6,0-2.7-0.1-3.4-1.1c-2.1-4.2-4.3-8.3-6.4-12.5c-2.1-4.1-4.4-8.3-6.8-12.6c-2.4-4.3-4.8-8.6-7.2-13h-0.2 c-2.1,4.3-4.4,8.6-6.7,12.9c-2.3,4.3-4.6,8.6-6.8,12.8c-2.3,4.2-4.6,8.5-6.9,12.6c-0.4,1-1.2,1.1-2.3,1.1H35.7 c-0.4,0-0.7,0.2-0.7-0.3c-0.1-0.4,0-0.8,0.2-1.1l31.1-51L36,61.4c-0.3-0.4-0.4-0.8-0.2-1c0.2-0.3,0.6-0.4,1-0.4h22.7 c0.5,0,1,0.1,1.4,0.2c0.4,0.2,0.7,0.5,1,0.9c1.9,4.3,4.1,8.6,6.4,12.9c2.4,4.3,4.7,8.5,7.2,12.7c2.4,4.2,4.6,8.4,6.7,12.7h0.2 c2.1-4.4,4.3-8.7,6.5-12.9c2.2-4.2,4.5-8.4,6.8-12.6c2.3-4.2,4.5-8.5,6.7-12.6c0.1-0.4,0.3-0.8,0.6-1c0.4-0.2,0.8-0.3,1.3-0.2 h21.1c0.5-0.1,1,0.2,1.1,0.7C126.6,60.9,126.4,61.3,126.2,61.5L126.2,61.5z"
+                        />
+                        <path
+                          class="st1"
+                          d="M172.4,167c-7.4,0.1-14.8-1.4-21.5-4.5c-6.3-2.9-11.5-7.7-15.1-13.6c-3.7-6.1-5.5-13.7-5.5-22.8 c-0.1-7.4,1.8-14.7,5.5-21.1c3.8-6.5,9.3-11.9,15.9-15.5c7-3.9,15.4-5.8,25.3-5.8c0.5,0,1.2,0,2.1,0.1c0.9,0.1,1.9,0.1,3.1,0.2 V52.4c0-0.7,0.3-1.1,1-1.1h20.3c0.5-0.1,0.9,0.3,1,0.7c0,0.1,0,0.2,0,0.2v95.2c0,1.8,0.1,3.8,0.2,6c0.2,2.1,0.3,4.1,0.4,5.8 c0,0.7-0.3,1.3-1,1.6c-5.2,2.2-10.7,3.8-16.3,4.8C182.7,166.5,177.6,167,172.4,167z M182.2,147v-44c-0.9-0.2-1.8-0.4-2.7-0.5 c-1.1-0.1-2.2-0.2-3.3-0.2c-3.9,0-7.8,0.8-11.3,2.6c-3.4,1.7-6.3,4.2-8.5,7.4c-2.2,3.2-3.3,7.5-3.3,12.7c-0.1,3.5,0.5,7,1.7,10.3 c1,2.7,2.5,5.1,4.5,7.1c1.9,1.8,4.2,3.2,6.8,4c2.7,0.9,5.5,1.3,8.3,1.3c1.5,0,2.9-0.1,4.2-0.2C179.9,147.6,181,147.4,182.2,147z"
+                        />
+                      </g>
+                    </g>
+                  </g>
                 </svg>
               </a>
             </div>
@@ -449,12 +573,16 @@
           <h2 class="section-head">Concluding Thoughts</h2>
           <div class="detail-wrapper">
             <p class="para-first">
-              I initally offered to overhaul the website as I noticed the user
-              experience was sub-optimal. I leveraged my Google UX Design Course
-              knowledge to conduct user research and see how I could improve the
-              website. Through iterative design and data-driven decisions, I was
-              able to develop and deploy a static website befitting of the
-              restaurant.
+              The Oasis project has been an extremely rewarding experience. I
+              had the opportunity to learn the ropes of Adobe XD and apply the
+              design process at the same time. I also got to delve into the
+              realm of responsive web design, which is crucial in today's
+              landscape. <br /><br />
+              Overall, I could not implement all of the features I wanted to due
+              to the lack of time. However, those ideas may be realized in
+              future designs.<br /><br />
+              Thank you for taking time out of your day to check my case study
+              on Oasis 😊.
             </p>
           </div>
         </section>
