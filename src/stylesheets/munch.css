@@ -28,6 +28,10 @@ section:not(:first-child) {
   padding: 2rem 1rem;
 }
 
+section:nth-child(even) {
+  background: var(--alt-section-clr);
+}
+
 .action-parent {
   padding: 0 1rem;
   margin-top: 1rem;
@@ -55,8 +59,12 @@ section:not(:first-child) {
 }
 
 h2 {
-  font-size: 18px;
-  margin-bottom: 0;
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+  margin: 0 0 2rem 0;
 }
 
 .section-head {
@@ -230,6 +238,7 @@ p {
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
   -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
   -moz-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.75s;
+  margin-bottom: 2rem;
 }
 
 .img-wrapper:hover {
@@ -240,11 +249,7 @@ p {
 /* User Testing */
 
 .insight-icon {
-  background: linear-gradient(
-    90deg,
-    rgba(117, 211, 240, 1) 0%,
-    rgba(176, 231, 248, 1) 100%
-  );
+  --insight-icon-clr: rgb(117, 211, 240);
 }
 
 #dark-btn {
