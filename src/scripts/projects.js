@@ -8,6 +8,30 @@ const numerator = document.querySelector('.numerator');
 const nextBtn = document.querySelector('.next-btn');
 const prevBtn = document.querySelector('.previous-btn');
 
+const projectData = {
+  oasis: {
+    title: 'Oasis',
+    desc: 'A Google UX Responsive Web Project',
+    theme: '#3a2d40',
+    num: '01',
+    location: '/oasis.html',
+  },
+  munch: {
+    title: 'Munch',
+    desc: 'A Google UX Design Certificate Project',
+    theme: 'rgb(70, 80, 84)',
+    num: '02',
+    location: '/munch.html',
+  },
+  yopo: {
+    title: 'Yopo',
+    desc: 'A website overhaul project',
+    theme: '#474743',
+    num: '03',
+    location: '/yopo.html',
+  },
+};
+
 window.onload = () => {
   setTimeout(() => {
     carouselItems.forEach((elem) => elem.classList.remove('disable-anim'));
@@ -48,24 +72,24 @@ const redirect = function (newActive) {
 // Check which card is active and modify respective HTML elements
 const checkActive = function (newActive) {
   if (newActive.getAttribute('data-card') === 'munch') {
-    projTitle.innerHTML = 'Munch';
-    projDesc.innerHTML = 'A Google UX Design Certificate Project';
-    numerator.innerHTML = '01';
-    document.body.style.background = 'rgb(70, 80, 84)';
+    projTitle.innerHTML = projectData.munch.title;
+    projDesc.innerHTML = projectData.munch.desc;
+    numerator.innerHTML = projectData.munch.num;
+    document.body.style.background = projectData.munch.theme;
   }
 
   if (newActive.getAttribute('data-card') === 'oasis') {
-    projTitle.innerHTML = 'Oasis';
-    projDesc.innerHTML = 'A Google UX Responsive Web Project';
-    numerator.innerHTML = '03';
-    document.body.style.background = '#3a2d40';
+    projTitle.innerHTML = projectData.oasis.title;
+    projDesc.innerHTML = projectData.oasis.desc;
+    numerator.innerHTML = projectData.oasis.num;
+    document.body.style.background = projectData.oasis.theme;
   }
 
   if (newActive.getAttribute('data-card') === 'yopo') {
-    projTitle.innerHTML = 'Yopo';
-    projDesc.innerHTML = 'A website overhaul project';
-    numerator.innerHTML = '02';
-    document.body.style.background = '#474743';
+    projTitle.innerHTML = projectData.yopo.title;
+    projDesc.innerHTML = projectData.yopo.desc;
+    numerator.innerHTML = projectData.yopo.num;
+    document.body.style.background = projectData.yopo.theme;
   }
 };
 

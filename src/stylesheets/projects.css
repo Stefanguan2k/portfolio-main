@@ -7,7 +7,8 @@ img {
 }
 
 body {
-  background: rgb(70, 80, 84);
+  background: #3a2d40;
+  /* Initial colour for project card */
   transition: background linear 0.3s;
 }
 
