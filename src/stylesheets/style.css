@@ -1,6 +1,9 @@
 :root {
   font-family: 'Rubik', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
-  /* Variables */
+  box-sizing: border-box;
+  /* ------------- */
+  /* CSS Variables */
+  /* ------------- */
 
   /* Backgrounds */
   --bg-clr: white;
@@ -12,7 +15,6 @@
   --nav-elem-clr: #d0d0d0;
   --nav-height: 50px;
   --nav-bg-height: 350px;
-  /* Original height with dark mode icon = 440px */
   /* Etc */
   --text-clr: #dedede;
   --shadow-clr: rgba(0, 0, 0, 0.3);
@@ -92,9 +94,9 @@ button {
   backdrop-filter: blur(var(--backdrop-blur));
   -webkit-backdrop-filter: blur(var(--backdrop-blur));
   transform: translateY(calc(-1 * (var(--nav-bg-height))));
-  transition: cubic-bezier(1, 0, 0, 1) 0.75s;
-  -webkit-transition: cubic-bezier(1, 0, 0, 1) 0.75s;
-  -moz-transition: cubic-bezier(1, 0, 0, 1) 0.75s;
+  transition: cubic-bezier(0.1, 1, 0.2, 1) 0.6s;
+  -webkit-transition: cubic-bezier(0.1, 1, 0.2, 1) 0.6s;
+  -moz-transition: cubic-bezier(0.1, 1, 0.2, 1) 0.6s;
 }
 
 .nav-bg[data-active='true'] {
@@ -144,12 +146,12 @@ button {
   list-style-type: none;
   z-index: 9999;
   transform: translateY(-30rem);
-  transition: transform cubic-bezier(1, 0, 0, 1) 0.75s,
-    opacity cubic-bezier(1, 0, 0, 1) 0.55s;
-  -webkit-transition: transform cubic-bezier(1, 0, 0, 1) 0.75s,
-    opacity cubic-bezier(1, 0, 0, 1) 0.55s;
-  -moz-transition: transform cubic-bezier(1, 0, 0, 1) 0.75s,
-    opacity cubic-bezier(1, 0, 0, 1) 0.55s;
+  transition: transform cubic-bezier(0.1, 1, 0.2, 1) 0.6s,
+    opacity cubic-bezier(0.1, 1, 0.2, 1) 0.45s;
+  -webkit-transition: transform cubic-bezier(0.1, 1, 0.2, 1) 0.6s,
+    opacity cubic-bezier(0.1, 1, 0.2, 1) 0.45s;
+  -moz-transition: transform cubic-bezier(0.1, 1, 0.2, 1) 0.6s,
+    opacity cubic-bezier(0.1, 1, 0.2, 1) 0.45s;
   opacity: 0;
 }
 

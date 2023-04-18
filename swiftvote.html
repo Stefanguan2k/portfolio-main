@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="rgb(22,22,23)" />
+    <meta
+      name="description"
+      content="An online vacation home booking website case study. ."
+    />
+    <title>Oasis Case Study - Stefan Guan</title>
+    <link rel="stylesheet" href="src/stylesheets/style.css" />
+    <link rel="stylesheet" href="src/stylesheets/oasis.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="src/SG.ico" />
+    <script defer src="/src/scripts/scripts.js"></script>
+    <script defer src="/src/scripts/oasis.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="nav-bg" data-active="false"></div>
+        <div class="navbar-inner">
+          <!-- Icon -->
+          <div class="main-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="124"
+              height="124"
+              viewBox="0 0 124 124"
+              style="height: 30px; width: 30px"
+            >
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill-rule: evenodd;
+                  }
+                </style>
+              </defs>
+              <path
+                id="G"
+                class="cls-1"
+                d="M75.11,90.193h25.1a35.947,35.947,0,0,1-3.08,7.016,20.237,20.237,0,0,1-4.563,5.419q-7.417,6.5-19.051,6.5a27.241,27.241,0,0,1-9.754-1.711,23.288,23.288,0,0,1-7.871-4.906A22.088,22.088,0,0,1,50.64,94.7a27.454,27.454,0,0,1-1.882-10.438,31.2,31.2,0,0,1,2.567-12.834,30.534,30.534,0,0,1,6.9-9.868,30.206,30.206,0,0,1,10.21-6.331A34.973,34.973,0,0,1,80.928,53,26.739,26.739,0,0,1,93.02,55.57a21.236,21.236,0,0,1,7.986,6.56l12.206-10.381a33.3,33.3,0,0,0-12.548-9.754A42.483,42.483,0,0,0,82.639,38.4,51.671,51.671,0,0,0,62.39,42.223a49.238,49.238,0,0,0-15.572,10.21A45.488,45.488,0,0,0,33.243,84.945a41.137,41.137,0,0,0,2.909,15.686A35.66,35.66,0,0,0,56.686,120.88a43.422,43.422,0,0,0,16.028,2.852,47.971,47.971,0,0,0,16.941-2.966,41.849,41.849,0,0,0,23.957-22.245A42.206,42.206,0,0,0,117.433,80.5V77.074H77.392Z"
+              />
+              <path
+                id="S"
+                class="cls-1"
+                d="M54.375,99.848a36.242,36.242,0,0,0,11.841-6.776A30.344,30.344,0,0,0,73.883,82.8a30.927,30.927,0,0,0,2.738-13.074q0-10.54-5.818-16.838A40.05,40.05,0,0,0,55.128,42.9l-5.75-2.053Q42.4,38.247,39.043,35.3a9.489,9.489,0,0,1-3.354-7.461,8.873,8.873,0,0,1,1.232-4.654,10.691,10.691,0,0,1,3.285-3.422,16.752,16.752,0,0,1,4.654-2.122,19.143,19.143,0,0,1,5.339-.753q6.706,0,10.2,3.012a13.311,13.311,0,0,1,4.449,7.392l16.975-6.434a26.562,26.562,0,0,0-2.6-6.913A24.8,24.8,0,0,0,73.814,7.17a28.086,28.086,0,0,0-8.83-5.2A35.907,35.907,0,0,0,52.116-.086,42.05,42.05,0,0,0,38.358,2.1a35.94,35.94,0,0,0-11.02,5.955,27.491,27.491,0,0,0-7.324,9.035,24.938,24.938,0,0,0-2.67,11.431,25.828,25.828,0,0,0,1.643,9.514,24.941,24.941,0,0,0,4.381,7.324,27.9,27.9,0,0,0,6.366,5.407,43.449,43.449,0,0,0,7.6,3.765l4.791,1.916q8.759,3.423,12.321,6.845A11.306,11.306,0,0,1,58,71.784,11.051,11.051,0,0,1,53.075,81.3a20.31,20.31,0,0,1-12.047,3.491,17.181,17.181,0,0,1-7.05-1.369,16.1,16.1,0,0,1-5.271-3.7,16.826,16.826,0,0,1-3.422-5.476A23.4,23.4,0,0,1,23.779,67.4L6.12,74.522a34.866,34.866,0,0,0,4.107,12.184A30.458,30.458,0,0,0,17.619,95.4a30.008,30.008,0,0,0,9.857,5.2,38.781,38.781,0,0,0,11.636,1.712A45.205,45.205,0,0,0,54.375,99.848Z"
+              />
+            </svg>
+          </div>
+          <!-- Hamburger icon -->
+          <button class="hamburger-icon" id="hamburger">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              class="hamburger"
+              style="height: 16px; width: 16px"
+            >
+              <path
+                d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"
+              />
+            </svg>
+          </button>
+          <aside class="desktop-nav">
+            <ul class="nav-list">
+              <li><a href="index.html" class="navlinks">Home</a></li>
+              <li>
+                <a aria-current="page" href="projects.html" class="navlinks"
+                  >Projects</a
+                >
+              </li>
+              <li><a href="aboutme.html" class="navlinks">About Me</a></li>
+              <li><a href="contact.html" class="navlinks">Contact</a></li>
+              <!-- To be implemented -->
+              <!-- <li>
+                <button class="toggle-dark" data-dark="false">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    class="dark-icon"
+                    style="height: 20px; width: 20px"
+                  >
+                    <path
+                      id="dark-mode-icon"
+                      d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"
+                    />
+                  </svg>
+                </button>
+              </li> -->
+            </ul>
+          </aside>
+        </div>
+        <aside class="nav-items" data-active="false">
+          <ul class="nav-list">
+            <li><a href="index.html" class="navlinks">Home</a></li>
+            <li>
+              <a aria-current="page" href="projects.html" class="navlinks"
+                >Projects</a
+              >
+            </li>
+            <li><a href="aboutme.html" class="navlinks">About Me</a></li>
+            <li><a href="contact.html" class="navlinks">Contact</a></li>
+            <!-- To be implemented -->
+            <!-- <li>
+              <button class="toggle-dark">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  class="dark-icon"
+                  style="height: 32px; width: 32px"
+                >
+                  <path
+                    d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"
+                  />
+                </svg>
+              </button>
+            </li> -->
+          </ul>
+        </aside>
+      </nav>
+      <div class="nav-close" data-active="false"></div>
+      <!-- End of Navbar -->
+      <div class="content-container" data-loaded="false">
+        <section class="hero bg">
+          <img
+            src="/src/assets/img/index/oasisBigLogo.svg"
+            alt="Oasis logo"
+            class="title"
+          />
+          <p class="description">
+            A case study for an online home booking website
+          </p>
+        </section>
+
+        <section class="project-details">
+          <h1 class="section-head">Project Details</h1>
+          <div class="detail-wrapper proj-wrapper">
+            <div class="role">
+              <div class="card-title">Role</div>
+              <p>
+                Stefan Guan - UX Designer<br /><br />
+                (User interviews, wireframing, prototyping, usability studies,
+                design iterations, responsive design)
+              </p>
+              <p class="date">Febrary 2023 - March 2023</p>
+            </div>
+            <div class="target">
+              <div class="card-title">Overview</div>
+              <p>
+                Many online booking websites for vacation stays often features
+                complicated interfaces. Consequently, users expressed that they
+                feel stressed when trying to find the perfect stay. The
+                objective of this website is to create a simple and powerful
+                booking platform, focusing on ease-of-use.
+              </p>
+            </div>
+            <div class="goals">
+              <div class="card-title">Users</div>
+              <p>
+                The website design caters to individuals who want to quickly and
+                efficiently book a home for leisure or for business with a
+                minimal amount of stress.
+              </p>
+            </div>
+          </div>
+          <div class="action-parent">
+            <div class="action-btn-container">
+              <a
+                class="action-btn pdf-btn"
+                href="/src/assets/Oasis-slide-deck.pdf"
+              >
+                Slide Deck
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  style="width: 20px; height: 20px"
+                >
+                  <path
+                    d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V304H296 272 184 160c-35.3 0-64 28.7-64 64v80 48 16H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128zM160 352h24c30.9 0 56 25.1 56 56s-25.1 56-56 56h-8v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V448 368c0-8.8 7.2-16 16-16zm24 80c13.3 0 24-10.7 24-24s-10.7-24-24-24h-8v48h8zm88-80h24c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H272c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16zm24 128c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16h-8v96h8zm72-112c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H400v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H400v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V432 368z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="research">
+          <h2 class="section-head">Research</h2>
+          <div class="detail-wrapper">
+            <p class="para-first">
+              The project began with a user interview aimed at finding any
+              roadblocks users have with their online booking experiences. I
+              conslidated the findings into three different user pain points.
+            </p>
+            <h3>User Pain Points</h3>
+            <div class="insight-container">
+              <div class="insight">
+                <div class="insight-icon insight-pain">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 384 512"
+                    style="height: 40px; width: 40px"
+                  >
+                    <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M190.4 74.1c5.6-16.8-3.5-34.9-20.2-40.5s-34.9 3.5-40.5 20.2l-128 384c-5.6 16.8 3.5 34.9 20.2 40.5s34.9-3.5 40.5-20.2l128-384zm70.9-41.7c-17.4-2.9-33.9 8.9-36.8 26.3l-64 384c-2.9 17.4 8.9 33.9 26.3 36.8s33.9-8.9 36.8-26.3l64-384c2.9-17.4-8.9-33.9-26.3-36.8zM352 32c-17.7 0-32 14.3-32 32V448c0 17.7 14.3 32 32 32s32-14.3 32-32V64c0-17.7-14.3-32-32-32z"
+                    />
+                  </svg>
+                </div>
+                <div class="card-title">Clutter</div>
+                <p>
+                  The user interface of some sites often have a lot going on,
+                  making it difficult to grasp the important details.
+                </p>
+              </div>
+              <div class="insight">
+                <div class="insight-icon insight-pain">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    style="height: 40px; width: 40px"
+                  >
+                    <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M423.9 255.8L411 413.1c-3.3 40.7-63.9 35.1-60.6-4.9l10-122.5-41.1 2.3c10.1 20.7 15.8 43.9 15.8 68.5 0 41.2-16.1 78.7-42.3 106.5l-39.3-39.3c57.9-63.7 13.1-167.2-74-167.2-25.9 0-49.5 9.9-67.2 26L73 243.2c22-20.7 50.1-35.1 81.4-40.2l75.3-85.7-42.6-24.8-51.6 46c-30 26.8-70.6-18.5-40.5-45.4l68-60.7c9.8-8.8 24.1-10.2 35.5-3.6 0 0 139.3 80.9 139.5 81.1 16.2 10.1 20.7 36 6.1 52.6L285.7 229l106.1-5.9c18.5-1.1 33.6 14.4 32.1 32.7zm-64.9-154c28.1 0 50.9-22.8 50.9-50.9C409.9 22.8 387.1 0 359 0c-28.1 0-50.9 22.8-50.9 50.9 0 28.1 22.8 50.9 50.9 50.9zM179.6 456.5c-80.6 0-127.4-90.6-82.7-156.1l-39.7-39.7C36.4 287 24 320.3 24 356.4c0 130.7 150.7 201.4 251.4 122.5l-39.7-39.7c-16 10.9-35.3 17.3-56.1 17.3z"
+                    />
+                  </svg>
+                </div>
+                <div class="card-title">Accessibility Options</div>
+                <p>
+                  The accessibility filters (e.g., no-stair entrances) are
+                  sometimes hidden away and only accessible after searching.
+                </p>
+              </div>
+              <div class="insight">
+                <div class="insight-icon insight-pain">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 512"
+                    style="height: 40px; width: 40px"
+                  >
+                    <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M72 88a56 56 0 1 1 112 0A56 56 0 1 1 72 88zM64 245.7C54 256.9 48 271.8 48 288s6 31.1 16 42.3V245.7zm144.4-49.3C178.7 222.7 160 261.2 160 304c0 34.3 12 65.8 32 90.5V416c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V389.2C26.2 371.2 0 332.7 0 288c0-61.9 50.1-112 112-112h32c24 0 46.2 7.5 64.4 20.3zM448 416V394.5c20-24.7 32-56.2 32-90.5c0-42.8-18.7-81.3-48.4-107.7C449.8 183.5 472 176 496 176h32c61.9 0 112 50.1 112 112c0 44.7-26.2 83.2-64 101.2V416c0 17.7-14.3 32-32 32H480c-17.7 0-32-14.3-32-32zm8-328a56 56 0 1 1 112 0A56 56 0 1 1 456 88zM576 245.7v84.7c10-11.3 16-26.1 16-42.3s-6-31.1-16-42.3zM320 32a64 64 0 1 1 0 128 64 64 0 1 1 0-128zM240 304c0 16.2 6 31 16 42.3V261.7c-10 11.3-16 26.1-16 42.3zm144-42.3v84.7c10-11.3 16-26.1 16-42.3s-6-31.1-16-42.3zM448 304c0 44.7-26.2 83.2-64 101.2V448c0 17.7-14.3 32-32 32H288c-17.7 0-32-14.3-32-32V405.2c-37.8-18-64-56.5-64-101.2c0-61.9 50.1-112 112-112h32c61.9 0 112 50.1 112 112z"
+                    />
+                  </svg>
+                </div>
+                <div class="card-title">Organization</div>
+                <p>
+                  Users found it frustrating when they were booking a place with
+                  their co-workers/friends.
+                </p>
+              </div>
+            </div>
+            <h3>Personas</h3>
+            <p class="para-first">
+              With the pain points identified and the user interview results on
+              hand, I created two personas to help better empathize with the
+              users.
+            </p>
+            <div class="persona-carousel">
+              <div class="persona">
+                <img
+                  class="persona-img"
+                  src="/src/assets/avatars/David.webp"
+                  alt=""
+                />
+                <p class="info">
+                  <strong>Name: </strong>David<br />
+                  <strong>Age: </strong>35<br />
+                  <strong>Occupation: </strong>Entrepreneur<br />
+                </p>
+                <p class="desc">
+                  David is an entrepreneur who frequently travels for work. They
+                  are irritated at how complex it is to figure out whether a
+                  location has accessibility considerations. Additionally, they
+                  are overwhelmed by how complicated it is to find a place to
+                  stay.
+                </p>
+              </div>
+
+              <div class="persona">
+                <img
+                  class="persona-img"
+                  src="/src/assets/avatars/Michelle.webp"
+                  alt=""
+                />
+                <p class="info">
+                  <strong>Name: </strong>Michelle<br />
+                  <strong>Age: </strong>24<br />
+                  <strong>Occupation: </strong>Legal Assistant<br />
+                </p>
+                <p class="desc">
+                  Michelle is a full time legal assistant. They work long and
+                  tough hours and would love to efficiently book vacation trips.
+                  They find that booking trips with friends is often
+                  frustrating. They find that there is a lot of back-and-forth
+                  and wasted time trying to decide where to go.
+                </p>
+              </div>
+            </div>
+            <div class="persona-btn">
+              <button class="prev-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                  <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                  <path
+                    d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 278.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+                  />
+                </svg>
+              </button>
+              <div class="card-counter">
+                <div class="card-ct1 current-cnt"></div>
+                <div class="card-ct2"></div>
+              </div>
+              <button class="next-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                  <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                  <path
+                    d="M342.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L274.7 256 105.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="concept">
+          <h2 class="section-head">Concept</h2>
+          <div class="detail-wrapper">
+            <p class="para-first">
+              With consideration of the user needs, I created a sitemap for the
+              website. For instance, the sitemap emphasizes simplicity, an
+              aspect that users found other sites overcomplicating.
+            </p>
+            <h3>Sitemap</h3>
+            <a
+              href="/src/assets/img/oasis/oasis-sitemap.webp"
+              class="img-wrapper"
+              ><img
+                src="/src/assets/img/oasis/oasis-sitemap.webp"
+                alt="The sitemap for the oasis website"
+                class="concept-img"
+                loading="lazy"
+            /></a>
+            <h3>Paper Wireframes</h3>
+            <p class="para-first">
+              With the basic skeleton of the website completed, the next step
+              was to create paper wireframes. This allowed quickly iterate
+              through ideas for how the would look.
+            </p>
+            <a
+              href="/src/assets/img/oasis/oasis-paper-wireframe.webp"
+              class="img-wrapper"
+              ><img
+                src="/src/assets/img/oasis/oasis-paper-wireframe.webp"
+                alt="Paper wireframe of the oasis website"
+                class="concept-img"
+                loading="lazy"
+            /></a>
+            <h3>Digital Wireframes</h3>
+            <p class="para-first">
+              After satisfactory paper wireframes, I converted the designs into
+              digital wireframes using Adobe XD. Thus, the digital wireframes
+              enabled the ability to gether more feedback.
+            </p>
+            <a
+              href="/src/assets/img/oasis/digital-wireframe.webp"
+              class="img-wrapper"
+              ><img
+                src="/src/assets/img/oasis/digital-wireframe.webp"
+                alt="Digital wireframe of the desktop oasis website"
+                class="concept-img"
+                loading="lazy"
+            /></a>
+            <a
+              href="/src/assets/img/oasis/mobile-digital-wireframe.webp"
+              class="img-wrapper"
+              ><img
+                src="/src/assets/img/oasis/mobile-digital-wireframeswebp.webp"
+                alt="Digital wireframe of the mobile oasis website"
+                class="concept-img"
+                loading="lazy"
+            /></a>
+          </div>
+        </section>
+
+        <section class="user-testing">
+          <h2 class="section-head">User Testing</h2>
+          <div class="detail-wrapper">
+            <p class="para-first">
+              After connecting the wireframes into a low-fidelity prototype, I
+              set out to test it with a usability study. The parameters of the
+              study include: (1) An unmoderated usability study, (2) remote
+              study in Canada, (3) five particiapnts, and (4) a duration of
+              20-40 minutes. The data from the usability study gave three
+              important insights.
+            </p>
+            <h3>Insights</h3>
+            <div class="insight-container">
+              <div class="insight">
+                <div class="insight-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V192c0-35.3-28.7-64-64-64H80c-8.8 0-16-7.2-16-16s7.2-16 16-16H448c17.7 0 32-14.3 32-32s-14.3-32-32-32H64zM416 272a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
+                    />
+                  </svg>
+                </div>
+                <div class="card-title">Saved Cards</div>
+                <p>
+                  Users want to be able to select their previously saved cards
+                  for booking.
+                </p>
+              </div>
+              <div class="insight">
+                <div class="insight-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path
+                      d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                    />
+                  </svg>
+                </div>
+                <div class="card-title">Navigation</div>
+                <p>
+                  The current navigation bar buttons do not sufficiently
+                  describe where they lead to.
+                </p>
+              </div>
+              <div class="insight">
+                <div class="insight-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      d="M448 256c0-106-86-192-192-192V448c106 0 192-86 192-192zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"
+                    />
+                  </svg>
+                </div>
+                <div class="card-title">Contrast</div>
+                <p>
+                  Elements there were toggleable lacked contrast. Some users
+                  reported not konwing whether an option was on or off.
+                </p>
+              </div>
+            </div>
+            <p class="para-first">
+              The insights were consequently implemented into the next iteration
+              of the designs—the mockups.
+            </p>
+
+            <a
+              href="/src/assets/img/oasis/before-and-after.webp"
+              class="img-wrapper"
+              ><img
+                src="/src/assets/img/oasis/before-and-after.webp"
+                alt="Comparison between digital wireframe and mockup with the improvements regarding the insights"
+                loading="lazy"
+                class="concept-img"
+            /></a>
+            <a href="/src/assets/img/oasis/mockups.png" class="img-wrapper"
+              ><img
+                src="/src/assets/img/oasis/mockups.png"
+                alt="Comparison between digital wireframe and mockup with the improvements regarding the insights"
+                loading="lazy"
+                class="concept-img"
+            /></a>
+            <h3>Accessibility Considerations</h3>
+            <div class="insight-container">
+              <div class="insight">
+                <div class="insight-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                    <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M208 80c0-26.5 21.5-48 48-48h64c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48h-8v40H464c30.9 0 56 25.1 56 56v32h8c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H464c-26.5 0-48-21.5-48-48V368c0-26.5 21.5-48 48-48h8V288c0-4.4-3.6-8-8-8H312v40h8c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H256c-26.5 0-48-21.5-48-48V368c0-26.5 21.5-48 48-48h8V280H112c-4.4 0-8 3.6-8 8v32h8c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V368c0-26.5 21.5-48 48-48h8V288c0-30.9 25.1-56 56-56H264V192h-8c-26.5 0-48-21.5-48-48V80z"
+                    />
+                  </svg>
+                </div>
+                <div class="card-title">Hierarchy</div>
+                <p>
+                  Clear and consistent heading styles inform visual hierarchy of
+                  each page.
+                </p>
+              </div>
+              <div class="insight">
+                <div class="insight-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M0 96C0 60.7 28.7 32 64 32H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM323.8 202.5c-4.5-6.6-11.9-10.5-19.8-10.5s-15.4 3.9-19.8 10.5l-87 127.6L170.7 297c-4.6-5.7-11.5-9-18.7-9s-14.2 3.3-18.7 9l-64 80c-5.8 7.2-6.9 17.1-2.9 25.4s12.4 13.6 21.6 13.6h96 32H424c8.9 0 17.1-4.9 21.2-12.8s3.6-17.4-1.4-24.7l-120-176zM112 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"
+                    />
+                  </svg>
+                </div>
+                <div class="card-title">Alt Text</div>
+                <p>
+                  As images are heavily featured due to the nature of the
+                  website, each image contains alt text to help screen readers
+                  describe the content of the image.
+                </p>
+              </div>
+              <div class="insight">
+                <div class="insight-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      d="M448 256c0-106-86-192-192-192V448c106 0 192-86 192-192zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"
+                    />
+                  </svg>
+                </div>
+                <div class="card-title">Contrast</div>
+                <p>
+                  Important elements have high contrast, making it stand out
+                  from the background (e.g., buttons, toggles).
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="final-design">
+          <h2 class="section-head">Final Design</h2>
+          <div class="detail-wrapper">
+            <a
+              href="/src/assets/img/oasis/oasis-final.webp"
+              class="img-wrapper p-0"
+            >
+              <img
+                class="concept-img"
+                src="/src/assets/img/oasis/oasis-final.webp"
+                alt="Mockup of the oasis website"
+              />
+            </a>
+            <h3>Style Guide</h3>
+            <a href="/src/assets/img/oasis/oasis-style-guide.webp" class="img-wrapper">
+              <img
+                class="concept-img"
+                src="/src/assets/img/oasis/oasis-style-guide.webp"
+                alt="Oasis style guide"
+              />
+            </a>
+            <div class="action-btn-container">
+              <a
+                class="xd-btn action-btn"
+                href="https://xd.adobe.com/view/99a46e1a-a8af-487b-a735-d5923365ea9f-ccf7/?fullscreen"
+              >
+                Hi-Fi Prototype
+                <svg
+                  viewBox="0 34.656 240 166.12"
+                  width="240"
+                  height="166.12"
+                  style="enable-background: new 0 0 240 234"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    id="Layer_2_1_"
+                    transform="matrix(1.398805, 0, 0, 1.398805, -47.899097, -35.671978)"
+                  >
+                    <g id="Outlined_Mnemonics_Logos">
+                      <g id="Xd">
+                        <path
+                          class="st1"
+                          d="M126.2,61.5L96.2,111l32,52.5c0.2,0.4,0.3,0.8,0.2,1.2c-0.1,0.4-0.5,0.1-1.1,0.2h-22.9 c-1.6,0-2.7-0.1-3.4-1.1c-2.1-4.2-4.3-8.3-6.4-12.5c-2.1-4.1-4.4-8.3-6.8-12.6c-2.4-4.3-4.8-8.6-7.2-13h-0.2 c-2.1,4.3-4.4,8.6-6.7,12.9c-2.3,4.3-4.6,8.6-6.8,12.8c-2.3,4.2-4.6,8.5-6.9,12.6c-0.4,1-1.2,1.1-2.3,1.1H35.7 c-0.4,0-0.7,0.2-0.7-0.3c-0.1-0.4,0-0.8,0.2-1.1l31.1-51L36,61.4c-0.3-0.4-0.4-0.8-0.2-1c0.2-0.3,0.6-0.4,1-0.4h22.7 c0.5,0,1,0.1,1.4,0.2c0.4,0.2,0.7,0.5,1,0.9c1.9,4.3,4.1,8.6,6.4,12.9c2.4,4.3,4.7,8.5,7.2,12.7c2.4,4.2,4.6,8.4,6.7,12.7h0.2 c2.1-4.4,4.3-8.7,6.5-12.9c2.2-4.2,4.5-8.4,6.8-12.6c2.3-4.2,4.5-8.5,6.7-12.6c0.1-0.4,0.3-0.8,0.6-1c0.4-0.2,0.8-0.3,1.3-0.2 h21.1c0.5-0.1,1,0.2,1.1,0.7C126.6,60.9,126.4,61.3,126.2,61.5L126.2,61.5z"
+                        />
+                        <path
+                          class="st1"
+                          d="M172.4,167c-7.4,0.1-14.8-1.4-21.5-4.5c-6.3-2.9-11.5-7.7-15.1-13.6c-3.7-6.1-5.5-13.7-5.5-22.8 c-0.1-7.4,1.8-14.7,5.5-21.1c3.8-6.5,9.3-11.9,15.9-15.5c7-3.9,15.4-5.8,25.3-5.8c0.5,0,1.2,0,2.1,0.1c0.9,0.1,1.9,0.1,3.1,0.2 V52.4c0-0.7,0.3-1.1,1-1.1h20.3c0.5-0.1,0.9,0.3,1,0.7c0,0.1,0,0.2,0,0.2v95.2c0,1.8,0.1,3.8,0.2,6c0.2,2.1,0.3,4.1,0.4,5.8 c0,0.7-0.3,1.3-1,1.6c-5.2,2.2-10.7,3.8-16.3,4.8C182.7,166.5,177.6,167,172.4,167z M182.2,147v-44c-0.9-0.2-1.8-0.4-2.7-0.5 c-1.1-0.1-2.2-0.2-3.3-0.2c-3.9,0-7.8,0.8-11.3,2.6c-3.4,1.7-6.3,4.2-8.5,7.4c-2.2,3.2-3.3,7.5-3.3,12.7c-0.1,3.5,0.5,7,1.7,10.3 c1,2.7,2.5,5.1,4.5,7.1c1.9,1.8,4.2,3.2,6.8,4c2.7,0.9,5.5,1.3,8.3,1.3c1.5,0,2.9-0.1,4.2-0.2C179.9,147.6,181,147.4,182.2,147z"
+                        />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="conclusion">
+          <h2 class="section-head">Concluding Thoughts</h2>
+          <div class="detail-wrapper">
+            <p class="para-first">
+              The Oasis project has been an extremely rewarding experience. I
+              had the opportunity to learn the ropes of Adobe XD and apply the
+              design process at the same time. I also got to delve into the
+              realm of responsive web design, which is crucial in today's
+              landscape. <br /><br />
+              Overall, I could not implement all of the features I wanted to due
+              to the lack of time. However, those ideas may be realized in
+              future designs.<br /><br />
+              Thank you for taking time out of your day to check my case study
+              on Oasis 😊.
+            </p>
+          </div>
+        </section>
+      </div>
+      <!-- Footer -->
+      <footer class="footer-container" data-icon="none">
+        <div class="footer-info">© Stefan Guan 2023</div>
+        <div class="link-container">
+          <a
+            href="https://www.linkedin.com/in/stefan-guan-a72224228/"
+            class="linkedin-btn"
+            aria-label="Linkedin footer button"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              style="height: 32px; width: 32px"
+            >
+              <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://github.com/Stefanguan2k"
+            class="github-btn"
+            aria-label="Github footer button"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              style="height: 32px; width: 32px"
+            >
+              <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM277.3 415.7c-8.4 1.5-11.5-3.7-11.5-8 0-5.4.2-33 .2-55.3 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6-14.1 0-28.4 1.9-41.6 5.6 0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 13.9.2 36.5.2 40.6 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3zm-98.1-61.1c-1.9.4-3.7-.4-3.9-1.7-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7.6 3.9 1.9.3 1.3-1 2.6-3 3zm-9.5-.9c0 1.3-1.5 2.4-3.5 2.4-2.2.2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7.9 3.7 2.4zm-13.7-1.1c-.4 1.3-2.4 1.9-4.1 1.3-1.9-.4-3.2-1.9-2.8-3.2.4-1.3 2.4-1.9 4.1-1.5 2 .6 3.3 2.1 2.8 3.4zm-12.3-5.4c-.9 1.1-2.8.9-4.3-.6-1.5-1.3-1.9-3.2-.9-4.1.9-1.1 2.8-.9 4.3.6 1.3 1.3 1.8 3.3.9 4.1zm-9.1-9.1c-.9.6-2.6 0-3.7-1.5s-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1zm-6.5-9.7c-.9.9-2.4.4-3.5-.6-1.1-1.3-1.3-2.8-.4-3.5.9-.9 2.4-.4 3.5.6 1.1 1.3 1.3 2.8.4 3.5zm-6.7-7.4c-.4.9-1.7 1.1-2.8.4-1.3-.6-1.9-1.7-1.5-2.6.4-.6 1.5-.9 2.8-.4 1.3.7 1.9 1.8 1.5 2.6z"
+              />
+            </svg>
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
