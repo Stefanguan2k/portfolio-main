@@ -9,19 +9,19 @@ const nextBtn = document.querySelector('.next-btn');
 const prevBtn = document.querySelector('.previous-btn');
 
 const projectData = {
+  swiftvote: {
+    title: 'SwiftVote',
+    desc: 'A Google UX App &amp; Responsive Web Project',
+    theme: '#2d403d',
+    num: '01',
+    location: '/swiftvote.html',
+  },
   oasis: {
     title: 'Oasis',
     desc: 'A Google UX Responsive Web Project',
     theme: '#3a2d40',
-    num: '01',
-    location: '/oasis.html',
-  },
-  munch: {
-    title: 'Munch',
-    desc: 'A Google UX Design Certificate Project',
-    theme: 'rgb(70, 80, 84)',
     num: '02',
-    location: '/munch.html',
+    location: '/oasis.html',
   },
   yopo: {
     title: 'Yopo',
@@ -29,6 +29,13 @@ const projectData = {
     theme: '#474743',
     num: '03',
     location: '/yopo.html',
+  },
+  munch: {
+    title: 'Munch',
+    desc: 'A Google UX Design Certificate Project',
+    theme: 'rgb(70, 80, 84)',
+    num: '04',
+    location: '/munch.html',
   },
 };
 
@@ -56,14 +63,18 @@ carouselList.addEventListener('click', function (event) {
 const redirect = function (newActive) {
   if (newActive.getAttribute('data-pos') === '0') {
     if (newActive.getAttribute('data-card') === 'munch') {
-      window.location.href = '/munch.html';
+      window.location.href = projectData.munch.location;
     }
     if (newActive.getAttribute('data-card') === 'yopo') {
-      window.location.href = '/yopo.html';
+      window.location.href = projectData.yopo.location;
     }
     if (newActive.getAttribute('data-card') === 'oasis') {
-      window.location.href = '/oasis.html';
-    } else {
+      window.location.href = projectData.oasis.location;
+    } 
+    if (newActive.getAttribute('data-card') === 'swiftvote') {
+      window.location.href = projectData.swiftvote.location;
+    } 
+    else {
       return;
     }
   }
@@ -90,6 +101,13 @@ const checkActive = function (newActive) {
     projDesc.innerHTML = projectData.yopo.desc;
     numerator.innerHTML = projectData.yopo.num;
     document.body.style.background = projectData.yopo.theme;
+  }
+
+  if (newActive.getAttribute('data-card') === 'swiftvote') {
+    projTitle.innerHTML = projectData.swiftvote.title;
+    projDesc.innerHTML = projectData.swiftvote.desc;
+    numerator.innerHTML = projectData.swiftvote.num;
+    document.body.style.background = projectData.swiftvote.theme;
   }
 };
 

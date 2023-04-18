@@ -7,7 +7,7 @@ img {
 }
 
 body {
-  background: #3a2d40;
+  background: #2d403d;
   /* Initial colour for project card */
   transition: background linear 0.3s;
 }
@@ -149,6 +149,9 @@ body {
 .list-item[data-card='oasis'] {
   background: linear-gradient(45deg, #541bc7, #ab00ff);
 }
+.list-item[data-card='swiftvote'] {
+  background: linear-gradient(45deg, #99e9ba, rgb(230, 255, 242));
+}
 
 .list-item[data-pos='0'] {
   z-index: 5;
@@ -161,6 +164,11 @@ body {
 .list-item[data-pos='-1'] {
   filter: blur(2px);
   transform: translateX(-70%) scale(0.8);
+  z-index: 1;
+}
+.list-item[data-pos='2'] {
+  filter: blur(2px);
+  transform: translateX(140%) scale(0.8);
   z-index: 1;
 }
 
