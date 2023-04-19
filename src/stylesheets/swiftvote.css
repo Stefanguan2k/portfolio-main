@@ -111,7 +111,7 @@ p {
 }
 
 .img-wrapper:hover {
-  box-shadow: 0 0 5px var(--shadow-clr);
+  box-shadow: 0 3px 8px var(--shadow-clr);
   transform: translateY(-2.5px);
 }
 
