@@ -70,7 +70,7 @@
 
 .hero {
   position: relative;
-  height: calc(100vh - var(--nav-height));
+  height: calc(90vh - var(--nav-height));
   min-height: 700px;
   padding: 2rem 2rem 0 2rem;
   display: flex;
@@ -273,6 +273,10 @@
     margin: 0;
     flex-wrap: wrap;
     align-items: flex-start;
+  }
+
+  .competencies {
+    margin-bottom: 10rem;
   }
 
   .works {
