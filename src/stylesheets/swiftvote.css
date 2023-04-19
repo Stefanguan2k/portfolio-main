@@ -75,14 +75,14 @@ p {
 .pdf-btn:hover,
 .xd-btn,
 .xd-btn:hover {
-  border-color: #35CA99;
+  border-color: #308264;
 }
 
 .pdf-btn:hover,
 .xd-btn:hover {
-  background-color: #35CA99;
-  color: black;
-  fill: black;
+  background-color: #308264;
+  color: var(--text-clr);
+  fill: var(--text-clr);
 }
 
 /* Images */
@@ -118,7 +118,7 @@ p {
 /* User Testing */
 
 .insight-icon {
-  --insight-icon-clr: #35CA99;
+  --insight-icon-clr: #308264;
 }
 
 /* Persona Carousel */
