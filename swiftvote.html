@@ -7,11 +7,11 @@
     <meta name="theme-color" content="rgb(22,22,23)" />
     <meta
       name="description"
-      content="An online vacation home booking website case study. ."
+      content="A voting registration platform empowering voters - A Google UX Design Certificate case study."
     />
-    <title>Oasis Case Study - Stefan Guan</title>
+    <title>SwiftVote Case Study - Stefan Guan</title>
     <link rel="stylesheet" href="src/stylesheets/style.css" />
-    <link rel="stylesheet" href="src/stylesheets/oasis.css" />
+    <link rel="stylesheet" href="src/stylesheets/swiftvote.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -102,8 +102,10 @@
       <div class="project-modal" data-active="false">
         <h2 class="modal-title">Projects</h2>
         <div class="proj-btn-wrapper">
-          <a href="swiftvote.html" class="proj-btn">SwiftVote</a>
-          <a href="oasis.html" class="proj-btn" data-active="true">Oasis</a>
+          <a href="swiftvote.html" class="proj-btn" data-active="true"
+            >SwiftVote</a
+          >
+          <a href="oasis.html" class="proj-btn">Oasis</a>
           <a href="yopo.html" class="proj-btn">Yopo</a>
           <a href="munch.html" class="proj-btn">Munch</a>
         </div>
@@ -124,12 +126,12 @@
       <div class="content-container" data-loaded="false">
         <section class="hero bg">
           <img
-            src="/src/assets/img/index/oasisBigLogo.svg"
-            alt="Oasis logo"
+            src="/src/assets/img/swiftvote/swiftvoteBW.svg"
+            alt="Swiftvote logo"
             class="title"
           />
           <p class="description">
-            A case study for an online home booking website
+            A case study for a voting registration experience
           </p>
         </section>
 
@@ -143,24 +145,22 @@
                 (User interviews, wireframing, prototyping, usability studies,
                 design iterations, responsive design)
               </p>
-              <p class="date">Febrary 2023 - March 2023</p>
+              <p class="date">March 2023 - April 2023</p>
             </div>
             <div class="target">
               <div class="card-title">Overview</div>
               <p>
-                Many online booking websites for vacation stays often features
-                complicated interfaces. Consequently, users expressed that they
-                feel stressed when trying to find the perfect stay. The
-                objective of this website is to create a simple and powerful
-                booking platform, focusing on ease-of-use.
+                Users find that registering to vote is not always simple.
+                SwiftVote is a service that empowers individuals to register to
+                vote. The service aims to offer features that make it easy for
+                users to register and stay on top of their registration.
               </p>
             </div>
             <div class="goals">
               <div class="card-title">Users</div>
               <p>
-                The website design caters to individuals who want to quickly and
-                efficiently book a home for leisure or for business with a
-                minimal amount of stress.
+                The service caters towards young and adult voters who find the
+                registration process complicated.
               </p>
             </div>
           </div>
@@ -168,7 +168,7 @@
             <div class="action-btn-container">
               <a
                 class="action-btn pdf-btn"
-                href="/src/assets/Oasis-slide-deck.pdf"
+                href="/src/assets/swiftvote-slide-deck.pdf"
               >
                 Slide Deck
                 <svg
@@ -189,114 +189,48 @@
           <h2 class="section-head">Research</h2>
           <div class="detail-wrapper">
             <p class="para-first">
-              The project began with a user interview aimed at finding any
-              roadblocks users have with their online booking experiences. I
-              conslidated the findings into three different user pain points.
+              The project began with a user interview aimed at determining the
+              roadblocks to voting registration. During the interview, some
+              users revealed that the registration process is complex. I created
+              personas that distilled the frustrations.
             </p>
-            <h3>User Pain Points</h3>
-            <div class="insight-container">
-              <div class="insight">
-                <div class="insight-icon insight-pain">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 384 512"
-                    style="height: 40px; width: 40px"
-                  >
-                    <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                    <path
-                      d="M190.4 74.1c5.6-16.8-3.5-34.9-20.2-40.5s-34.9 3.5-40.5 20.2l-128 384c-5.6 16.8 3.5 34.9 20.2 40.5s34.9-3.5 40.5-20.2l128-384zm70.9-41.7c-17.4-2.9-33.9 8.9-36.8 26.3l-64 384c-2.9 17.4 8.9 33.9 26.3 36.8s33.9-8.9 36.8-26.3l64-384c2.9-17.4-8.9-33.9-26.3-36.8zM352 32c-17.7 0-32 14.3-32 32V448c0 17.7 14.3 32 32 32s32-14.3 32-32V64c0-17.7-14.3-32-32-32z"
-                    />
-                  </svg>
-                </div>
-                <div class="card-title">Clutter</div>
-                <p>
-                  The user interface of some sites often have a lot going on,
-                  making it difficult to grasp the important details.
-                </p>
-              </div>
-              <div class="insight">
-                <div class="insight-icon insight-pain">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512"
-                    style="height: 40px; width: 40px"
-                  >
-                    <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                    <path
-                      d="M423.9 255.8L411 413.1c-3.3 40.7-63.9 35.1-60.6-4.9l10-122.5-41.1 2.3c10.1 20.7 15.8 43.9 15.8 68.5 0 41.2-16.1 78.7-42.3 106.5l-39.3-39.3c57.9-63.7 13.1-167.2-74-167.2-25.9 0-49.5 9.9-67.2 26L73 243.2c22-20.7 50.1-35.1 81.4-40.2l75.3-85.7-42.6-24.8-51.6 46c-30 26.8-70.6-18.5-40.5-45.4l68-60.7c9.8-8.8 24.1-10.2 35.5-3.6 0 0 139.3 80.9 139.5 81.1 16.2 10.1 20.7 36 6.1 52.6L285.7 229l106.1-5.9c18.5-1.1 33.6 14.4 32.1 32.7zm-64.9-154c28.1 0 50.9-22.8 50.9-50.9C409.9 22.8 387.1 0 359 0c-28.1 0-50.9 22.8-50.9 50.9 0 28.1 22.8 50.9 50.9 50.9zM179.6 456.5c-80.6 0-127.4-90.6-82.7-156.1l-39.7-39.7C36.4 287 24 320.3 24 356.4c0 130.7 150.7 201.4 251.4 122.5l-39.7-39.7c-16 10.9-35.3 17.3-56.1 17.3z"
-                    />
-                  </svg>
-                </div>
-                <div class="card-title">Accessibility Options</div>
-                <p>
-                  The accessibility filters (e.g., no-stair entrances) are
-                  sometimes hidden away and only accessible after searching.
-                </p>
-              </div>
-              <div class="insight">
-                <div class="insight-icon insight-pain">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 640 512"
-                    style="height: 40px; width: 40px"
-                  >
-                    <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                    <path
-                      d="M72 88a56 56 0 1 1 112 0A56 56 0 1 1 72 88zM64 245.7C54 256.9 48 271.8 48 288s6 31.1 16 42.3V245.7zm144.4-49.3C178.7 222.7 160 261.2 160 304c0 34.3 12 65.8 32 90.5V416c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V389.2C26.2 371.2 0 332.7 0 288c0-61.9 50.1-112 112-112h32c24 0 46.2 7.5 64.4 20.3zM448 416V394.5c20-24.7 32-56.2 32-90.5c0-42.8-18.7-81.3-48.4-107.7C449.8 183.5 472 176 496 176h32c61.9 0 112 50.1 112 112c0 44.7-26.2 83.2-64 101.2V416c0 17.7-14.3 32-32 32H480c-17.7 0-32-14.3-32-32zm8-328a56 56 0 1 1 112 0A56 56 0 1 1 456 88zM576 245.7v84.7c10-11.3 16-26.1 16-42.3s-6-31.1-16-42.3zM320 32a64 64 0 1 1 0 128 64 64 0 1 1 0-128zM240 304c0 16.2 6 31 16 42.3V261.7c-10 11.3-16 26.1-16 42.3zm144-42.3v84.7c10-11.3 16-26.1 16-42.3s-6-31.1-16-42.3zM448 304c0 44.7-26.2 83.2-64 101.2V448c0 17.7-14.3 32-32 32H288c-17.7 0-32-14.3-32-32V405.2c-37.8-18-64-56.5-64-101.2c0-61.9 50.1-112 112-112h32c61.9 0 112 50.1 112 112z"
-                    />
-                  </svg>
-                </div>
-                <div class="card-title">Organization</div>
-                <p>
-                  Users found it frustrating when they were booking a place with
-                  their co-workers/friends.
-                </p>
-              </div>
-            </div>
-            <h3>Personas</h3>
-            <p class="para-first">
-              With the pain points identified and the user interview results on
-              hand, I created two personas to help better empathize with the
-              users.
-            </p>
+
             <div class="persona-carousel">
               <div class="persona">
                 <img
                   class="persona-img"
-                  src="/src/assets/avatars/David.webp"
-                  alt="Photo of David"
+                  src="/src/assets/avatars/mark.webp"
+                  alt="Photo of Mark"
                 />
                 <p class="info">
-                  <strong>Name: </strong>David<br />
-                  <strong>Age: </strong>35<br />
-                  <strong>Occupation: </strong>Entrepreneur<br />
+                  <strong>Name: </strong>Mark<br />
+                  <strong>Age: </strong>42<br />
+                  <strong>Occupation: </strong>Accountant<br />
                 </p>
                 <p class="desc">
-                  David is an entrepreneur who frequently travels for work. They
-                  are irritated at how complex it is to figure out whether a
-                  location has accessibility considerations. Additionally, they
-                  are overwhelmed by how complicated it is to find a place to
-                  stay.
+                  Mark is a father to two children. They are extremely busy at
+                  work and at home. Mark missed the previous election due to
+                  scheduling conflicts. They also heard that voting offices tend
+                  to have long line-ups that are unpredictable.
                 </p>
               </div>
 
               <div class="persona">
                 <img
                   class="persona-img"
-                  src="/src/assets/avatars/Michelle.webp"
-                  alt="Photo of Michelle"
+                  src="/src/assets/avatars/sam.webp"
+                  alt="Photo of Samantha"
                 />
                 <p class="info">
-                  <strong>Name: </strong>Michelle<br />
-                  <strong>Age: </strong>24<br />
-                  <strong>Occupation: </strong>Legal Assistant<br />
+                  <strong>Name: </strong>Samantha<br />
+                  <strong>Age: </strong>20<br />
+                  <strong>Occupation: </strong>Student<br />
                 </p>
                 <p class="desc">
-                  Michelle is a full time legal assistant. They work long and
-                  tough hours and would love to efficiently book vacation trips.
-                  They find that booking trips with friends is often
-                  frustrating. They find that there is a lot of back-and-forth
-                  and wasted time trying to decide where to go.
+                  Samantha is a very punctual student that takes extra time to
+                  ensure their events are well-timed. As a student, Samantha
+                  spends a lot of time studying and thus, does not know much
+                  about upcoming elections or its participants.
                 </p>
               </div>
             </div>
@@ -322,63 +256,56 @@
                 </svg>
               </button>
             </div>
+            <h3 class="mt-2">Ideation</h3>
+            <p class="para-first">
+              After creating the user personas, I did the Crazy-8's exercise. I
+              divided a page into eighths and sketched up solutions to the
+              personas' pain points. The areas I focused on were,
+              notifications/reminders, accessibility, and voting information.
+            </p>
+            <a
+              href="/src/assets/img/swiftvote/sv-crazy-eights.webp"
+              class="img-wrapper"
+            >
+              <img
+                src="/src/assets/img/swiftvote/sv-crazy-eights.webp"
+                alt="crazy eight sketches of solutions to user pain points"
+                class="concept-img"
+                loading="lazy"
+              />
+            </a>
           </div>
         </section>
 
         <section class="concept">
-          <h2 class="section-head">Concept</h2>
+          <h2 class="section-head">Starting the Design</h2>
           <div class="detail-wrapper">
             <p class="para-first">
-              With consideration of the user needs, I created a sitemap for the
-              website. For instance, the sitemap emphasizes simplicity, an
-              aspect that users found other sites overcomplicating.
+              After the ideation pase and sketching of paper wireframes, I
+              created digital wireframes. These wireframes serve the purpose of
+              resolving issues that users had with other implementations.
             </p>
-            <h3>Sitemap</h3>
             <a
-              href="/src/assets/img/oasis/oasis-sitemap.webp"
+              href="/src/assets/img/swiftvote/sv-digital-wireframe.webp"
               class="img-wrapper"
               ><img
-                src="/src/assets/img/oasis/oasis-sitemap.webp"
-                alt="The sitemap for the oasis website"
+                src="/src/assets/img/swiftvote/sv-digital-wireframe.webp"
+                alt="A digital wireframe for the swiftvote app"
                 class="concept-img"
                 loading="lazy"
             /></a>
-            <h3>Paper Wireframes</h3>
+            <h3>Low-Fidelity Prototype</h3>
             <p class="para-first">
-              With the basic skeleton of the website completed, the next step
-              was to create paper wireframes. This allowed quickly iterate
-              through ideas for how the would look.
+              After creating the screens for the main user flow, I linked them
+              up to create an interactive prototype. The prototype enabled
+              testing via usability studies.
             </p>
             <a
-              href="/src/assets/img/oasis/oasis-paper-wireframe.webp"
+              href="/src/assets/img/swiftvote/sv-lofi-proto.webp"
               class="img-wrapper"
               ><img
-                src="/src/assets/img/oasis/oasis-paper-wireframe.webp"
-                alt="Paper wireframe of the oasis website"
-                class="concept-img"
-                loading="lazy"
-            /></a>
-            <h3>Digital Wireframes</h3>
-            <p class="para-first">
-              After satisfactory paper wireframes, I converted the designs into
-              digital wireframes using Adobe XD. Thus, the digital wireframes
-              enabled the ability to gether more feedback.
-            </p>
-            <a
-              href="/src/assets/img/oasis/digital-wireframe.webp"
-              class="img-wrapper"
-              ><img
-                src="/src/assets/img/oasis/digital-wireframe.webp"
-                alt="Digital wireframe of the desktop oasis website"
-                class="concept-img"
-                loading="lazy"
-            /></a>
-            <a
-              href="/src/assets/img/oasis/mobile-digital-wireframe.webp"
-              class="img-wrapper"
-              ><img
-                src="/src/assets/img/oasis/mobile-digital-wireframeswebp.webp"
-                alt="Digital wireframe of the mobile oasis website"
+                src="/src/assets/img/swiftvote/sv-lofi-proto.webp"
+                alt="Low-fidelity prototype of the swiftvote app"
                 class="concept-img"
                 loading="lazy"
             /></a>
@@ -392,73 +319,100 @@
               After connecting the wireframes into a low-fidelity prototype, I
               set out to test it with a usability study. The parameters of the
               study include: (1) An unmoderated usability study, (2) remote
-              study in Canada, (3) five particiapnts, and (4) a duration of
-              20-40 minutes. The data from the usability study gave three
-              important insights.
+              study in Canada, (3) six particiapnts, and (4) a duration of 40
+              minutes. The data from the usability study gave three important
+              insights.
             </p>
             <h3>Insights</h3>
             <div class="insight-container">
               <div class="insight">
                 <div class="insight-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                     <path
-                      d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V192c0-35.3-28.7-64-64-64H80c-8.8 0-16-7.2-16-16s7.2-16 16-16H448c17.7 0 32-14.3 32-32s-14.3-32-32-32H64zM416 272a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
+                      fill="white"
+                      d="M448 160H320V128H448v32zM48 64C21.5 64 0 85.5 0 112v64c0 26.5 21.5 48 48 48H464c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zM448 352v32H192V352H448zM48 288c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48H464c26.5 0 48-21.5 48-48V336c0-26.5-21.5-48-48-48H48z"
                     />
                   </svg>
                 </div>
-                <div class="card-title">Saved Cards</div>
+                <div class="card-title">Confusing Tracker</div>
                 <p>
-                  Users want to be able to select their previously saved cards
-                  for booking.
+                  Users found the progress tracker confusing. They also found
+                  the accessibility button a bit confusing as it is similar to
+                  the progress tracker
                 </p>
               </div>
               <div class="insight">
                 <div class="insight-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                    <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                     <path
-                      d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                      fill="white"
+                      d="M64 64C28.7 64 0 92.7 0 128v64c0 8.8 7.4 15.7 15.7 18.6C34.5 217.1 48 235 48 256s-13.5 38.9-32.3 45.4C7.4 304.3 0 311.2 0 320v64c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V320c0-8.8-7.4-15.7-15.7-18.6C541.5 294.9 528 277 528 256s13.5-38.9 32.3-45.4c8.3-2.9 15.7-9.8 15.7-18.6V128c0-35.3-28.7-64-64-64H64zm64 112l0 160c0 8.8 7.2 16 16 16H432c8.8 0 16-7.2 16-16V176c0-8.8-7.2-16-16-16H144c-8.8 0-16 7.2-16 16zM96 160c0-17.7 14.3-32 32-32H448c17.7 0 32 14.3 32 32V352c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32V160z"
                     />
                   </svg>
                 </div>
-                <div class="card-title">Navigation</div>
+                <div class="card-title">Support</div>
                 <p>
-                  The current navigation bar buttons do not sufficiently
-                  describe where they lead to.
+                  The users wanted a way to contact support during registration
+                  in case they have questions or concerns.
                 </p>
               </div>
               <div class="insight">
                 <div class="insight-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                    <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                     <path
-                      d="M448 256c0-106-86-192-192-192V448c106 0 192-86 192-192zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"
+                      fill="white"
+                      d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V256.9L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6h29.7c33.7 0 64.9 17.7 82.3 46.6l58.3 97c9.1 15.1 4.2 34.8-10.9 43.9s-34.8 4.2-43.9-10.9L232 256.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V352H152z"
                     />
                   </svg>
                 </div>
-                <div class="card-title">Contrast</div>
+                <div class="card-title">Election Candidates</div>
                 <p>
-                  Elements there were toggleable lacked contrast. Some users
-                  reported not konwing whether an option was on or off.
+                  Users needed a way to quickly research about candidates that
+                  are participating in a specific election to better inform
+                  their decisions.
                 </p>
               </div>
             </div>
             <p class="para-first">
-              The insights were consequently implemented into the next iteration
-              of the designs—the mockups.
+              After gaining insights, I implemented the changes into the
+              mockups.
             </p>
 
             <a
-              href="/src/assets/img/oasis/before-and-after.webp"
+              href="/src/assets/img/swiftvote/sv-before-after.webp"
               class="img-wrapper"
               ><img
-                src="/src/assets/img/oasis/before-and-after.webp"
+                src="/src/assets/img/swiftvote/sv-before-after.webp"
                 alt="Comparison between digital wireframe and mockup with the improvements regarding the insights"
                 loading="lazy"
                 class="concept-img"
             /></a>
-            <a href="/src/assets/img/oasis/mockups.png" class="img-wrapper"
+            <a
+              href="/src/assets/img/swiftvote/sv-mockups.webp"
+              class="img-wrapper"
               ><img
-                src="/src/assets/img/oasis/mockups.png"
-                alt="Oasis app mockups"
+                src="/src/assets/img/swiftvote/sv-mockups.webp"
+                alt="Mockups of five different screens of the app"
+                loading="lazy"
+                class="concept-img"
+            /></a>
+            <h3>High-Fidelity Prototype</h3>
+            <p class="para-first">
+              After creating each screen of the mockups, I created a
+              high-fidelity prototype. This iteration contains a similar user
+              flow when compared to the low-fidelity prototype. However, this
+              prototype features changes that were prompted by the usability
+              study.
+            </p>
+            <a
+              href="/src/assets/img/swiftvote/sv-hifi-proto.webp"
+              class="img-wrapper"
+              ><img
+                src="/src/assets/img/swiftvote/sv-hifi-proto.webp"
+                alt="High-fidelity prototype of the swiftvote app"
                 loading="lazy"
                 class="concept-img"
             /></a>
@@ -469,6 +423,7 @@
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                     <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                     <path
+                      fill="white"
                       d="M208 80c0-26.5 21.5-48 48-48h64c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48h-8v40H464c30.9 0 56 25.1 56 56v32h8c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H464c-26.5 0-48-21.5-48-48V368c0-26.5 21.5-48 48-48h8V288c0-4.4-3.6-8-8-8H312v40h8c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H256c-26.5 0-48-21.5-48-48V368c0-26.5 21.5-48 48-48h8V280H112c-4.4 0-8 3.6-8 8v32h8c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V368c0-26.5 21.5-48 48-48h8V288c0-30.9 25.1-56 56-56H264V192h-8c-26.5 0-48-21.5-48-48V80z"
                     />
                   </svg>
@@ -482,23 +437,8 @@
               <div class="insight">
                 <div class="insight-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                     <path
-                      d="M0 96C0 60.7 28.7 32 64 32H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM323.8 202.5c-4.5-6.6-11.9-10.5-19.8-10.5s-15.4 3.9-19.8 10.5l-87 127.6L170.7 297c-4.6-5.7-11.5-9-18.7-9s-14.2 3.3-18.7 9l-64 80c-5.8 7.2-6.9 17.1-2.9 25.4s12.4 13.6 21.6 13.6h96 32H424c8.9 0 17.1-4.9 21.2-12.8s3.6-17.4-1.4-24.7l-120-176zM112 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"
-                    />
-                  </svg>
-                </div>
-                <div class="card-title">Alt Text</div>
-                <p>
-                  As images are heavily featured due to the nature of the
-                  website, each image contains alt text to help screen readers
-                  describe the content of the image.
-                </p>
-              </div>
-              <div class="insight">
-                <div class="insight-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
+                      fill="white"
                       d="M448 256c0-106-86-192-192-192V448c106 0 192-86 192-192zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"
                     />
                   </svg>
@@ -509,64 +449,88 @@
                   from the background (e.g., buttons, toggles).
                 </p>
               </div>
+              <div class="insight">
+                <div class="insight-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      fill="white"
+                      d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                    />
+                  </svg>
+                </div>
+                <div class="card-title">Simple Navigation</div>
+                <p>
+                  The app features a simple navigation bar to quickly jump
+                  between the important pages.
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
-        <section class="final-design">
-          <h2 class="section-head">Final Design</h2>
+        <section class="responsive-design">
+          <h2 class="section-head">Responsive Design</h2>
           <div class="detail-wrapper">
+            <p class="para-first">
+              After designing the app, I began working on the accompanying
+              responsive website. I first created a sitemap to visualize the
+              organization of the pages to maintain consistency through the
+              experiences.
+            </p>
+            <h2>Sitemap</h2>
             <a
-              href="/src/assets/img/oasis/oasis-final.webp"
+              href="/src/assets/img/swiftvote/sv-sitemap.webp"
               class="img-wrapper p-0"
             >
               <img
                 class="concept-img"
-                src="/src/assets/img/oasis/oasis-final.webp"
-                alt="Mockup of the oasis website"
+                src="/src/assets/img/swiftvote/sv-sitemap.webp"
+                alt="Sitemap of the swiftvote website"
+                loading="lazy"
               />
             </a>
-            <h3>Style Guide</h3>
+            <h3>Responsive Designs</h3>
+            <p class="para-first">
+              With the sitemap in mind, I designed different variations of the
+              website for mobile, tablet, and desktop screen sizes. I kept the
+              same design language throughtout the app and the website, ensuring
+              a consistent experience on each device.
+            </p>
             <a
-              href="/src/assets/img/oasis/oasis-style-guide.webp"
+              href="/src/assets/img/swiftvote/sv-responsive-designs.webp"
               class="img-wrapper"
             >
               <img
                 class="concept-img"
-                src="/src/assets/img/oasis/oasis-style-guide.webp"
-                alt="Oasis style guide"
+                src="/src/assets/img/swiftvote/sv-responsive-designs.webp"
+                alt="The home screen variations of the swiftvote website based on devices."
+                loading="lazy"
               />
             </a>
             <div class="action-btn-container">
               <a
-                class="xd-btn action-btn"
-                href="https://xd.adobe.com/view/99a46e1a-a8af-487b-a735-d5923365ea9f-ccf7/?fullscreen"
+                class="proto-btn action-btn"
+                href="https://www.figma.com/proto/vWjOCqzVo7VJeMlT7ipUJV/SwiftVote-GoogleUX?page-id=64%3A5768&node-id=82-755&viewport=1268%2C147%2C0.13&scaling=scale-down&starting-point-node-id=82%3A719"
               >
-                Hi-Fi Prototype
-                <svg
-                  viewBox="0 34.656 240 166.12"
-                  width="240"
-                  height="166.12"
-                  style="enable-background: new 0 0 240 234"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g
-                    id="Layer_2_1_"
-                    transform="matrix(1.398805, 0, 0, 1.398805, -47.899097, -35.671978)"
-                  >
-                    <g id="Outlined_Mnemonics_Logos">
-                      <g id="Xd">
-                        <path
-                          class="st1"
-                          d="M126.2,61.5L96.2,111l32,52.5c0.2,0.4,0.3,0.8,0.2,1.2c-0.1,0.4-0.5,0.1-1.1,0.2h-22.9 c-1.6,0-2.7-0.1-3.4-1.1c-2.1-4.2-4.3-8.3-6.4-12.5c-2.1-4.1-4.4-8.3-6.8-12.6c-2.4-4.3-4.8-8.6-7.2-13h-0.2 c-2.1,4.3-4.4,8.6-6.7,12.9c-2.3,4.3-4.6,8.6-6.8,12.8c-2.3,4.2-4.6,8.5-6.9,12.6c-0.4,1-1.2,1.1-2.3,1.1H35.7 c-0.4,0-0.7,0.2-0.7-0.3c-0.1-0.4,0-0.8,0.2-1.1l31.1-51L36,61.4c-0.3-0.4-0.4-0.8-0.2-1c0.2-0.3,0.6-0.4,1-0.4h22.7 c0.5,0,1,0.1,1.4,0.2c0.4,0.2,0.7,0.5,1,0.9c1.9,4.3,4.1,8.6,6.4,12.9c2.4,4.3,4.7,8.5,7.2,12.7c2.4,4.2,4.6,8.4,6.7,12.7h0.2 c2.1-4.4,4.3-8.7,6.5-12.9c2.2-4.2,4.5-8.4,6.8-12.6c2.3-4.2,4.5-8.5,6.7-12.6c0.1-0.4,0.3-0.8,0.6-1c0.4-0.2,0.8-0.3,1.3-0.2 h21.1c0.5-0.1,1,0.2,1.1,0.7C126.6,60.9,126.4,61.3,126.2,61.5L126.2,61.5z"
-                        />
-                        <path
-                          class="st1"
-                          d="M172.4,167c-7.4,0.1-14.8-1.4-21.5-4.5c-6.3-2.9-11.5-7.7-15.1-13.6c-3.7-6.1-5.5-13.7-5.5-22.8 c-0.1-7.4,1.8-14.7,5.5-21.1c3.8-6.5,9.3-11.9,15.9-15.5c7-3.9,15.4-5.8,25.3-5.8c0.5,0,1.2,0,2.1,0.1c0.9,0.1,1.9,0.1,3.1,0.2 V52.4c0-0.7,0.3-1.1,1-1.1h20.3c0.5-0.1,0.9,0.3,1,0.7c0,0.1,0,0.2,0,0.2v95.2c0,1.8,0.1,3.8,0.2,6c0.2,2.1,0.3,4.1,0.4,5.8 c0,0.7-0.3,1.3-1,1.6c-5.2,2.2-10.7,3.8-16.3,4.8C182.7,166.5,177.6,167,172.4,167z M182.2,147v-44c-0.9-0.2-1.8-0.4-2.7-0.5 c-1.1-0.1-2.2-0.2-3.3-0.2c-3.9,0-7.8,0.8-11.3,2.6c-3.4,1.7-6.3,4.2-8.5,7.4c-2.2,3.2-3.3,7.5-3.3,12.7c-0.1,3.5,0.5,7,1.7,10.3 c1,2.7,2.5,5.1,4.5,7.1c1.9,1.8,4.2,3.2,6.8,4c2.7,0.9,5.5,1.3,8.3,1.3c1.5,0,2.9-0.1,4.2-0.2C179.9,147.6,181,147.4,182.2,147z"
-                        />
-                      </g>
-                    </g>
-                  </g>
+                App Prototype
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                  <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M80 0C44.7 0 16 28.7 16 64V448c0 35.3 28.7 64 64 64H304c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H80zm80 432h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H160c-8.8 0-16-7.2-16-16s7.2-16 16-16z"
+                  />
+                </svg>
+              </a>
+              <a
+                class="proto-btn action-btn"
+                href="https://www.figma.com/proto/vWjOCqzVo7VJeMlT7ipUJV/SwiftVote-GoogleUX?page-id=155%3A1252&node-id=315-6231&viewport=-518%2C-685%2C0.07&scaling=scale-down&starting-point-node-id=315%3A6231&show-proto-sidebar=1"
+              >
+                Web Prototype
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z"
+                  />
                 </svg>
               </a>
             </div>
@@ -577,16 +541,17 @@
           <h2 class="section-head">Concluding Thoughts</h2>
           <div class="detail-wrapper">
             <p class="para-first">
-              The Oasis project has been an extremely rewarding experience. I
-              had the opportunity to learn the ropes of Adobe XD and apply the
-              design process at the same time. I also got to delve into the
-              realm of responsive web design, which is crucial in today's
-              landscape. <br /><br />
-              Overall, I could not implement all of the features I wanted to due
-              to the lack of time. However, those ideas may be realized in
-              future designs.<br /><br />
+              The SwiftVote project has been an invaluable learning experience.
+              I had to consider more use cases than just designing an app or
+              website alone. However, by going through the design process, I
+              believe I created a cohesive experience across the different
+              platforms.
+              <br /><br />
+              Given more time, I could improve the layouts of the responsive
+              website to better utilize the larger screen spaces.
+              <br /><br />
               Thank you for taking time out of your day to check my case study
-              on Oasis 😊.
+              on SwiftVote 🥳.
             </p>
           </div>
         </section>
