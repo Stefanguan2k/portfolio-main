@@ -72,8 +72,9 @@ projCloseBtn.addEventListener('click', () => {
 projNavBtn.addEventListener('click', () => {
   navbg.setAttribute('data-active', false);
   navItems.setAttribute('data-active', false);
-  navClose.setAttribute('data-active', false);
+  navClose.setAttribute('data-active', true);
   projModal.setAttribute('data-active', true);
+  triangle.classList.add('r180');
 });
 
 desktopProjBtn.addEventListener('click', () => {
@@ -91,6 +92,8 @@ navClose.addEventListener('click', () => {
   navbg.setAttribute('data-active', false);
   navItems.setAttribute('data-active', false);
   navClose.setAttribute('data-active', false);
+  projModal.setAttribute('data-active', false);
+  triangle.classList.remove('r180');
 });
 
 // Resize navbar height and close mobile nav menu
@@ -100,10 +103,10 @@ window.addEventListener('resize', () => {
     navItems.setAttribute('data-active', false);
     navClose.setAttribute('data-active', false);
   }
-  else {
-    projModal.setAttribute('data-active', false);
-    triangle.classList.remove('r180');
-  }
+  // else {
+  //    projModal.setAttribute('data-active', false);
+  //    triangle.classList.remove('r180');
+  // }
   projModal.classList.add('disable-anim');
   setTimeout(() => {
     navbg.classList.remove('disable-anim');

@@ -96,8 +96,8 @@ button {
   /* Original value with dark mode icon */
   /* height: calc(440px + var(--nav-height)); */
   width: 100%;
-  backdrop-filter: blur(var(--backdrop-blur));
-  -webkit-backdrop-filter: blur(var(--backdrop-blur));
+  backdrop-filter: blur(var(--backdrop-blur)) brightness(0.5);
+  -webkit-backdrop-filter: blur(var(--backdrop-blur)) brightness(0.5);
   transform: translateY(calc(-1 * (var(--nav-bg-height))));
   transition: cubic-bezier(0.1, 1, 0.2, 1) 0.6s;
   -webkit-transition: cubic-bezier(0.1, 1, 0.2, 1) 0.6s;
@@ -105,24 +105,23 @@ button {
 }
 
 .project-modal[data-active='false'] {
-  transform:translateY(500px)
+  transform: translateY(500px);
 }
 
 .project-modal {
+  z-index: 9999;
   position: fixed;
   bottom: 0;
-  z-index: 9999;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: max-content;
   border-radius: 1rem 1rem 0 0;
   background: var(--nav-clr);
   backdrop-filter: blur(var(--backdrop-blur)) brightness(0.5);
   padding-bottom: 5rem;
-  -webkit-backdrop-filter: blur(var(--backdrop-blur));
+  -webkit-backdrop-filter: blur(var(--backdrop-blur)) brightness(0.5);
   transition: cubic-bezier(0.1, 1, 0.2, 1) 0.6s;
   -webkit-transition: cubic-bezier(0.1, 1, 0.2, 1) 0.6s;
   -moz-transition: cubic-bezier(0.1, 1, 0.2, 1) 0.6s;
@@ -153,7 +152,7 @@ button {
 }
 
 .proj-btn:hover {
-  background: var(--card-border-clr)
+  background: var(--card-border-clr);
 }
 
 .close-modal {
@@ -163,7 +162,7 @@ button {
   top: 0;
   right: 0;
   padding: 0.5rem;
-  aspect-ratio: 1;
+  width: 40px;
   height: 40px;
   margin: 1.5rem 1rem 0 0;
   border: none;
@@ -178,7 +177,7 @@ button {
 }
 
 .proj-btn[data-active='true'] {
-  background:rgb(0, 135, 172);
+  background: rgb(0, 135, 172);
 }
 
 .project-modal > ul > li {
@@ -305,7 +304,6 @@ button {
 .navlinks:not([aria-current='page']):hover {
   color: grey;
 }
-
 
 .desktop-nav {
   display: none;
@@ -515,6 +513,10 @@ button {
   transform: rotate(180deg);
 }
 
+.mt-2 {
+  margin-top: 2rem;
+}
+
 @media (min-width: 768px) {
   .hamburger-icon {
     display: none;
@@ -541,7 +543,7 @@ button {
     max-width: var(--max-container-width);
     border-radius: 0.5rem;
     height: max-content;
-    padding: 0.5rem ;
+    padding: 0.5rem;
     gap: 1rem;
     justify-content: space-between;
     z-index: 100;
@@ -552,7 +554,7 @@ button {
   .project-modal[data-active='false'] {
     transform: translate(-50%, -10rem);
   }
-  
+
   .proj-btn-wrapper {
     flex-direction: row;
     margin: 0 2rem;
@@ -568,7 +570,7 @@ button {
 
   .proj-btn[data-active='true'] {
     background: none;
-    color:rgb(0, 135, 172);
+    color: rgb(0, 135, 172);
     font-weight: bold;
   }
 
