@@ -71,17 +71,15 @@ p {
 }
 
 .pdf-btn,
-.pdf-btn:hover,
-.xd-btn,
-.xd-btn:hover {
-  border-color: #9882c5;
+.xd-btn{
+  background: #9882c5;
+  color: black;
+  fill: black;
 }
 
 .pdf-btn:hover,
 .xd-btn:hover {
-  background-color: #9882c5;
-  color: black;
-  fill: black;
+  background-color: #9882c59f;
 }
 
 /* Images */
@@ -110,7 +108,7 @@ p {
 }
 
 .img-wrapper:hover {
-  box-shadow: 0 0 5px var(--shadow-clr);
+  box-shadow: 0 3px 8px var(--shadow-clr);
   transform: translateY(-2.5px);
 }
 
@@ -199,7 +197,7 @@ p {
   padding: 0.5rem;
   border-radius: 100%;
   border: solid 1px var(--card-border-clr);
-  box-shadow: 0 0 5px var(--shadow-clr);
+  box-shadow: 0 3px 8px var(--shadow-clr);;
   cursor: pointer;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
   -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
@@ -286,7 +284,7 @@ p {
   gap: 0.3rem;
   width: 80%;
   border-radius: 0.5rem;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.219);
+  box-shadow: 0 3px 8px var(--shadow-clr);
 }
 
 .address > span {
@@ -360,7 +358,7 @@ p {
   .persona {
     position: relative;
     border-radius: 1rem;
-    box-shadow: 0 0 5px var(--shadow-clr);
+    box-shadow: 0 3px 8px var(--shadow-clr);
   }
   .persona-btn {
     display: none;

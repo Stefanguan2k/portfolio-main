@@ -56,7 +56,10 @@ p {
 }
 
 .action-btn {
-  --btn-hover-clr: rgb(0, 95, 122);
+  background: rgb(0, 95, 122);
+}
+.action-btn:hover {
+  background: rgba(0, 95, 122, 0.626);
 }
 
 /* Desktop View */

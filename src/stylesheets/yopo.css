@@ -191,11 +191,13 @@ p {
 }
 
 .web-btn {
-  border: solid #ece1c6 4px;
+  background: #ece1c6;
+  color: black;
+  fill: black;
 }
 
 .web-btn:hover {
-  background: #ece1c6;
+  background: #ece1c686;
   color: black;
   fill: black;
 }

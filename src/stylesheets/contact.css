@@ -30,7 +30,7 @@ input,
 textarea {
   border-radius: 0.3rem;
   border: none;
-  padding: 0.5rem;
+  padding: 0.7rem;
   background: var(--card-bg);
   resize: vertical;
   color: var(--text-clr);
@@ -105,30 +105,36 @@ label {
 
 #submit-btn {
   z-index: 10;
-  --btn-hover-clr: rgb(0, 95, 122);
+  background: rgb(0, 95, 122);
+  border: transparent;
+}
+
+#submit-btn:hover {
+  background: rgba(0, 95, 122, 0.626);
 }
 
 .action-btn[data-submit='fail'] {
-  border-color: rgb(114, 29, 29);
   background: rgb(114, 29, 29);
 }
 
 .action-btn[data-submit='success'] {
-  border-color: rgb(29, 114, 73);
   background: rgb(29, 114, 73);
 }
 
+.clear-btn {
+  border: solid rgb(114, 29, 29) 3px;
+}
+
 .clear-btn:hover {
-  border-color: rgb(114, 29, 29);
   background: rgb(114, 29, 29);
 }
 
 .reset-btn {
-  border-color: rgb(114, 104, 29);
+  background: rgb(114, 104, 29);
 }
 
 .reset-btn:hover {
-  background: rgb(114, 104, 29);
+  background: rgba(114, 104, 29, 0.6);
 }
 
 /* Loading Icon */

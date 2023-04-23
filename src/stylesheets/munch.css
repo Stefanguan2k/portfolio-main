@@ -37,13 +37,12 @@ section:nth-child(even) {
   margin-top: 1rem;
 }
 
-.pdf-btn,
-.pdf-btn:hover {
-  border-color: rgb(0, 95, 122);
+.pdf-btn {
+  background: rgb(0, 95, 122);
 }
 
 .pdf-btn:hover {
-  background-color: rgb(0, 95, 122);
+  background: rgba(0, 95, 122, 0.626);
 }
 
 .description {
@@ -91,7 +90,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 5px var(--shadow-clr);
+  box-shadow: 0 3px 8px var(--shadow-clr);
   max-width: calc(400px + 1.2rem);
   width: 100%;
   min-height: calc(250px + 1.2rem);
@@ -179,7 +178,7 @@ p {
   padding: 0.5rem;
   border-radius: 100%;
   border: solid 1px var(--card-border-clr);
-  box-shadow: 0 0 5px var(--shadow-clr);
+  box-shadow: 0 3px 8px var(--shadow-clr);
   cursor: pointer;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
   -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
@@ -242,7 +241,7 @@ p {
 }
 
 .img-wrapper:hover {
-  box-shadow: 0 0 5px var(--shadow-clr);
+  box-shadow: 0 3px 8px var(--shadow-clr);
   transform: translateY(-2.5px);
 }
 
@@ -257,7 +256,7 @@ p {
 }
 
 .figma-btn {
-  border: solid rgb(142, 46, 16) 4px;
+  background: rgb(0, 95, 122);
 }
 
 .figma-btn > svg,
@@ -280,7 +279,6 @@ p {
 
 .figma-btn:hover,
 .figma-btn:focus {
-  border: solid transparent 4px;
   fill: #dedede;
   animation-name: animFigma;
   animation-duration: 1.5s;
@@ -291,28 +289,28 @@ p {
 
 @keyframes animFigma {
   0% {
-    background: rgb(148, 49, 19);
-    box-shadow: 0 0 10px rgb(148, 49, 19);
+    background: rgb(0, 95, 122);
+    box-shadow: 0 0 10px rgb(0, 95, 122);
   }
   20% {
-    background: rgb(180, 80, 69);
-    box-shadow: 0 0 10px rgb(180, 80, 69);
+    background: rgb(6, 146, 92);
+    box-shadow: 0 0 10px rgb(6, 146, 92);
   }
   40% {
     background: rgb(115, 63, 183);
     box-shadow: 0 0 10px rgb(115, 63, 183);
   }
   60% {
-    background: rgb(17, 129, 173);
-    box-shadow: 0 0 10px rgb(17, 129, 173);
+    background: rgb(148, 49, 19);
+    box-shadow: 0 0 10px rgb(148, 49, 19);
   }
   80% {
-    background: rgb(6, 146, 92);
-    box-shadow: 0 0 10px rgb(6, 146, 92);
+    background: rgb(180, 80, 69);
+    box-shadow: 0 0 10px rgb(180, 80, 69);
   }
   100% {
-    background: rgb(63, 63, 63);
-    box-shadow: 0 0 10px var(--shadow-clr);
+    background: rgb(0, 95, 122);
+    box-shadow: 0 3px 8px var(--shadow-clr);
   }
 }
 

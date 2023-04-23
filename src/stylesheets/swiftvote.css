@@ -71,17 +71,13 @@ p {
 }
 
 .pdf-btn,
-.pdf-btn:hover,
-.proto-btn,
-.proto-btn:hover {
-  border-color: #308264;
+.proto-btn {
+  background: #308264;
 }
 
 .pdf-btn:hover,
 .proto-btn:hover {
-  background-color: #308264;
-  color: var(--text-clr);
-  fill: var(--text-clr);
+  background-color: #30826497;
 }
 
 /* Images */
@@ -286,7 +282,7 @@ p {
   gap: 0.3rem;
   width: 80%;
   border-radius: 0.5rem;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.219);
+  box-shadow: 0 3px 8px var(--shadow-clr);
 }
 
 .address > span {
@@ -360,7 +356,7 @@ p {
   .persona {
     position: relative;
     border-radius: 1rem;
-    box-shadow: 0 0 5px var(--shadow-clr);
+    box-shadow: 0 3px 8px var(--shadow-clr);
   }
   .persona-btn {
     display: none;
